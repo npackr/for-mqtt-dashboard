@@ -1,0 +1,14 @@
+{
+  "name": "mqtt-dashboard",
+  "version": "1.0.0",
+  "description": "A dashboard manage and analytic datas from MQTT server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "L2NK TEAM - npackr",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^4.3.6"
+  }
+}
