@@ -7,33 +7,62 @@
 var mqtt = require('mqtt');
 // tạo option sử dụng thuộc tính connect để kết nối đến broket MQTT 
 var options = {
-    port: 1883,
-    host: 'test.mosquitto.org',
+    port: 23640,
+    host: '168.138.165.18',
     clientId: 'mqttjs_' + Math.random().toString(16).substr(2, 8),
-    username: 'aaabhffz',
-    password: 'EqeHDNIXN',
+    username: 'taikhoansv',
+    password: 'MatKhauMQTT+075800',
     keepalive: 60,
     reconnectPeriod: 1000,
     protocolId: 'MQIsdp',
     protocolVersion: 3,
-    clean: true,
-    encoding: 'utf8'
+    clean: true
 };
-var client = mqtt.connect('mqtt://test.mosquitto.org', options);
+
+var client = mqtt.connect('mqtt://168.138.165.18', options);
+
+// TOPIC LIST
+var topic_list = {
+    // Living room
+    'PhongKhach/MayLanh': {qos: 1},
+    'PhongKhach/TV': {qos: 1},
+    'PhongKhach/AmThanh': {qos: 0},
+    'PhongKhach/AnhSang': {qos: 3},
+
+    // Kitchen
+    'PhongBep/TuLanh': {qos: 0},
+    'PhongBep/BepDien': {qos: 0},
+    'PhongBep/ViSong': {qos: 0},
+
+    // Bedroom
+    'PhongNgu/MayLanh': {qos: 1},
+    'PhongNgu/Den': {qos: 3},
+    'PhongNgu/MayNongLanh': {qos: 2},
+
+    // Garden
+    'SanVuon/ChieuSang': {qos: 3},
+    'SanVuon/HoBoi': {qos: 2},
+}
 
 // function có chức năng subscribe 1 topic nếu đã kết nối thành công đến broker
 client.on('connect', function() {
-    console.log('Client A connected')
-    // client subcribe topic /client-a/sub
-    client.subscribe('/client-a/sub')
+    console.log('Client connected to server!')
+    // client subcribe topic
+    client.subscribe(topic_list, function (error, granted) {
+        if (error) {
+            console.log(error);
+          } else {
+            console.log(`Topic list  was subscribed!`);
+          }
+    });
 })
-// function có chức năng gửi 1 gói tin đễn đến topic đã đăng kí
-client.on('message', function(topic, message) {
-    // in ra màn hình console 1 message ở định dạng string
-    console.log(message.toString())
-    // publish gói tin 'Hello from client A' đến topic /client-b/sub
-    client.publish('/client-b/sub', 'Hello from client A')
-    // đóng kết nối của client
-    client.end()
+
+// Function for receiving message from topic
+client.on('message', function (topic, payload, packet) {
+    // Payload is Buffer
+    console.log(`Topic: ${topic}, Message: ${payload.toString()}, QoS: ${packet.qos}`)
+
+    // TODO: Send received messages to database for storing and use in future
 })
-console.log('Client A started')
+
+console.log('Client was started!')
