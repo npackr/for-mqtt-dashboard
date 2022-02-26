@@ -1,4 +1,4 @@
-/*  MARIADB CONNECTOR
+/*  MARIADB CONNECTOR TEST SCRIPT
     This script base on a resource from MariaDB offcial blog
 
     By          : npackr
