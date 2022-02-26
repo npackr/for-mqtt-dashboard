@@ -1,3 +1,3 @@
-# for-mqtt-dashboard
+# mqtt-data-dashboard
 
-MQTT DASHBOARD - A project for manage and analytic datas from MQTT server
+A dashboard for manage and analytics data from MQTT servers
