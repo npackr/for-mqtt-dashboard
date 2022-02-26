@@ -1,10 +1,12 @@
-/*  This source code only for testing, coyping from HOCARM.ORG
+/*  MQTT CONNECTOR MAIN SCRIPT
+    This script base on a article on HOCARM.ORG
     
-    Tester      : npackr
-    Resource URL: https://hocarm.org/mqtt-client-va-mqtt-broker/ */
+    By       : npackr
+    Resources: https://hocarm.org/mqtt-client-va-mqtt-broker/ */
 
 // tạo biến mqtt sử dụng các chức năng của module mqtt
 var mqtt = require('mqtt');
+
 // tạo option sử dụng thuộc tính connect để kết nối đến broket MQTT 
 var options = {
     port: 23640,
