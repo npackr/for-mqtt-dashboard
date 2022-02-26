@@ -4,10 +4,10 @@
     By       : npackr
     Resources: https://hocarm.org/mqtt-client-va-mqtt-broker/ */
 
-// tạo biến mqtt sử dụng các chức năng của module mqtt
+// MQTT GLOBAL VALUEABLE - Use to access MQTT.JS framework
 var mqtt = require('mqtt');
 
-// tạo option sử dụng thuộc tính connect để kết nối đến broket MQTT 
+// CONNECT OPTIONS
 var options = {
     port: 23640,
     host: '168.138.165.18',
@@ -21,9 +21,10 @@ var options = {
     clean: true
 };
 
+// CONNECTION STRING - Use to connect the MQTT server
 var client = mqtt.connect('mqtt://168.138.165.18', options);
 
-// TOPIC LIST
+// TOPIC LIST - Use when the server doesn't allow subscribing a wildcard
 var topic_list = {
     // Living room
     'PhongKhach/MayLanh': {qos: 1},
@@ -46,11 +47,11 @@ var topic_list = {
     'SanVuon/HoBoi': {qos: 2},
 }
 
-// function có chức năng subscribe 1 topic nếu đã kết nối thành công đến broker
+// CONNECTED FUNCTION - Run after connected to server
 client.on('connect', function() {
     console.log('Client connected to server!')
     // client subcribe topic
-    client.subscribe(topic_list, function (error, granted) {
+    client.subscribe('#', function (error, granted) {
         if (error) {
             console.log(error);
           } else {
@@ -59,7 +60,7 @@ client.on('connect', function() {
     });
 })
 
-// Function for receiving message from topic
+// MESSAGE ARRIVED FUNCTION - Function runs when receiving message from topic
 client.on('message', function (topic, payload, packet) {
     // Payload is Buffer
     console.log(`Topic: ${topic}, Message: ${payload.toString()}, QoS: ${packet.qos}`)
