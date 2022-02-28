@@ -7,12 +7,6 @@
 
 =*= VIETNAMESE VERSION =*=
 
-PHÂN HIỆU ĐẠI HỌC THUỶ LỢI
-
-BỘ MÔN CÔNG NGHỆ THÔNG TIN
-
-
-
 **TÀI LIỆU SRS**
 
 *Đề tài: DASHBOARD QUẢN LÝ ĐIỆN NĂNG DỰA TRÊN SỐ LIỆU TỪ SERVER MQTT*
