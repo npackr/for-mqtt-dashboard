@@ -17,7 +17,7 @@ BỘ MÔN CÔNG NGHỆ THÔNG TIN
 
 *Đề tài: DASHBOARD QUẢN LÝ ĐIỆN NĂNG DỰA TRÊN SỐ LIỆU TỪ SERVER MQTT*
 
-*Thực hiện bởi NHÓM 3:
+Thực hiện bởi NHÓM 3:
 
 1.	Nguyễn Anh Kiệt.	MSSV: 1851062658.	Lớp: S21- 60TH1
 2.	Nguyễn Thị Giao Linh.   MSSV: 1851062815.	Lớp: S21-60TH1
