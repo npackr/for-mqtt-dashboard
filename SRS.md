@@ -27,18 +27,18 @@ Các doanh nghiệp ngày càng chịu áp lực trong việc điều chỉnh đ
 **I.	GIỚI THIỆU**
 
 *1.	Mục đích:*
-●	Xây dựng dashboard cho phép thấy được bức ảnh hệ thống đang vận hành một cách nhanh chóng & toàn diện nhất qua các dữ liệu gửi về từ máy chủ MQTT.
-●	Thống kê dữ liệu lâu dài, lập báo cáo dữ liệu hằng tuần, hằng tháng, hằng năm. Mở rộng các tính năng tiện ích liên quan như tính toán chi phí điện thông qua một giao diện tương tác duy nhất
+- Xây dựng dashboard cho phép thấy được bức ảnh hệ thống đang vận hành một cách nhanh chóng & toàn diện nhất qua các dữ liệu gửi về từ máy chủ MQTT.
+- Thống kê dữ liệu lâu dài, lập báo cáo dữ liệu hằng tuần, hằng tháng, hằng năm. Mở rộng các tính năng tiện ích liên quan như tính toán chi phí điện thông qua một giao diện tương tác duy nhất
 
 *2.	Phạm vi:*
 Quản lý dữ liệu từ các nguồn topic gửi từ các client thông qua dữ liệu nhận được từ broker, trong đó:
--	MQTT Broker: Được cung cấp dưới dạng mã nguồn mở hoặc các phiên bản thương mại, có thể đi kèm với các dịch vụ điện toán đám mây. Công việc của Broker là lọc các tin nhắn dựa trên topic, sau đó phân phối các tin nhắn đến các thiết bị/ứng dụng đã đăng ký topic đó. Các bạn có thể tham khảo một số MQTT Broker như: HiveMQ , Mosquitto, MQTTRoute, Jmqtt, … 
--	MQTT Client: Là các thiết bị/ứng dụng Client kết nối đến Broker để thực hiện truyền nhận dữ liệu. Hiện nay có rất nhiều mã nguồn mở MQTT Client được viết dưới nhiều ngôn ngữ khác nhau như HiveMQ MQTT Client được phát triển dựa trên ngôn ngữ Java, Eclipse Paho dựa trên C/C++, Python, …
--	Topic: Mỗi MQTT Client thực hiện truyền/nhận dữ liệu với nhau thông qua các Topic được quản lý bởi Broker. Một Client đăng ký nhận dữ liệu được gọi là một Subcriber còn một Client gửi dữ liệu đi được gọi là một Publisher. Để nhận dữ liệu từ Publisher, đầu tiên Subcriber phải subscribe (đăng ký theo dõi) đến một Topic, sau đó bất cứ Client nào publish dữ liệu đến đúng Topic, thì Broker sẽ lọc và chuyển tiếp gói tin đến đúng Subscriber đó. Một Client có thể subscribe hoặc publish đến nhiều Topic khác nhau.
+- MQTT Broker: Được cung cấp dưới dạng mã nguồn mở hoặc các phiên bản thương mại, có thể đi kèm với các dịch vụ điện toán đám mây. Công việc của Broker là lọc các tin nhắn dựa trên topic, sau đó phân phối các tin nhắn đến các thiết bị/ứng dụng đã đăng ký topic đó. Các bạn có thể tham khảo một số MQTT Broker như: HiveMQ , Mosquitto, MQTTRoute, Jmqtt, … 
+- MQTT Client: Là các thiết bị/ứng dụng Client kết nối đến Broker để thực hiện truyền nhận dữ liệu. Hiện nay có rất nhiều mã nguồn mở MQTT Client được viết dưới nhiều ngôn ngữ khác nhau như HiveMQ MQTT Client được phát triển dựa trên ngôn ngữ Java, Eclipse Paho dựa trên C/C++, Python, …
+- Topic: Mỗi MQTT Client thực hiện truyền/nhận dữ liệu với nhau thông qua các Topic được quản lý bởi Broker. Một Client đăng ký nhận dữ liệu được gọi là một Subcriber còn một Client gửi dữ liệu đi được gọi là một Publisher. Để nhận dữ liệu từ Publisher, đầu tiên Subcriber phải subscribe (đăng ký theo dõi) đến một Topic, sau đó bất cứ Client nào publish dữ liệu đến đúng Topic, thì Broker sẽ lọc và chuyển tiếp gói tin đến đúng Subscriber đó. Một Client có thể subscribe hoặc publish đến nhiều Topic khác nhau.
 
 *3.	Định nghĩa:*
--	Dashboard là báo cáo tiến độ dưới dạng trực quan hóa dữ liệu (data visualization) bằng cách kết nối với các nguồn dữ liệu, các tệp, tệp đính kèm, dịch vụ và API của doanh nghiệp bạn, và sau đó hiển thị tất cả dữ liệu này dưới dạng bảng, biểu đồ đường, biểu đồ thanh.
--	MQTT (Message Queuing Telemetry Transport) là giao thức truyền thông điệp (message) theo mô hình publish/subscribe (cung cấp / thuê bao), được sử dụng cho các thiết bị IoT với băng thông thấp, độ tin cậy cao và khả năng được sử dụng trong điều kiện mạng không ổn định. Nó dựa trên một Broker (tạm dịch là “Máy chủ môi giới”) “nhẹ” (khá ít xử lý) và được thiết kế có tính mở (tức là không đặc trưng cho ứng dụng cụ thể nào), đơn giản và dễ cài đặt.
+- Dashboard là báo cáo tiến độ dưới dạng trực quan hóa dữ liệu (data visualization) bằng cách kết nối với các nguồn dữ liệu, các tệp, tệp đính kèm, dịch vụ và API của doanh nghiệp bạn, và sau đó hiển thị tất cả dữ liệu này dưới dạng bảng, biểu đồ đường, biểu đồ thanh.
+- MQTT (Message Queuing Telemetry Transport) là giao thức truyền thông điệp (message) theo mô hình publish/subscribe (cung cấp / thuê bao), được sử dụng cho các thiết bị IoT với băng thông thấp, độ tin cậy cao và khả năng được sử dụng trong điều kiện mạng không ổn định. Nó dựa trên một Broker (tạm dịch là “Máy chủ môi giới”) “nhẹ” (khá ít xử lý) và được thiết kế có tính mở (tức là không đặc trưng cho ứng dụng cụ thể nào), đơn giản và dễ cài đặt.
  
 
 **II. MÔ TẢ CHUNG**
@@ -89,12 +89,12 @@ e. Chức năng cảnh báo khi có sự quá tải
 - Dữ liệu được cập nhật thường xuyên nên hệ thống sẽ đưa ra những cảnh báo khi lượng điện tiêu thụ trên hệ thống cập nhật vượt quá mức bình thường (20%-30%)
 
 *2. Yêu cầu giao diện ngoài*
--	Hỗ trợ hiển thị biểu đồ trực tiếp trên nền web
--	Hiển thị các menu trực quan để người sử dụng có thể dễ dàng thao tác
+- Hỗ trợ hiển thị biểu đồ trực tiếp trên nền web
+- Hiển thị các menu trực quan để người sử dụng có thể dễ dàng thao tác
 
 *3. Yêu cầu hiệu suất*
-•	Đảm bảo hệ thống hoạt động xuyên suốt 24/24 để có thể nhận về tất cả dữ liệu từ máy chủ MQTT
-•	Các biểu đồ số liệu, dữ liệu cần cập nhật liên tục thời gian thực và theo thời gian nhất định được định trước
+• Đảm bảo hệ thống hoạt động xuyên suốt 24/24 để có thể nhận về tất cả dữ liệu từ máy chủ MQTT
+• Các biểu đồ số liệu, dữ liệu cần cập nhật liên tục thời gian thực và theo thời gian nhất định được định trước
 
 *4. Thuộc tính*
 
@@ -105,7 +105,7 @@ a. Tính bảo mật hệ thống
 
 b.  Tính an toàn thông tin
 - Thông tin mật khẩu đăng nhập lưu trữ trên cơ sở dữ liệu phải mã hóa an toàn
-- Liên kết giữ hệ thống và người dùng phải sử dụng HTTPS
+- Liên kết giữa hệ thống và người dùng phải sử dụng HTTPS
 
 c. Tính bảo trì
 - Thường xuyên rà soát các lỗ hổng trên hệ thống
