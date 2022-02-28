@@ -11,7 +11,7 @@ PHÂN HIỆU ĐẠI HỌC THUỶ LỢI
 
 BỘ MÔN CÔNG NGHỆ THÔNG TIN
 
-*
+
 
 **TÀI LIỆU SRS**
 
@@ -24,7 +24,7 @@ Thực hiện bởi NHÓM 3:
 3.	Trần Thị Bích Ngọc.	MSSV: 1851062787.	Lớp: S21-60TH1
 4.	Nguyễn Yến Linh.	MSSV: 1851062815.	Lớp: S21-60TH2
 
-*
+
 
 **LỜI MỞ ĐẦU**
 
