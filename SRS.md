@@ -45,6 +45,7 @@ Quản lý dữ liệu từ các nguồn topic gửi từ các client thông qua
 
 *1. Tổng quan về sản phẩm*
     Sản phẩm là sự chuyển hóa về công nghệ của mô hình quản lý đơn thuần trên máy tính, giảm sai sót trong quá trình thực hiện giám sát thủ công. Thông qua các tính năng của phần mềm có thể giúp người quản lý xem được các biểu đồ hoạt động, kiểm soát được toàn bộ các thông tin liên quan đến điện năng đã sử dụng và có những sự can thiệp nếu có sự quá tải xảy ra.
+
 *2. Chức năng sản phẩm*
 - Quản lý, giám sát toàn bộ hệ thống
 - Cho phép kiểm soát nguồn thông tin của các thiết bị có trên hệ thống.
