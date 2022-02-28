@@ -1,6 +1,6 @@
 **SYSTEM SRS DOCUMENT**
 
-* Full document: /document/srs-document.dõc
+* Full document: /document/srs-document.docx
 * No English version now
 
 
