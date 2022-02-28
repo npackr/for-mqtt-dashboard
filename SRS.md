@@ -29,7 +29,7 @@ Thực hiện bởi NHÓM 3:
 **LỜI MỞ ĐẦU**
 
 Các doanh nghiệp ngày càng chịu áp lực trong việc điều chỉnh để phù hợp với thị trường chuyển đổi số cạnh tranh khốc liệt. Duy trì lợi thế cạnh tranh là cần thiết hơn bao giờ hết, nên các công ty đang nhanh chóng áp dụng phương pháp quản lý dự án linh hoạt và việc tiếp cận thông tin phù hợp một cách kịp thời. Do đó, các nhà quản lý dự án ngày càng ưa chuộng sử dụng hình thức dashboard để dễ dàng quản lý cũng như tổng hợp tức thì những thông tin hoạt động liên quan đến hệ thống thông tin. Vì lẽ đó, dự án dashboard dữ liệu điện năng từ máy chủ MQTT sẽ là một hình thức hứa hẹn mang lại nhiều tiện ích cho người quản lý các thiết bị IoT thay cho các hình thức truyền thống, nâng cao năng suất công việc.
- 
+
 **I.	GIỚI THIỆU**
 
 *1.	Mục đích:*
