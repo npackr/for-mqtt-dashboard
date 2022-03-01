@@ -6,7 +6,8 @@
 
 ## TÀI LIỆU SRS
 
-*Đề tài: DASHBOARD QUẢN LÝ ĐIỆN NĂNG DỰA TRÊN SỐ LIỆU TỪ SERVER MQTT*
+### Đề tài: DASHBOARD QUẢN LÝ ĐIỆN NĂNG DỰA TRÊN SỐ LIỆU TỪ SERVER MQTT
+
 Thực hiện bởi NHÓM 3:
 
 1. Nguyễn Anh Kiệt. MSSV: 1851062658. Lớp: S21- 60TH1
@@ -14,18 +15,18 @@ Thực hiện bởi NHÓM 3:
 3. Trần Thị Bích Ngọc. MSSV: 1851062787. Lớp: S21-60TH1
 4. Nguyễn Yến Linh. MSSV: 1851062815. Lớp: S21-60TH2
 
-### LỜI MỞ ĐẦU
+#### LỜI MỞ ĐẦU
 
 Các doanh nghiệp ngày càng chịu áp lực trong việc điều chỉnh để phù hợp với thị trường chuyển đổi số cạnh tranh khốc liệt. Duy trì lợi thế cạnh tranh là cần thiết hơn bao giờ hết, nên các công ty đang nhanh chóng áp dụng phương pháp quản lý dự án linh hoạt và việc tiếp cận thông tin phù hợp một cách kịp thời. Do đó, các nhà quản lý dự án ngày càng ưa chuộng sử dụng hình thức dashboard để dễ dàng quản lý cũng như tổng hợp tức thì những thông tin hoạt động liên quan đến hệ thống thông tin. Vì lẽ đó, dự án dashboard dữ liệu điện năng từ máy chủ MQTT sẽ là một hình thức hứa hẹn mang lại nhiều tiện ích cho người quản lý các thiết bị IoT thay cho các hình thức truyền thống, nâng cao năng suất công việc.
 
 #### I. GIỚI THIỆU
 
-*1. Mục đích:*
+##### 1. Mục đích:
 
 * Xây dựng dashboard cho phép thấy được bức ảnh hệ thống đang vận hành một cách nhanh chóng & toàn diện nhất qua các dữ liệu gửi về từ máy chủ MQTT.
 * Thống kê dữ liệu lâu dài, lập báo cáo dữ liệu hằng tuần, hằng tháng, hằng năm. Mở rộng các tính năng tiện ích liên quan như tính toán chi phí điện thông qua một giao diện tương tác duy nhất
 
-*2. Phạm vi:*
+##### 2. Phạm vi
 
 Quản lý dữ liệu từ các nguồn topic gửi từ các client thông qua dữ liệu nhận được từ broker, trong đó:
 
@@ -33,18 +34,18 @@ Quản lý dữ liệu từ các nguồn topic gửi từ các client thông qua
 * MQTT Client: Là các thiết bị/ứng dụng Client kết nối đến Broker để thực hiện truyền nhận dữ liệu. Hiện nay có rất nhiều mã nguồn mở MQTT Client được viết dưới nhiều ngôn ngữ khác nhau như HiveMQ MQTT Client được phát triển dựa trên ngôn ngữ Java, Eclipse Paho dựa trên C/C++, Python, …
 * Topic: Mỗi MQTT Client thực hiện truyền/nhận dữ liệu với nhau thông qua các Topic được quản lý bởi Broker. Một Client đăng ký nhận dữ liệu được gọi là một Subcriber còn một Client gửi dữ liệu đi được gọi là một Publisher. Để nhận dữ liệu từ Publisher, đầu tiên Subcriber phải subscribe (đăng ký theo dõi) đến một Topic, sau đó bất cứ Client nào publish dữ liệu đến đúng Topic, thì Broker sẽ lọc và chuyển tiếp gói tin đến đúng Subscriber đó. Một Client có thể subscribe hoặc publish đến nhiều Topic khác nhau.
 
-*3. Định nghĩa:*
+##### 3. Định nghĩa
 
 * Dashboard là báo cáo tiến độ dưới dạng trực quan hóa dữ liệu (data visualization) bằng cách kết nối với các nguồn dữ liệu, các tệp, tệp đính kèm, dịch vụ và API của doanh nghiệp bạn, và sau đó hiển thị tất cả dữ liệu này dưới dạng bảng, biểu đồ đường, biểu đồ thanh.
 * MQTT (Message Queuing Telemetry Transport) là giao thức truyền thông điệp (message) theo mô hình publish/subscribe (cung cấp / thuê bao), được sử dụng cho các thiết bị IoT với băng thông thấp, độ tin cậy cao và khả năng được sử dụng trong điều kiện mạng không ổn định. Nó dựa trên một Broker (tạm dịch là “Máy chủ môi giới”) “nhẹ” (khá ít xử lý) và được thiết kế có tính mở (tức là không đặc trưng cho ứng dụng cụ thể nào), đơn giản và dễ cài đặt.
 
-#### II. MÔ TẢ CHUNG**
+#### II. MÔ TẢ CHUNG
 
-*1. Tổng quan về sản phẩm:*
+##### 1. Tổng quan về sản phẩm
 
 * Sản phẩm là sự chuyển hóa về công nghệ của mô hình quản lý đơn thuần trên máy tính, giảm sai sót trong quá trình thực hiện giám sát thủ công. Thông qua các tính năng của phần mềm có thể giúp người quản lý xem được các biểu đồ hoạt động, kiểm soát được toàn bộ các thông tin liên quan đến điện năng đã sử dụng và có những sự can thiệp nếu có sự quá tải xảy ra.
 
-*2. Chức năng sản phẩm:*
+##### 2. Chức năng sản phẩm
 
 * Quản lý, giám sát toàn bộ hệ thống
 * Cho phép kiểm soát nguồn thông tin của các thiết bị có trên hệ thống.
@@ -52,11 +53,11 @@ Quản lý dữ liệu từ các nguồn topic gửi từ các client thông qua
 * Chức năng sao lưu dữ liệu tự động và thường xuyên.
 * Cho phép so sánh, phân loại các vùng dữ liệu khác nhau từ các thiết bị và phòng khác nhau
 
-*3. Đối tượng người dùng:*
+##### 3. Đối tượng người dùng
 
 * Người quản lý các thiết bị IoT
 
-*4. Ràng buộc tổng thể:*
+##### 4. Ràng buộc tổng thể
 
 a. Ràng buộc về phần cứng:
 
@@ -72,7 +73,7 @@ c. Yêu cầu kết nối với các hệ thống khác:
 
 #### III. YÊU CẦU CHI TIẾT
 
-*1. Yêu cầu chức năng:*
+##### 1. Yêu cầu chức năng
 
 a. Chức năng lọc tìm kiếm dữ liệu:
 
@@ -97,17 +98,17 @@ e. Chức năng cảnh báo khi có sự quá tải:
 
 * Dữ liệu được cập nhật thường xuyên nên hệ thống sẽ đưa ra những cảnh báo khi lượng điện tiêu thụ trên hệ thống cập nhật vượt quá mức bình thường (20%-30%)
 
-*2. Yêu cầu giao diện ngoài:*
+##### 2. Yêu cầu giao diện ngoài
 
 * Hỗ trợ hiển thị biểu đồ trực tiếp trên nền web
 * Hiển thị các menu trực quan để người sử dụng có thể dễ dàng thao tác
 
-*3. Yêu cầu hiệu suất:*
+##### 3. Yêu cầu hiệu suất
 
 * Đảm bảo hệ thống hoạt động xuyên suốt 24/24 để có thể nhận về tất cả dữ liệu từ máy chủ MQTT
 * Các biểu đồ số liệu, dữ liệu cần cập nhật liên tục thời gian thực và theo thời gian nhất định được định trước
 
-*4. Thuộc tính:*
+##### 4. Thuộc tính
 
 a. Tính bảo mật hệ thống:
 
