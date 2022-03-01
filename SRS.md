@@ -1,6 +1,6 @@
 # SYSTEM SRS DOCUMENT
 
-* Full document: /document/srs-document.docx
+* Full document: [srs_document.docx](/document/srs-document.docx)
 * No English version now
 * Tiếng Việt phía bên dưới
 
