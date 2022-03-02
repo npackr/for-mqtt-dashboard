@@ -1,7 +1,7 @@
 # mqtt-data-dashboard
 
-* Gannt in PNG: [gantt.png](/document/gantt.png)
-* Full chart in GAN: [gantt.gan](/document/gantt.gan)
+* Gantt chart in PNG: [gantt.png](/document/gantt.png)
+* Gantt chart in GAN: [gantt.gan](/document/gantt.gan)
 
 ## Gantt Chart
 
