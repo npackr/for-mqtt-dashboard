@@ -4,5 +4,5 @@ A dashboard for manage and analytics data from MQTT servers
 
 ## Documents
 
-* SRS Document: [srs-document.docx](/document/srs-document.docx)
+* SRS Document: [SRS.md](/SRS.md)
 * Gantt Chart : [gantt.png](/document/gantt.png)
