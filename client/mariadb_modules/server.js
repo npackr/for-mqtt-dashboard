@@ -6,7 +6,7 @@
 */
 
 const express = require('express')
-const db = require('./db')
+const db = require('./connector')
 const app = express()
 const port = 8080
 const bodyParser = require("body-parser");
@@ -15,10 +15,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
  
 // GET
-app.get('/tasks', async (req, res) => {
+app.get('/user', async (req, res) => {
     try {
-        const result = await db.pool.query("select * from tasks");
+        const result = await db.pool.query("select * from user");
         res.send(result);
+        console.log("Connect successfully!")
     } catch (err) {
         throw err;
     }
@@ -28,7 +29,7 @@ app.get('/tasks', async (req, res) => {
 app.post('/tasks', async (req, res) => {
     let task = req.body;
     try {
-        const result = await db.pool.query("insert into tasks (description) values (?)", [task.description]);
+        const result = await db.pool.query("INSERT INTO `login` (`id`, `user`, `login`, `password`) VALUES (NULL, 'user2', 'user', 'o0?,6b/6CJZTM/H\'');");
         res.send(result);
     } catch (err) {
         throw err;

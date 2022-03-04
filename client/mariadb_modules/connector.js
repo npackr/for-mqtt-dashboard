@@ -9,11 +9,11 @@ var mariadb = require('mariadb');
 
 // Create a connection pool
 var pool = mariadb.createPool({
-    host: 'https://db.npackr.com',
+    host: 'https://npackr.com',
     port: 3306,
     user: 'npackrco_mqtt-dashboard',
     password: "o0?,6b/6CJZTM/H'",
-    database: 'npackrco_qlsach'
+    database: 'npackrco_mqtt-dashboard'
 });
 
 // Expose a method to establish connection with MariaDB SkySQL
