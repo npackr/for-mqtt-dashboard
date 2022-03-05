@@ -7,18 +7,18 @@ A dashboard for managing and analytics data from MQTT servers
 * SRS Document: [SRS.md](/SRS.md)
 * Gantt Chart : [GANTT.md](/GANTT.md)
 
-## Dependencies
+## Local Dependencies
 
 * [NodeJS](https://nodejs.org)
 
-### Cloud Dependencies
+## Cloud Dependencies
 
 * [Mosquitto](https://mosquitto.org/) *(Private server)*
 * [MongoDB Atlas](https://www.mongodb.com/atlas)
 
 ## How to use
 
-**STEP 1. Install all of dependencies**
+**STEP 1. Install all local dependencies**
 
 To run this project offline, make sure you are installing the local client of cloud dependencies and changing the connection string as well
 
