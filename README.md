@@ -28,9 +28,9 @@ To run this project offline, make sure you are installing the local client of cl
 
 Use one of there commands in your terminal to run the HTTP server
 
-* On macOS or Linux, run the app with this command: `DEBUG=myapp:* npm start`
-* On Windows Command Prompt, use this command: `set DEBUG=myapp:* & npm start`
-* On Windows PowerShell, use this command: `$env:DEBUG='myapp:*'; npm start` 
+* On macOS or Linux, run the app with this command: `DEBUG=app:* npm start`
+* On Windows Command Prompt, use this command: `set DEBUG=app:* & npm start`
+* On Windows PowerShell, use this command: `$env:DEBUG='app:*'; npm start` 
 
 **STEP 4. Access via browser**
 
