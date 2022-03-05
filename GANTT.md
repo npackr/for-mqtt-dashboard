@@ -19,8 +19,9 @@
 
                         Project finishing
                         |----| 28-March-2022 -> 2-April-2022
-                    
+
 ## Project resources
+
 1. Nguyen Anh Kiet
 2. Nguyen Thi Giao Linh
 3. Tran Thi Bich Ngoc
