@@ -24,17 +24,17 @@ A dashboard for managing and analytics data from MQTT servers
 
 **STEP 2.** Pull this repository local
 
-**STEP 3.** Run the HTTP server
+**STEP 3.** Start HTTP server
 
-* Use this command to run the old-dashboard server: `node old-dashboard.js`
+* Old dashboard (Bootstrap 3: Admin Bucket)
+  * Use this command to run the old-dashboard server: `node old-dashboard.js`
+  * Then use a browser and go to the address: `localhost:7070` for old-dashboard
+* New dashboard (Vue: Black Dashboard)
+  * Use this command to run the new-dashboard server:
 
-* Use this command to run the new-dashboard server:
+    ```Terminal/PowerShell
+    cd app/dashboard
+    npm run dev
+    ```
 
-  cd app/dashboard
-  npm run dev
-
-**STEP 4.** Access via browser
-
-* Use a browser and go to the address: `localhost:7070` for old-dashboard
-
-* Use a browser and go to the address: `localhost:3000` for new-dashboard
+* Then use a browser and go to the address: `localhost:3000` for new-dashboard
