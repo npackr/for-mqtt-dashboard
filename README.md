@@ -22,7 +22,7 @@ A dashboard for managing and analytics data from MQTT servers
 
 * To run this project offline, make sure you are installing the local client of cloud dependencies and changing the connection string as well
 
-**STEP 2.** Pull this repository local
+**STEP 2.** Clone this repository local
 
 **STEP 3.** Start HTTP server
 
