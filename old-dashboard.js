@@ -8,5 +8,5 @@ var port = process.env.PORT || 7070;
 var hostname = '127.0.0.1';
 
 app.listen(port, hostname, () => {
-   console.log(`Server running at http://${hostname}:${port}/`);
+   console.log(`Old dashboard server running at http://${hostname}:${port}/`);
  });
