@@ -28,11 +28,7 @@ To run this project offline, make sure you are installing the local client of cl
 
 **STEP 3.** Run the HTTP server
 
-Use one of there commands in your terminal to run the HTTP server
-
-* On macOS or Linux, run the app with this command: `DEBUG=app:* npm start`
-* On Windows Command Prompt, use this command: `set DEBUG=app:* & npm start`
-* On Windows PowerShell, use this command: `$env:DEBUG='app:*'; npm start`
+Use this command to run the server: `node old-dashboard.js`
 
 **STEP 4.** Access via browser
 

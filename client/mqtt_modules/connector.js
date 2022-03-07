@@ -47,6 +47,8 @@ var topic_list = {
     'SanVuon/HoBoi': {qos: 2},
 }
 
+
+
 // CONNECTED FUNCTION - Run after connected to server
 client.on('connect', function() {
     console.log('Client connected to server!')
@@ -66,6 +68,8 @@ client.on('message', function (topic, payload, packet) {
     console.log(`Topic: ${topic}, Message: ${payload.toString()}, QoS: ${packet.qos}`)
 
     // TODO: Send received messages to database for storing and use in future
+
+    
 })
 
 console.log('Client was started!')
