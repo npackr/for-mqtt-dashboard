@@ -37,4 +37,4 @@ A dashboard for managing and analytics data from MQTT servers
     npm run dev
     ```
 
-* Then use a browser and go to the address: `localhost:3000` for new-dashboard
+  * Then use a browser and go to the address: `localhost:3000` for new-dashboard
