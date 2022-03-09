@@ -13,7 +13,7 @@
     "lint-fix": "vue-cli-service lint --fix"
   },
   "dependencies": {
-    "ansi-regex": "^5.0.1",
+    "ansi-regex": "^6.0.1",
     "chart.js": "^2.9.3",
     "register-service-worker": "^1.7.1",
     "sass": "^1.49.9",

@@ -2543,9 +2543,9 @@
     "timsort" "^0.3.0"
 
 "css-loader@*", "css-loader@^6.5.0":
-  "integrity" "sha512-S7HCfCiDHLA+VXKqdZwyRZgoO0R9BnKDnVIoHMq5grl3N86zAu7MB+FBWHr5xOJC8SmvpTLha/2NpfFkFEN/ig=="
-  "resolved" "https://registry.npmjs.org/css-loader/-/css-loader-6.7.0.tgz"
-  "version" "6.7.0"
+  "integrity" "sha512-yB5CNFa14MbPJcomwNh3wLThtkZgcNyI2bNMRt8iE5Z8Vwl7f8vQXFAzn2HDOJvtDq2NTZBUGMSUNNyrv3/+cw=="
+  "resolved" "https://registry.npmjs.org/css-loader/-/css-loader-6.7.1.tgz"
+  "version" "6.7.1"
   dependencies:
     "icss-utils" "^5.1.0"
     "postcss" "^8.4.7"
@@ -2597,17 +2597,17 @@
   "resolved" "https://registry.npmjs.org/cssesc/-/cssesc-3.0.0.tgz"
   "version" "3.0.0"
 
-"cssnano-preset-default@^5.2.0":
-  "integrity" "sha512-3N5Vcptj2pqVKpHVqH6ezOJvqikR2PdLTbTrsrhF61FbLRQuujAqZ2sKN5rvcMsb7hFjrNnjZT8CGEkxoN/Pwg=="
-  "resolved" "https://registry.npmjs.org/cssnano-preset-default/-/cssnano-preset-default-5.2.0.tgz"
-  "version" "5.2.0"
+"cssnano-preset-default@^5.2.1":
+  "integrity" "sha512-Y+CUCS5iZ1uzHn5KtmKIlysQVXrTtLCnYsYTOJcbdd5rghOwtw1gobvEXefBncjGO4fWwGZr9/n9hwZfo6W1Fw=="
+  "resolved" "https://registry.npmjs.org/cssnano-preset-default/-/cssnano-preset-default-5.2.1.tgz"
+  "version" "5.2.1"
   dependencies:
     "css-declaration-sorter" "^6.0.3"
     "cssnano-utils" "^3.1.0"
     "postcss-calc" "^8.2.3"
     "postcss-colormin" "^5.3.0"
     "postcss-convert-values" "^5.1.0"
-    "postcss-discard-comments" "^5.1.0"
+    "postcss-discard-comments" "^5.1.1"
     "postcss-discard-duplicates" "^5.1.0"
     "postcss-discard-empty" "^5.1.0"
     "postcss-discard-overridden" "^5.1.0"
@@ -2630,7 +2630,7 @@
     "postcss-reduce-initial" "^5.1.0"
     "postcss-reduce-transforms" "^5.1.0"
     "postcss-svgo" "^5.1.0"
-    "postcss-unique-selectors" "^5.1.0"
+    "postcss-unique-selectors" "^5.1.1"
 
 "cssnano-utils@^3.1.0":
   "integrity" "sha512-JQNR19/YZhz4psLX/rQ9M83e3z2Wf/HdJbryzte4a3NSuafyp9w/I4U+hx5C2S9g41qlstH7DEWnZaaj83OuEA=="
@@ -2638,11 +2638,11 @@
   "version" "3.1.0"
 
 "cssnano@^5.0.0", "cssnano@^5.0.6":
-  "integrity" "sha512-wWxave1wMlThGg4ueK98jFKaNqXnQd1nVZpSkQ9XvR+YymlzP1ofWqES1JkHtI250LksP9z5JH+oDcrKDJezAg=="
-  "resolved" "https://registry.npmjs.org/cssnano/-/cssnano-5.1.0.tgz"
-  "version" "5.1.0"
+  "integrity" "sha512-WWfN7jBK/3Uk3oX/jsFbQApDf9DkXj6dOYull5ZaSGskcDggzg3RyDZI4GKKO+00LdfLMEZtY1cwTQUL+YMg2Q=="
+  "resolved" "https://registry.npmjs.org/cssnano/-/cssnano-5.1.1.tgz"
+  "version" "5.1.1"
   dependencies:
-    "cssnano-preset-default" "^5.2.0"
+    "cssnano-preset-default" "^5.2.1"
     "lilconfig" "^2.0.3"
     "yaml" "^1.10.2"
 
@@ -4954,10 +4954,10 @@
   dependencies:
     "postcss-value-parser" "^4.2.0"
 
-"postcss-discard-comments@^5.1.0":
-  "integrity" "sha512-L0IKF4jAshRyn03SkEO6ar/Ipz2oLywVbg2THf2EqqdNkBwmVMxuTR/RoAltOw4piiaLt3gCAdrbAqmTBInmhg=="
-  "resolved" "https://registry.npmjs.org/postcss-discard-comments/-/postcss-discard-comments-5.1.0.tgz"
-  "version" "5.1.0"
+"postcss-discard-comments@^5.1.1":
+  "integrity" "sha512-5JscyFmvkUxz/5/+TB3QTTT9Gi9jHkcn8dcmmuN68JQcv3aQg4y88yEHHhwFB52l/NkaJ43O0dbksGMAo49nfQ=="
+  "resolved" "https://registry.npmjs.org/postcss-discard-comments/-/postcss-discard-comments-5.1.1.tgz"
+  "version" "5.1.1"
 
 "postcss-discard-duplicates@^5.1.0":
   "integrity" "sha512-zmX3IoSI2aoenxHV6C7plngHWWhUOV3sP1T8y2ifzxzbtnuhk1EdPwm0S1bIUNaJ2eNbWeGLEwzw8huPD67aQw=="
@@ -5163,10 +5163,10 @@
     "postcss-value-parser" "^4.2.0"
     "svgo" "^2.7.0"
 
-"postcss-unique-selectors@^5.1.0":
-  "integrity" "sha512-LmUhgGobtpeVJJHuogzjLRwJlN7VH+BL5c9GKMVJSS/ejoyePZkXvNsYUtk//F6vKOGK86gfRS0xH7fXQSDtvA=="
-  "resolved" "https://registry.npmjs.org/postcss-unique-selectors/-/postcss-unique-selectors-5.1.0.tgz"
-  "version" "5.1.0"
+"postcss-unique-selectors@^5.1.1":
+  "integrity" "sha512-5JiODlELrz8L2HwxfPnhOWZYWDxVHWL83ufOv84NrcgipI7TaeRsatAhK4Tr2/ZiYldpK/wBvw5BD3qfaK96GA=="
+  "resolved" "https://registry.npmjs.org/postcss-unique-selectors/-/postcss-unique-selectors-5.1.1.tgz"
+  "version" "5.1.1"
   dependencies:
     "postcss-selector-parser" "^6.0.5"
 
