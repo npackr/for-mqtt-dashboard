@@ -2138,9 +2138,9 @@
     "lodash.uniq" "^4.5.0"
 
 "caniuse-lite@^1.0.0", "caniuse-lite@^1.0.30001297", "caniuse-lite@^1.0.30001313":
-  "integrity" "sha512-rI1UN0koZUiKINjysQDuRi2VeSCce3bYJNmDcj3PIKREiAmjakugBul1QSkg/fPrlULYl6oWfGg3PbgOSY9X4Q=="
-  "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001313.tgz"
-  "version" "1.0.30001313"
+  "integrity" "sha512-0zaSO+TnCHtHJIbpLroX7nsD+vYuOVjl3uzFbJO1wMVbuveJA0RK2WcQA9ZUIOiO0/ArMiMgHJLxfEZhQiC0kw=="
+  "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001314.tgz"
+  "version" "1.0.30001314"
 
 "case-sensitive-paths-webpack-plugin@^2.3.0":
   "integrity" "sha512-roIFONhcxog0JSSWbvVAh3OocukmSgpqOH6YpMkCvav/ySIV3JKg4Dc8vYtQjYi/UxpNE36r/9v+VqTQqgkYmw=="
@@ -2512,16 +2512,7 @@
     "shebang-command" "^1.2.0"
     "which" "^1.2.9"
 
-"cross-spawn@^7.0.2":
-  "integrity" "sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w=="
-  "resolved" "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.3.tgz"
-  "version" "7.0.3"
-  dependencies:
-    "path-key" "^3.1.0"
-    "shebang-command" "^2.0.0"
-    "which" "^2.0.1"
-
-"cross-spawn@^7.0.3":
+"cross-spawn@^7.0.2", "cross-spawn@^7.0.3":
   "integrity" "sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w=="
   "resolved" "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.3.tgz"
   "version" "7.0.3"
@@ -2898,9 +2889,9 @@
     "jake" "^10.6.1"
 
 "electron-to-chromium@^1.4.76":
-  "integrity" "sha512-fiDxw8mO9Ph1Z0bjX2sFTPpi0J0QkOiwOJF+5Q0J0baNc/F9lLePAvDPlnoxvbUYYMizqrKPeotRRkJ9LtxAew=="
-  "resolved" "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.77.tgz"
-  "version" "1.4.77"
+  "integrity" "sha512-COsbJCGVYCc/aAY4cd94x1Js3q0r406YKGbdL8LXHg0O9dEjuFEFU/vZneRxBxKo/f1lLHi0YyAR7sbFM+i8Bg=="
+  "resolved" "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.80.tgz"
+  "version" "1.4.80"
 
 "emoji-regex@^8.0.0":
   "integrity" "sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A=="
@@ -4873,7 +4864,12 @@
   "resolved" "https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz"
   "version" "1.0.1"
 
-"path-key@^2.0.0", "path-key@^2.0.1":
+"path-key@^2.0.0":
+  "integrity" "sha1-QRyttXTFoUDTpLGRDUDYDMn0C0A="
+  "resolved" "https://registry.npmjs.org/path-key/-/path-key-2.0.1.tgz"
+  "version" "2.0.1"
+
+"path-key@^2.0.1":
   "integrity" "sha1-QRyttXTFoUDTpLGRDUDYDMn0C0A="
   "resolved" "https://registry.npmjs.org/path-key/-/path-key-2.0.1.tgz"
   "version" "2.0.1"
@@ -6544,18 +6540,18 @@
     "clone-deep" "^4.0.1"
     "wildcard" "^2.0.0"
 
-"webpack-sources@*", "webpack-sources@^1.4.3":
+"webpack-sources@*", "webpack-sources@^3.2.3":
+  "integrity" "sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w=="
+  "resolved" "https://registry.npmjs.org/webpack-sources/-/webpack-sources-3.2.3.tgz"
+  "version" "3.2.3"
+
+"webpack-sources@^1.4.3":
   "integrity" "sha512-lgTS3Xhv1lCOKo7SA5TjKXMjpSM4sBjNV5+q2bqesbSPs5FjGmU6jjtBSkX9b4qW87vDIsCIlUPOEhbZrMdjeQ=="
   "resolved" "https://registry.npmjs.org/webpack-sources/-/webpack-sources-1.4.3.tgz"
   "version" "1.4.3"
   dependencies:
     "source-list-map" "^2.0.0"
     "source-map" "~0.6.1"
-
-"webpack-sources@^3.2.3":
-  "integrity" "sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w=="
-  "resolved" "https://registry.npmjs.org/webpack-sources/-/webpack-sources-3.2.3.tgz"
-  "version" "3.2.3"
 
 "webpack-virtual-modules@^0.4.2":
   "integrity" "sha512-5NUqC2JquIL2pBAAo/VfBP6KuGkHIZQXW/lNKupLPfhViwh8wNsu0BObtl09yuKZszeEUfbXz8xhrHvSG16Nqw=="
