@@ -26,7 +26,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // INDEX DIRECTORY - Set public_html folder
-app.use(express.static(path.join(__dirname, 'app/dashboard')));
+app.use(express.static(path.join(__dirname, 'app/old-dashboard')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
