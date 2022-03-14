@@ -27,40 +27,41 @@ var client = mqtt.connect('mqtt://168.138.165.18', options);
 // TOPIC LIST - Use when the server doesn't allow subscribing a wildcard
 var topic_list = {
     // Living room
-    'PhongKhach/MayLanh': {qos: 1},
-    'PhongKhach/TV': {qos: 1},
-    'PhongKhach/AmThanh': {qos: 0},
-    'PhongKhach/AnhSang': {qos: 3},
+    'PhongKhach/MayLanh': { qos: 1 },
+    'PhongKhach/TV': { qos: 1 },
+    'PhongKhach/AmThanh': { qos: 0 },
+    'PhongKhach/AnhSang': { qos: 3 },
 
     // Kitchen
-    'PhongBep/TuLanh': {qos: 0},
-    'PhongBep/BepDien': {qos: 0},
-    'PhongBep/ViSong': {qos: 0},
+    'PhongBep/TuLanh': { qos: 0 },
+    'PhongBep/BepDien': { qos: 0 },
+    'PhongBep/ViSong': { qos: 0 },
 
     // Bedroom
-    'PhongNgu/MayLanh': {qos: 1},
-    'PhongNgu/Den': {qos: 3},
-    'PhongNgu/MayNongLanh': {qos: 2},
+    'PhongNgu/MayLanh': { qos: 1 },
+    'PhongNgu/Den': { qos: 3 },
+    'PhongNgu/MayNongLanh': { qos: 2 },
 
     // Garden
-    'SanVuon/ChieuSang': {qos: 3},
-    'SanVuon/HoBoi': {qos: 2},
+    'SanVuon/ChieuSang': { qos: 3 },
+    'SanVuon/HoBoi': { qos: 2 },
 }
 
 
 
 // CONNECTED FUNCTION - Run after connected to server
-client.on('connect', function() {
+client.on('connect', function () {
     console.log('Client connected to server!')
     // client subcribe topic
     client.subscribe('#', function (error, granted) {
         if (error) {
             console.log(error);
-          } else {
+        } else {
             console.log(`Topic list  was subscribed!`);
-          }
+        }
     });
 })
+
 
 // MESSAGE ARRIVED FUNCTION - Function runs when receiving message from topic
 client.on('message', function (topic, payload, packet) {
@@ -69,7 +70,7 @@ client.on('message', function (topic, payload, packet) {
 
     // TODO: Send received messages to database for storing and use in future
 
-    
+
 })
 
 console.log('Client was started!')
