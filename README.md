@@ -6,6 +6,7 @@ A dashboard for managing and analytics data from MQTT servers
 
 * SRS Document: [SRS.md](/SRS.md)
 * Gantt Chart : [GANTT.md](/GANTT.md)
+* UML Diagram : [UML.mdj](/UML.mdj)
 
 ## Local Dependencies
 
