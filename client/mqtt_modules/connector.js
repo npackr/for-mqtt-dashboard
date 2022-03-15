@@ -70,7 +70,7 @@ client.on('message', function (topic, payload, packet) {
 
     // TODO: Send received messages to database for storing and use in future
 
-
+    
 })
 
 console.log('Client was started!')

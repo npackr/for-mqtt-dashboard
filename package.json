@@ -5,7 +5,8 @@
   "scripts": {
     "old": "node ./bin/www",
     "new": "cd app/dashboard & npm run serve",
-    "mqtt": "node client/mqtt_modules/connector.js"
+    "mqtt": "node client/mqtt_modules/connector.js",
+    "realm": "node client/mongodb_modules/realm-test.js"
   },
   "dependencies": {
     "ansi-regex": "^5.0.1",
