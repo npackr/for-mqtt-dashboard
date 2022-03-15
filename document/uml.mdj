@@ -1097,14 +1097,6 @@
 														"$ref": "AAAAAAF/e+rC8EiP8EM="
 													},
 													"name": "Chia trường hợp đăng nhập"
-												},
-												{
-													"_type": "UMLInitialNode",
-													"_id": "AAAAAAF/e/nwiknlX/o=",
-													"_parent": {
-														"$ref": "AAAAAAF/e+rC8EiP8EM="
-													},
-													"name": "InitialNode1"
 												}
 											],
 											"edges": [
@@ -2013,7 +2005,7 @@
 													"_parent": {
 														"$ref": "AAAAAAF/fAOEZErWUhU="
 													},
-													"name": "AD Tính tiền điện theo cấp bậc",
+													"name": "Hoạt động Tính tiền điện theo cấp bậc",
 													"ownedViews": [
 														{
 															"_type": "UMLControlNodeView",
@@ -7152,7 +7144,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF/hpWrv9uJ8Sk="
 							},
-							"name": "MaViTri"
+							"name": "MaViTri",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -7160,7 +7153,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF/hpWrv9uJ8Sk="
 							},
-							"name": "TenViTri"
+							"name": "TenViTri",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -7237,7 +7231,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF/hpWz2NuycMs="
 							},
-							"name": "MaThietBi"
+							"name": "MaThietBi",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -7245,7 +7240,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF/hpWz2NuycMs="
 							},
-							"name": "TenThietBi"
+							"name": "TenThietBi",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -7301,7 +7297,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF/hpYXm9vdYQU="
 							},
-							"name": "NoiDungDuLieu"
+							"name": "NoiDungDuLieu",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -7407,7 +7404,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF/hpYnO9wHrJE="
 							},
-							"name": "TenNguoiDung"
+							"name": "TenNguoiDung",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -7415,7 +7413,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF/hpYnO9wHrJE="
 							},
-							"name": "MaNguoiDung"
+							"name": "MaNguoiDung",
+							"type": ""
 						}
 					],
 					"operations": [
