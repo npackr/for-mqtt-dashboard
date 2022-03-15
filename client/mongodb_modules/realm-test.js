@@ -9,42 +9,54 @@ if (!apiKey) {
 }
 
 const DataSchema = {
-    name: "consumption",
-    properties: {
-        "_id": "string",
-        "qos": "string",
-        "status": "string",
-        "timestamp": "string",
-        "topic": "string"
-    },
-    primaryKey: "_id"
+    "title": "consumption",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "qos": {
+            "bsonType": "string"
+        },
+        "status": {
+            "bsonType": "object",
+            "properties": {
+                "temp": {
+                    "bsonType": "string"
+                }
+            }
+        },
+        "timestamp": {
+            "bsonType": "timestamp"
+        },
+        "topic": {
+            "bsonType": "string"
+        }
+    }
 };
 // Create an api key credential
 async function run() {
     await app.logIn(Realm.Credentials.serverApiKey(apiKey));
 
-    const realm = await Realm.open({
-        schema: [DataSchema],
-        sync: {
+    const consumption = {
+        schema: DataSchema, sync: {
             user: app.currentUser,
-            partitionValue: "real-time",
-        },
-    });
-
+            partitionValue: "real-time"
+        }
+    };
+    
     realm.write(() => {
-        const newData = realm.create({
-            name: "consumption",
-            properties: {
-                "_id": new BSON.ObjectID(),
-                "qos": qos.toString(),
-                "topic": topic.toString(),
-                "status": payload.toString(),
-                "timestamp": new BSON.Timestamp(),
-            },
-            primaryKey: "_id"
+        const newTask = Realm.create(DataSchema.self, {
+          _id: new BSON.ObjectID(),
+          _partition: partitionValue,
+          topic: "a string",
+          timestamp: "a string",
+          payload: "a string",
+          qos: "a string",
         });
-    });
+      });
+    
 }
+
 run().catch(err => {
     console.error("Failed to open realm:", err)
 });
