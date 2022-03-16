@@ -1,0 +1,18 @@
+{
+  "name": "mqtt-dashboard",
+  "version": "1.0.0",
+  "description": "A dashboard manage and analytic datas from MQTT server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "L2NK TEAM - npackr",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "mariadb": "^2.5.6",
+    "mqtt": "^4.3.6",
+    "realm": "^10.13.0"
+  }
+}

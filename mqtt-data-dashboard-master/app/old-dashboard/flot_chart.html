@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>Flot Chart</title>
+
+    <!--Core CSS -->
+    <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reset.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]>
+    <script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <section id="container">
+        <!--header start-->
+        <header class="header fixed-top clearfix">
+            <!--logo start-->
+            <div class="brand">
+
+                <a href="index.html" class="logo">
+                    ĐIỆN SỬ DỤNG
+                </a>
+                <div class="sidebar-toggle-box">
+                    <div class="fa fa-bars"></div>
+                </div>
+            </div>
+            <!--logo end-->
+
+            <div class="nav notify-row" id="top_menu">
+                <!--  notification start -->
+                <ul class="nav top-menu">
+                    <!-- settings start -->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <i class="fa fa-tasks"></i>
+                            <span class="badge bg-success">8</span>
+                        </a>
+                        <ul class="dropdown-menu extended tasks-bar">
+                            <li>
+                                <p class="">8 thiết bị đang hoạt động</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info clearfix">
+                                        <div class="desc pull-left">
+                                            <h5>Máy lạnh</h5>
+                                            <p>Phòng khách</p>
+                                        </div>
+                                        <span class="notification-pie-chart pull-right" data-percent="45">
+                                            <span class="percent"></span>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info clearfix">
+                                        <div class="desc pull-left">
+                                            <h5>Máy giặt</h5>
+                                            <p>Phòng giặt</p>
+                                        </div>
+                                        <span class="notification-pie-chart pull-right" data-percent="78">
+                                            <span class="percent"></span>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info clearfix">
+                                        <div class="desc pull-left">
+                                            <h5>Hệ thống đèn</h5>
+                                            <p>Hồ bơi</p>
+                                        </div>
+                                        <span class="notification-pie-chart pull-right" data-percent="60">
+                                            <span class="percent"></span>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info clearfix">
+                                        <div class="desc pull-left">
+                                            <h5>Hệ thống âm thanh</h5>
+                                            <p>Phòng khách</p>
+                                        </div>
+                                        <span class="notification-pie-chart pull-right" data-percent="90">
+                                            <span class="percent"></span>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="external">
+                                <a href="#">Xem tất cả thiết bị</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- settings end -->
+                    <!-- inbox dropdown start-->
+                    <li id="header_inbox_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="badge bg-important">1</span>
+                        </a>
+                        <ul class="dropdown-menu extended inbox">
+                            <li>
+                                <p class="red">Tin tức</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="photo"><img alt="avatar" src="images/avatar-mini.jpg"></span>
+                                    <span class="subject">
+                                            <span class="from">P.U.I</span><br/>
+                                            <span class="time">Tổng đài chăm sóc khách hàng</span><br/>
+                                    </span>
+                                    <span class="message">
+                                        <p>
+                                            Quý khách có thể liên hệ tổng đài <br />
+                                            chăm sóc khách hàng trong quá trình<br />
+                                            sử dụng nếu có bất kỳ vấn đề gì.<br />
+                                            Trân trọng!
+                                        </p>
+                                        
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">Đọc tất cả tin tức</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- inbox dropdown end -->
+
+                    <!-- notification dropdown start-->
+                    <li id="header_notification_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+
+                            <i class="fa fa-bell-o"></i>
+                            <span class="badge bg-warning">1</span>
+                        </a>
+                        <ul class="dropdown-menu extended notification">
+                            <li>
+                                <p>Thông báo</p>
+                            </li>
+                            <li>
+                                <div class="alert alert-info clearfix">
+                                    <span class="alert-icon"><i class="fa fa-bolt"></i></span>
+                                    <div class="noti-info">
+                                        <a href="#"> Máy lạnh đang sử dụng hơn 20% mức tiêu thụ thông thường!</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <!-- notification dropdown end -->
+                </ul>
+                <!--  notification end -->
+            </div>
+            <div class="top-nav clearfix">
+                <!--search & user info start-->
+                <ul class="nav pull-right top-menu">
+                    <li>
+                        <input type="text" class="form-control search" placeholder=" Search">
+                    </li>
+                    <!-- user login dropdown start-->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <img alt="" src="images/avatar1_small.jpg">
+                            <span class="username">QTV </span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+
+                            <li><a href="login.html"><i class="fa fa-key"></i> Thoát đăng nhập</a></li>
+                            <li><a href="#"><i class="fa fa-cog"></i> Tổng đài hỗ trợ</a></li>
+
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                    <li>
+                        <div class="toggle-right-box">
+                            <div class="fa fa-bars"></div>
+                        </div>
+                    </li>
+                </ul>
+                <!--search & user info end-->
+            </div>
+        </header>
+        <!--header end-->
+        <!--sidebar start-->
+        <aside>
+            <div id="sidebar" class="nav-collapse">
+                <!-- sidebar menu start-->
+                <div class="leftside-navigation">
+                    <ul class="sidebar-menu" id="nav-accordion">
+
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="fa fa-th"></i>
+                                <span>Dữ liệu sử dụng điện năng</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a href="/mqtt-data-dashboard-master/app/old-dashboard/flot_chart.html">Mới nhất</a></li>
+                                <li><a href="/mqtt-data-dashboard-master/app/old-dashboard/flot_chart.html">Hôm nay</a></li>
+                                <li><a href="/mqtt-data-dashboard-master/app/old-dashboard/c3_chart.html">Tuần này</a></li>
+                                <li><a href="/mqtt-data-dashboard-master/app/old-dashboard/morris.html">Tháng này</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="sub-menu">
+                            <a class="active" href="javascript:;">
+                                <i class=" fa fa-bar-chart-o"></i>
+                                <span>Biểu đồ sử dụng năng lượng</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="active"><a href="mqtt-consumption-chart.html">Tổng hợp</a></li>
+                                <li><a href="/mqtt-data-dashboard-master/app/old-dashboard/chartjs.html">Theo lượng sử dụng</a></li>
+                                
+                            </ul>
+                        </li>
+
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="fa fa-dashboard"></i>
+                                <span>Tiện ích bổ sung</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a href="advanced_form.html">Tính tiền điện</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p style="padding: 10px; size: 10px;">
+                        (c) MQTT Data Dashboard 2022.<br/>
+                        Giao diện khi thử nghiệm có thể khác với thực tế!
+                    </p>
+                </div>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+    <!--main content start-->
+    <section id="main-content">
+        <section class="wrapper">
+        <!-- page start-->
+
+        <div class="row">
+            <div class="col-sm-12">
+                <section class="panel">
+                    <header class="panel-heading">
+                        Real Time Chart
+                    <span class="tools pull-right">
+                        <a href="javascript:;" class="fa fa-chevron-down"></a>
+                        <a href="javascript:;" class="fa fa-cog"></a>
+                        <a href="javascript:;" class="fa fa-times"></a>
+                     </span>
+                    </header>
+                    <div class="panel-body">
+                        <div id="reatltime-chart">
+                            <div id="reatltime-chartContainer" style="width:100%;height:300px; text-align: center; margin:0 auto;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+                <section class="panel">
+                    <header class="panel-heading">
+                        Năng lượng sử dụng hôm nay (wh)
+                    <span class="tools pull-right">
+                        <a href="javascript:;" class="fa fa-chevron-down"></a>
+                        <a href="javascript:;" class="fa fa-cog"></a>
+                        <a href="javascript:;" class="fa fa-times"></a>
+                     </span>
+                    </header>
+                    <div class="panel-body">
+                        <div id="combine-chart">
+                            <div id="legendcontainer26" class="legend-block">
+                            </div>
+                            <div id="combine-chartContainer" style="width: 100%;height:300px; text-align: center; margin:0 auto;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </section>
+    </section>
+    <!--main content end-->
+<!--right sidebar start-->
+
+<!--right sidebar end-->
+
+</section>
+
+<!-- Placed js at the end of the document so the pages load faster -->
+
+<!--Core js-->
+<script src="js/jquery.js"></script>
+<script src="bs3/js/bootstrap.min.js"></script>
+<script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+<!-- Easy Pie Chart-->
+<script src="js/easypiechart/jquery.easypiechart.js"></script>
+<!-- Sparkline Chart-->
+<script src="js/sparkline/jquery.sparkline.js"></script>
+<!-- jQuery Flot Chart-->
+<script src="js/flot-chart/jquery.flot.js"></script>
+<script src="js/flot-chart/jquery.flot.tooltip.min.js"></script>
+<script src="js/flot-chart/jquery.flot.resize.js"></script>
+<script src="js/flot-chart/jquery.flot.pie.resize.js"></script>
+<script src="js/flot-chart/jquery.flot.selection.js"></script>
+<script src="js/flot-chart/jquery.flot.stack.js"></script>
+<script src="js/flot-chart/jquery.flot.time.js"></script>
+<script src="js/flot.chart.init.js"></script>
+<!-- Common script init for all pages-->
+<script src="js/scripts.js"></script>
+
+
+</body>
+</html>
