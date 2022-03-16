@@ -109,13 +109,13 @@
 
             // DONUT
             var dataPie = [{
-                label: "Samsung",
+                label: "Phòng khách",
                 data: 50
             }, {
-                label: "Nokia",
+                label: "Phòng ngủ",
                 data: 50
             }, {
-                label: "Syphony",
+                label: "Khác",
                 data: 100
             }];
 
@@ -197,52 +197,52 @@
                 axes: true,
                 fillOpacity: .7,
                 data: [{
-                    period: '2010 Q1',
+                    period: '2020 Q1',
                     iphone: 10,
                     ipad: 10,
                     itouch: 10
                 }, {
-                    period: '2010 Q2',
+                    period: '2020 Q2',
                     iphone: 1778,
                     ipad: 7294,
                     itouch: 18441
                 }, {
-                    period: '2010 Q3',
+                    period: '2020 Q3',
                     iphone: 4912,
                     ipad: 12969,
                     itouch: 3501
                 }, {
-                    period: '2010 Q4',
+                    period: '2020 Q4',
                     iphone: 3767,
                     ipad: 3597,
                     itouch: 5689
                 }, {
-                    period: '2011 Q1',
+                    period: '2021 Q1',
                     iphone: 6810,
                     ipad: 1914,
                     itouch: 2293
                 }, {
-                    period: '2011 Q2',
+                    period: '2021 Q2',
                     iphone: 5670,
                     ipad: 4293,
                     itouch: 1881
                 }, {
-                    period: '2011 Q3',
+                    period: '2021 Q3',
                     iphone: 4820,
                     ipad: 3795,
                     itouch: 1588
                 }, {
-                    period: '2011 Q4',
+                    period: '2021 Q4',
                     iphone: 25073,
                     ipad: 5967,
                     itouch: 5175
                 }, {
-                    period: '2012 Q1',
+                    period: '2022 Q1',
                     iphone: 10687,
                     ipad: 34460,
                     itouch: 22028
                 }, {
-                    period: '2012 Q2',
+                    period: '2022 Q2',
                     iphone: 1000,
                     ipad: 5713,
                     itouch: 1791
@@ -404,45 +404,6 @@
         });
 
 
-        /*Chat*/
-        $(function () {
-            $('.chat-input').keypress(function (ev) {
-                var p = ev.which;
-                var chatTime = moment().format("h:mm");
-                var chatText = $('.chat-input').val();
-                if (p == 13) {
-                    if (chatText == "") {
-                        alert('Empty Field');
-                    } else {
-                        $('<li class="clearfix"><div class="chat-avatar"><img src="images/chat-user-thumb.png" alt="male"><i>' + chatTime + '</i></div><div class="conversation-text"><div class="ctext-wrap"><i>John Carry</i><p>' + chatText + '</p></div></div></li>').appendTo('.conversation-list');
-                    }
-                    $(this).val('');
-                    $('.conversation-list').scrollTo('100%', '100%', {
-                        easing: 'swing'
-                    });
-                    return false;
-                    ev.epreventDefault();
-                    ev.stopPropagation();
-                }
-            });
-
-
-            $('.chat-send .btn').click(function () {
-                var chatTime = moment().format("h:mm");
-                var chatText = $('.chat-input').val();
-                if (chatText == "") {
-                    alert('Empty Field');
-                    $(".chat-input").focus();
-                } else {
-                    $('<li class="clearfix"><div class="chat-avatar"><img src="images/chat-user-thumb.png" alt="male"><i>' + chatTime + '</i></div><div class="conversation-text"><div class="ctext-wrap"><i>John Carry</i><p>' + chatText + '</p></div></div></li>').appendTo('.conversation-list');
-                    $('.chat-input').val('');
-                    $(".chat-input").focus();
-                    $('.conversation-list').scrollTo('100%', '100%', {
-                        easing: 'swing'
-                    });
-                }
-            });
-        });
 
 
 
