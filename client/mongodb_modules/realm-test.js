@@ -3,7 +3,7 @@ const BSON = require("bson");
 
 // Update this with your App ID
 const app = new Realm.App({ id: "mqtt-data-dashboard-djtyx" });
-const payloadschema = {
+const payloadSchema = {
   name: "Payload",
   properties: {
     _id: "objectId",
@@ -22,7 +22,7 @@ async function run() {
   console.log(`Logged in with server API key by user id: ${app.currentUser.id}`);
 
   const realm = await Realm.open({
-    schema: [payloadschema],
+    schema: [payloadSchema],
     sync: {
       user: app.currentUser,
       partitionValue: "pdb",
@@ -40,21 +40,11 @@ async function run() {
   realm.write(() => {
     const payload1 = realm.create("Payload", {
       _id: new BSON.ObjectID(),
-      topic: "go grocery shopping",
-      payload: "Open",
-      qos: "1",
+      topic: "xxx",
+      payload: "yyy",
+      qos: "zzz",
       timestamp: new BSON.Timestamp().toString()
     });
-    
-    const payload2 = realm.create("Payload", {
-      _id: new BSON.ObjectID(),
-      topic: "go grocery shopping 2",
-      payload: "Open 2",
-      qos: "2",
-      timestamp: new BSON.Timestamp().toString()
-    });
-
-    console.log(`created two payload: ${payload1.name} & ${payload2.name}`);
   });
 
   // Find a specific Task
