@@ -3,13 +3,15 @@ const BSON = require("bson");
 
 // Update this with your App ID
 const app = new Realm.App({ id: "mqtt-data-dashboard-djtyx" });
-const TaskSchema = {
-  name: "Task",
+const payloadschema = {
+  name: "Payload",
   properties: {
     _id: "objectId",
     _partition: "string?",
-    name: "string",
-    status: "string",
+    topic: "string",
+    payload: "string",
+    qos: "string",
+    timestamp: "string"
   },
   primaryKey: "_id",
 };
@@ -20,43 +22,48 @@ async function run() {
   console.log(`Logged in with server API key by user id: ${app.currentUser.id}`);
 
   const realm = await Realm.open({
-    schema: [TaskSchema],
+    schema: [payloadschema],
     sync: {
       user: app.currentUser,
-      partitionValue: "quickstart",
+      partitionValue: "pdb",
     },
   });
 
-  // Get all Tasks in the realm
-  const tasks = realm.objects("Task");
+  // Get all payload in the realm
+  const payload = realm.objects("Payload");
 
-  // Add a listener that fires whenever one or more Tasks are inserted, modified, or deleted.
-  tasks.addListener(taskListener);
+  // Add a listener that fires whenever one or more payload are inserted, modified, or deleted.
+  payload.addListener(payloadListener);
 
-  // Add a couple of Tasks in a single, atomic transaction
+  // Add a couple of payload in a single, atomic transaction
   // Realm automatically sets the _partition property based on the partitionValue used to open the realm
   realm.write(() => {
-    const task1 = realm.create("Task", {
+    const payload1 = realm.create("Payload", {
       _id: new BSON.ObjectID(),
-      name: "go grocery shopping",
-      status: "Open",
+      topic: "go grocery shopping",
+      payload: "Open",
+      qos: "1",
+      timestamp: new BSON.Timestamp().toString()
     });
     
-    const task2 = realm.create("Task", {
+    const payload2 = realm.create("Payload", {
       _id: new BSON.ObjectID(),
-      name: "go exercise",
-      status: "Open",
+      topic: "go grocery shopping 2",
+      payload: "Open 2",
+      qos: "2",
+      timestamp: new BSON.Timestamp().toString()
     });
-    console.log(`created two tasks: ${task1.name} & ${task2.name}`);
+
+    console.log(`created two payload: ${payload1.name} & ${payload2.name}`);
   });
 
   // Find a specific Task
-  let task = tasks.filtered("status = 'Open' LIMIT(1)")[0];
+  let task = payload.filtered("payload = 'Open' LIMIT(1)")[0];
   console.log("task", JSON.stringify(task, null, 2));
 
   // Update the Task
   realm.write(() => {
-    task.status = "InProgress";
+    task.payload = "InProgress";
   });
 
   // Delete the Task
@@ -66,7 +73,7 @@ async function run() {
   });
 
   // Clean up
-  tasks.removeListener(taskListener);
+  payload.removeListener(payloadListener);
   realm.close();
   app.currentUser.logOut();
 }
@@ -75,7 +82,7 @@ run().catch(err => {
 });
 
 // Define the collection notification listener
-function taskListener(tasks, changes) {
+function payloadListener(payload, changes) {
   // Update UI in response to deleted objects
   changes.deletions.forEach((index) => {
     // Deleted objects cannot be accessed directly,
@@ -85,14 +92,14 @@ function taskListener(tasks, changes) {
 
   // Update UI in response to inserted objects
   changes.insertions.forEach((index) => {
-    let insertedTask = tasks[index].name;
+    let insertedTask = payload[index].name;
     console.log(`inserted task: ${JSON.stringify(insertedTask, null, 2)}`);
     // ...
   });
 
   // Update UI in response to modified objects
   changes.newModifications.forEach((index) => {
-    let modifiedTask = tasks[index];
+    let modifiedTask = payload[index];
     console.log(`modified task: ${JSON.stringify(modifiedTask, null, 2)}`);
     // ...
   });
