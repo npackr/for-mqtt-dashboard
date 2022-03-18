@@ -36,23 +36,14 @@
 
 
         var barChartData = {
-            labels : ["Monday","Tuesday","Wenesday","Thurstday","Friday","Saturday","Sunday"],
+            labels : ["0h","2h","4h","6h","8h","10h","12h","14h","16h","18h","20h","22h","23h59h"],
             datasets : [
-                {
-                    fillColor : "#4dd1a1",
-                    strokeColor : "#4dd1a1",
-                    data : [28,48,40,19,54,27,38]
-                },
                 {
                     fillColor : "#c75052",
                     strokeColor : "#c75052",
-                    data : [34,45,54,43,56,55,65]
+                    data : [742,643,723,979,654,812,940,778,829,816,889,797,724]
                 },
-                {
-                    fillColor : "#755ad6",
-                    strokeColor : "#755ad6",
-                    data : [32,23,36,34,29,38,42]
-                }
+                
                 
             ]
 
@@ -62,7 +53,7 @@
 
 
         var Linedata = {
-            labels : ["Monday","Tuesday","Wenesday","Thurstday","Friday","Saturday","Sunday"],
+            labels : ["0h","2h","4h","6h","8h","10h","12h","14h","16h","18h","20h","22h","23h59h"],
             datasets : [
                 {
                     fillColor : "#4dd1a1",

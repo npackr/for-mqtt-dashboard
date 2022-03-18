@@ -36,22 +36,22 @@
 
 
         var barChartData = {
-            labels : ["Monday","Tuesday","Wenesday","Thurstday","Friday","Saturday","Sunday"],
+            labels : ["WEEK 1","WEEK 2","WEEK 3","WEEK 4" ],
             datasets : [
                 {
                     fillColor : "#4dd1a1",
                     strokeColor : "#4dd1a1",
-                    data : [28,48,40,19,54,27,38]
+                    data : [111,134,123,145]
                 },
                 {
                     fillColor : "#c75052",
                     strokeColor : "#c75052",
-                    data : [34,45,54,43,56,55,65]
+                    data : [223,256,276,249]
                 },
                 {
                     fillColor : "#755ad6",
                     strokeColor : "#755ad6",
-                    data : [32,23,36,34,29,38,42]
+                    data : [90,87,88,64]
                 }
                 
             ]
@@ -65,16 +65,16 @@
             labels : ["Monday","Tuesday","Wenesday","Thurstday","Friday","Saturday","Sunday"],
             datasets : [
                 {
-                    fillColor : "#4dd1a1",
-                    strokeColor : "#4dd1a1",
-                    pointColor : "#4dd1a1",
+                    fillColor : "#E67A77",
+                    strokeColor : "#E67A77",
+                    pointColor : "#E67A77",
                     pointStrokeColor : "#fff",
                     data : [100,159,190,281,156,155,140]
                 },
                 {
-                    fillColor : "#755ad6",
-                    strokeColor : "#755ad6",
-                    pointColor : "#755ad6",
+                    fillColor : "##755ad6",
+                    strokeColor : "##755ad6",
+                    pointColor : "##755ad6",
                     pointStrokeColor : "#fff",
                     data : [65,59,90,181,56,55,40]
                 },
@@ -94,7 +94,7 @@
         var pieData = [
             {
                 value: 30,
-                color:"#c75052"
+                color:"#E67A77"
             },
             {
                 value : 50,
@@ -102,7 +102,7 @@
             },
             {
                 value : 100,
-                color : "#755ad6"
+                color : "##755ad6"
             }
 
         ];
@@ -114,7 +114,7 @@
         var donutData = [
             {
                 value: 30,
-                color:"#c75052"
+                color:"#E67A77"
             },
             {
                 value : 50,
@@ -122,7 +122,7 @@
             },
             {
                 value : 100,
-                color : "#755ad6"
+                color : "##755ad6"
             },
             {
                 value : 40,

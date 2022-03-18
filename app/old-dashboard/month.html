@@ -8,15 +8,12 @@
     <meta name="author" content="ThemeBucket">
     <link rel="shortcut icon" href="images/favicon.png">
 
-    <title>Month</title>
+    <title>MONTH</title>
 
     <!--Core CSS -->
     <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-reset.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
-
-    <!--Morris Chart CSS -->
-    <link rel="stylesheet" href="js/morris-chart/morris.css">
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
@@ -34,6 +31,7 @@
 </head>
 
 <body>
+
     <section id="container">
         <!--header start-->
         <header class="header fixed-top clearfix">
@@ -228,9 +226,9 @@
                             </a>
                             <ul class="sub">
                                 <li><a href="flot_chartnow.html">Mới nhất</a></li>
-                                <li><a href="flot_charttoday.html">Hôm nay</a></li>
+                                <li><a href="today.html">Hôm nay</a></li>
                                 <li><a href="chartjs.html">Tuần này</a></li>
-                                <li><a href="morris.html">Tháng này</a></li>
+                                <li><a href="month.html">Tháng này</a></li>
                             </ul>
                         </li>
 
@@ -264,17 +262,17 @@
                 <!-- sidebar menu end-->
             </div>
         </aside>
-        <!--sidebar end-->
+<!--sidebar end-->
     <!--main content start-->
     <section id="main-content">
         <section class="wrapper">
         <!-- page start-->
-            
+
         <div class="row">
             <div class="col-sm-12">
                 <section class="panel">
                     <header class="panel-heading">
-                       Theo lượng sử dụng(theo tháng)
+                        MONTH (KWh)
                         <span class="tools pull-right">
                             <a href="javascript:;" class="fa fa-chevron-down"></a>
                             <a href="javascript:;" class="fa fa-cog"></a>
@@ -282,14 +280,18 @@
                          </span>
                     </header>
                     <div class="panel-body">
-                        <div id="graph-bar"></div>
+                        <div class="chartJS">
+                            <canvas id="bar-chart-js" height="250" width="800" ></canvas>
+
+
+                        </div>
+
+
+
                     </div>
                 </section>
             </div>
         </div>
-      
-           
-
         <!-- page end-->
         </section>
     </section>
@@ -318,13 +320,11 @@
 <script src="js/flot-chart/jquery.flot.tooltip.min.js"></script>
 <script src="js/flot-chart/jquery.flot.resize.js"></script>
 <script src="js/flot-chart/jquery.flot.pie.resize.js"></script>
-
-<!--Morris Chart-->
-<script src="js/morris-chart/morris.js"></script>
-<script src="js/morris-chart/raphael-min.js"></script>
-<script src="js/morris.init.js"></script>
-
+<!--Chart JS-->
+<script src="js/chart-js/Chart.js"></script>
+<script src="js/month.js"></script>
 <!--common script init for all pages-->
 <script src="js/scripts.js"></script>
+
 </body>
 </html>

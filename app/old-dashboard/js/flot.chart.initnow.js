@@ -1,6 +1,4 @@
-
-
-    $(function() {
+  $(function() {
         var data1 = [];
         var totalPoints = 300;
         function GetData() {
@@ -54,6 +52,77 @@
             setTimeout(update, updateInterval);
         }
         update();
+    });
+
+    $(function() {
+        var data = [{
+            label: "Paid Signup",
+            data: 60
+        }, {
+            label: "Free Signup",
+            data: 30
+        }, {
+            label: "Guest Signup",
+            data: 10
+        }];
+        var options = {
+            series: {
+                pie: {
+                    show: true
+                }
+            },
+            legend: {
+                show: true
+            },
+            grid: {
+                hoverable: true,
+                clickable: true
+            },
+            colors: ["#79D1CF", "#D9DD81", "#E67A77"],
+            tooltip: true,
+            tooltipOpts: {
+                defaultTheme: false
+            }
+        };
+        $.plot($("#pie-chart #pie-chartContainer"), data, options);
+    });
+
+    $(function() {
+        var data = [{
+            label: "Premium Member",
+            data: 40
+        }, {
+            label: "Gold Member",
+            data: 20
+        }, {
+            label: "Platinum Member",
+            data: 10
+        }, {
+            label: "Silver Member",
+            data: 30
+        }];
+        var options = {
+            series: {
+                pie: {
+                    show: true,
+                    innerRadius: 0.5,
+                    show: true
+                }
+            },
+            legend: {
+                show: true
+            },
+            grid: {
+                hoverable: true,
+                clickable: true
+            },
+            colors: ["#79D1CF", "#D9DD81", "#E67A77","#9972B5"],
+            tooltip: true,
+            tooltipOpts: {
+                defaultTheme: false
+            }
+        };
+        $.plot($("#pie-chart-donut #pie-donutContainer"), data, options);
     });
 
     $(function() {
@@ -216,73 +285,4 @@
                 data, options);
     });
 
-    $(function() {
-        var data1 = GenerateSeries(0);
-        var data2 = GenerateSeries(100);
-        var data3 = GenerateSeries(200);
-        var dataset = [data1, data2, data3];
-        function GenerateSeries(added) {
-            var data = [];
-            var start = 100 + added;
-            var end = 200 + added;
-            for (i = 1; i <= 100; i++) {
-                var d = Math.floor(Math.random() * (end - start + 1) + start);
-                data.push([i, d]);
-                start++;
-                end++;
-            }
-            return data;
-        }
-        var options = {
-            series: {
-                stack: true,
-                shadowSize: 0
-            },
-            grid: {
-                hoverable: true,
-                clickable: true,
-                tickColor: "#f9f9f9",
-                borderWidth: 1,
-                borderColor: "#eeeeee"
-            },
-            legend: {
-                position: 'nw',
-                labelBoxBorderColor: "#000000",
-    container: $("#bar-chart #legendPlaceholder20"),
-                noColumns: 0
-            }
-        };
-        var plot;
-        function ToggleSeries() {
-            var d = [];
-            $("#toggle-chart input[type='checkbox']").each(function() {
-        if ($(this).is(":checked")) {
-        var seqence = $(this).attr("id").replace("cbdata", "");
-        d.push({
-        label: "data" + seqence,
-        data: dataset[seqence - 1]
-        });
-    }
-    });
-    options.series.lines = {};
-    options.series.bars = {};
-    $("#toggle-chart input[type='radio']").each(function() {
-        if ($(this).is(":checked")) {
-        if ($(this).val() == "line") {
-        options.series.lines = {
-        fill: true
-        };
-    } else {
-        options.series.bars = {
-            show: true
-        };
-    }
-    }
-    });
-    $.plot($("#toggle-chart #toggle-chartContainer"), d, options);
-        }
-        $("#toggle-chart input").change(function() {
-            ToggleSeries();
-        });
-        ToggleSeries();
-    });
+   

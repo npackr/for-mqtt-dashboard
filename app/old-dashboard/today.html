@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="ThemeBucket">
     <link rel="shortcut icon" href="images/favicon.png">
 
-    <title>Flot Chart</title>
+    <title>WEEK</title>
 
     <!--Core CSS -->
     <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
@@ -30,6 +31,7 @@
 </head>
 
 <body>
+
     <section id="container">
         <!--header start-->
         <header class="header fixed-top clearfix">
@@ -223,10 +225,10 @@
                                 <span>Dữ liệu sử dụng điện năng</span>
                             </a>
                             <ul class="sub">
-                                <li><a href="flot_chart.html">Mới nhất</a></li>
-                                <li><a href="flot_chart.html">Hôm nay</a></li>
-                                <li><a href="c3_chart.html">Tuần này</a></li>
-                                <li><a href="morris.html">Tháng này</a></li>
+                                <li><a href="flot_chartnow.html">Mới nhất</a></li>
+                                <li><a href="today.html">Hôm nay</a></li>
+                                <li><a href="chartjs.html">Tuần này</a></li>
+                                <li><a href="month.html">Tháng này</a></li>
                             </ul>
                         </li>
 
@@ -248,7 +250,7 @@
                                 <span>Tiện ích bổ sung</span>
                             </a>
                             <ul class="sub">
-                                <li><a href="#">Tính tiền điện</a></li>
+                                <li><a href="form_validation.html">Tính tiền điện</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -260,7 +262,7 @@
                 <!-- sidebar menu end-->
             </div>
         </aside>
-        <!--sidebar end-->
+<!--sidebar end-->
     <!--main content start-->
     <section id="main-content">
         <section class="wrapper">
@@ -270,48 +272,28 @@
             <div class="col-sm-12">
                 <section class="panel">
                     <header class="panel-heading">
-                        Real Time Chart
-                    <span class="tools pull-right">
-                        <a href="javascript:;" class="fa fa-chevron-down"></a>
-                        <a href="javascript:;" class="fa fa-cog"></a>
-                        <a href="javascript:;" class="fa fa-times"></a>
-                     </span>
+                        Today (Wh)
+                        <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-cog"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span>
                     </header>
                     <div class="panel-body">
-                        <div id="reatltime-chart">
-                            <div id="reatltime-chartContainer" style="width:100%;height:300px; text-align: center; margin:0 auto;">
-                            </div>
+                        <div class="chartJS">
+                            <canvas id="bar-chart-js" height="250" width="800" ></canvas>
+
+
                         </div>
+
+                    <p>Giá trị được cập nhật hằng ngày</p>
+
                     </div>
                 </section>
             </div>
         </div>
-    
-
-        <div class="row">
-            <div class="col-sm-12">
-                <section class="panel">
-                    <header class="panel-heading">
-                        Năng lượng sử dụng hôm nay (wh)
-                    <span class="tools pull-right">
-                        <a href="javascript:;" class="fa fa-chevron-down"></a>
-                        <a href="javascript:;" class="fa fa-cog"></a>
-                        <a href="javascript:;" class="fa fa-times"></a>
-                     </span>
-                    </header>
-                    <div class="panel-body">
-                        <div id="combine-chart">
-                            <div id="legendcontainer26" class="legend-block">
-                            </div>
-                            <div id="combine-chartContainer" style="width: 100%;height:300px; text-align: center; margin:0 auto;">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-
-    </section>
+        <!-- page end-->
+        </section>
     </section>
     <!--main content end-->
 <!--right sidebar start-->
@@ -329,22 +311,20 @@
 <script src="js/jquery.scrollTo.min.js"></script>
 <script src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
 <script src="js/jquery.nicescroll.js"></script>
-<!-- Easy Pie Chart-->
+<!--Easy Pie Chart-->
 <script src="js/easypiechart/jquery.easypiechart.js"></script>
-<!-- Sparkline Chart-->
+<!--Sparkline Chart-->
 <script src="js/sparkline/jquery.sparkline.js"></script>
-<!-- jQuery Flot Chart-->
+<!--jQuery Flot Chart-->
 <script src="js/flot-chart/jquery.flot.js"></script>
 <script src="js/flot-chart/jquery.flot.tooltip.min.js"></script>
 <script src="js/flot-chart/jquery.flot.resize.js"></script>
 <script src="js/flot-chart/jquery.flot.pie.resize.js"></script>
-<script src="js/flot-chart/jquery.flot.selection.js"></script>
-<script src="js/flot-chart/jquery.flot.stack.js"></script>
-<script src="js/flot-chart/jquery.flot.time.js"></script>
-<script src="js/flot.chart.init.js"></script>
-<!-- Common script init for all pages-->
+<!--Chart JS-->
+<script src="js/chart-js/Chart.js"></script>
+<script src="js/today.js"></script>
+<!--common script init for all pages-->
 <script src="js/scripts.js"></script>
-
 
 </body>
 </html>
