@@ -329,7 +329,7 @@ ul.sidebar-menu li a.active i {
 .wrapper {
     display:inline-block;
     margin-top:80px;
-    padding:15px;
+    padding:30px;
     width:100%;
 
 }
@@ -4525,24 +4525,25 @@ div.tagsinput span.tag {
     border-radius:100% !important;
 }
 .widget-h {
-    color:#afaebc;
-    font-size:16px;
+    color:#000;
+    font-size:20px;
     text-transform:uppercase;
     margin:0px 0px 10px 0px;
     text-align:center;
+    
 }
 .gauge-canvas {
     text-align:center;
 }
 .gauge-value {
-    color:#fa8564;
-    font-size:16px;
+    color:rgba(255, 0, 0, .7);
+    font-size:20px;
     font-weight:bold;
     padding-left:20px;
 }
 .gauge-title {
-    color:#ccc;
-    font-size:14px;
+    color:#000;
+    font-size:20px;
     padding-right:20px;
 }
 .gauge-meta {
@@ -4627,7 +4628,7 @@ div.tagsinput span.tag {
     color:#3acdc7;
 }
 .top-stats-panel {
-    min-height:164px;
+    min-height:260px;
 }
 .top-stats-panel .sm-pie {
     margin-top:30px;
@@ -4960,19 +4961,19 @@ div.tagsinput span.tag {
 }
 /*=Event Calendar=*/
 .event-calendar {
-    background:#1fb5ac;
+    background: rgba(255,0,0,0.7);
     -webkit-border-radius:6px;
     -moz-border-radius:6px;
     border-radius:6px;
-    min-height:474px;
+    min-height:330px;
 }
 .calendar-block {
-    float:right !important;
-    -webkit-border-radius:0 5px 5px 0px;
+    float:left !important;
+    -webkit-border-radius: 5px 5px 0px;
     -moz-border-radius:0 5px 5px 0px;
     border-radius:0 5px 5px 0px;
     background:#fff;
-    min-height:474px;
+    min-height:330px;
     z-index: 1000;
 }
 .event-list-block {
@@ -4980,14 +4981,9 @@ div.tagsinput span.tag {
     -moz-border-radius:5px 0px 0px 5px;
     border-radius:5px 0px 0px 5px;
 }
-.calendar-block .clndr {
-    margin:40px 0;
-}
-.calendar-block .clndr {
-    margin:40px 0;
-}
+
 .calendar-block .clndr-controls {
-    margin:45px 0px !important;
+    margin:25px 0px !important;
 }
 .calendar-block .day-contents {
     width:30px;
@@ -4995,7 +4991,7 @@ div.tagsinput span.tag {
 }
 .today .day-contents {
     width:30px;
-    background:#1fb0ab;
+    background:rgba(255, 0, 0, .7);
     cursor:pointer;
     color:#fff;
     -webkit-border-radius:3px;
@@ -5036,9 +5032,9 @@ div.tagsinput span.tag {
 }
 .cal-day {
     font-size:30px;
-    font-weight:300;
+    font-weight:400;
     text-transform:uppercase;
-    color:#fff;
+    color:#000;
     padding-top:15px;
     padding-bottom:30px;
 }
@@ -5049,11 +5045,11 @@ div.tagsinput span.tag {
 .evnt-input,.evnt-input:focus {
     background:none;
     border:none;
-    border-bottom:#fff 1px solid;
+    border-bottom:#000 1px solid;
     -webkit-border-radius:0px;
     -moz-border-radius:0px;
     border-radius:0px;
-    color:#fff;
+    color:#000;
     padding-left:0px;
     margin-top:10px;
 }
@@ -5723,6 +5719,7 @@ right: -1px;
 }
 .electric-pay {
     text-align: center;
+    color: #000;
 }
 
 .color-bonus{
