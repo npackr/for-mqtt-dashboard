@@ -30,10 +30,10 @@ async function run() {
   });
 
   // Get all payload in the realm
-  const payload = realm.objects("Payload");
+  const payloads = realm.objects("Payload");
 
   // Add a listener that fires whenever one or more payload are inserted, modified, or deleted.
-  payload.addListener(payloadListener);
+  payloads.addListener(payloadListener);
 
   // Add a couple of payload in a single, atomic transaction
   // Realm automatically sets the _partition property based on the partitionValue used to open the realm
@@ -41,14 +41,14 @@ async function run() {
     const payload1 = realm.create("Payload", {
       _id: new BSON.ObjectID(),
       topic: "xxx",
-      payload: "yyy",
+      payload: "Open",
       qos: "zzz",
       timestamp: new BSON.Timestamp().toString()
     });
   });
 
   // Find a specific Task
-  let task = payload.filtered("payload = 'Open' LIMIT(1)")[0];
+  let task = payloads.filtered("payload = 'Open' LIMIT(1)")[0];
   console.log("task", JSON.stringify(task, null, 2));
 
   // Update the Task
@@ -63,7 +63,7 @@ async function run() {
   });
 
   // Clean up
-  payload.removeListener(payloadListener);
+  payloads.removeListener(payloadListener);
   realm.close();
   app.currentUser.logOut();
 }
@@ -72,7 +72,7 @@ run().catch(err => {
 });
 
 // Define the collection notification listener
-function payloadListener(payload, changes) {
+function payloadListener(payloads, changes) {
   // Update UI in response to deleted objects
   changes.deletions.forEach((index) => {
     // Deleted objects cannot be accessed directly,
@@ -82,14 +82,14 @@ function payloadListener(payload, changes) {
 
   // Update UI in response to inserted objects
   changes.insertions.forEach((index) => {
-    let insertedTask = payload[index].name;
+    let insertedTask = payloads[index].topic;
     console.log(`inserted task: ${JSON.stringify(insertedTask, null, 2)}`);
     // ...
   });
 
   // Update UI in response to modified objects
   changes.newModifications.forEach((index) => {
-    let modifiedTask = payload[index];
+    let modifiedTask = payloads[index];
     console.log(`modified task: ${JSON.stringify(modifiedTask, null, 2)}`);
     // ...
   });

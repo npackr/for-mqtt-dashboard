@@ -3,6 +3,8 @@ const Realm = require("realm");
 const BSON = require("bson");
 // MQTT.JS IMPORT
 var mqtt = require('mqtt');
+// GLOBAL VERIABLE
+const data = [];
 
 // REALM APP AND SCHEMA DEFINDING
 const app = new Realm.App({ id: "mqtt-data-dashboard-djtyx" });
@@ -50,16 +52,13 @@ client.on('connect', function () {
 })
 
 // MESSAGE ARRIVED FUNCTION - Function runs when receiving message from topic
-client.on('message', function (topic, payload, packet) {
-  // Payload is Buffer
-  console.log(`Topic: ${topic}, Message: ${payload.toString()}, QoS: ${packet.qos}`)
-})
 
-// REALM DATABASE COMMUNICATION FUNCTION
-async function run(topic, payload, packet) {
+
+async function run() {
+  // REALM DATABASE COMMUNICATION FUNCTION
   const credentials = Realm.Credentials.serverApiKey("G1lEIVcWV2e32WAiizbLtvgraT2VnvuhUTZdkBItqZNvJeZuivIYEKLLtjcOsxxs");
   await app.logIn(credentials);
-  
+
   const realm = await Realm.open({
     schema: [payloadSchema],
     sync: {
@@ -76,27 +75,30 @@ async function run(topic, payload, packet) {
 
   // Add a couple of payload in a single, atomic transaction
   // Realm automatically sets the _partition property based on the partitionValue used to open the realm
-  realm.write(() => {
-    const payload1 = realm.create("Payload", {
-      _id: new BSON.ObjectID(),
-      topic: topic,
-      payload: payload.toString(),
-      qos: packet.qos.toString(),
-      timestamp: new BSON.Timestamp().toString()
+
+  client.on('message', function (topic, payload, packet) {
+    realm.write(() => {
+      const payload1 = realm.create("Payload", {
+        _id: new BSON.ObjectID(),
+        topic: topic,
+        payload: payload.toString(),
+        qos: packet.qos.toString(),
+        timestamp: new BSON.Timestamp().toString()
+      });
     });
-  });
+  })
+
+  // Define the collection notification listener
+  function payloadListener(payloads, changes) {
+    // Update UI in response to inserted objects
+    changes.insertions.forEach((index) => {
+      let insertedPayload = payloads[index].topic + " : " + payloads[index].payload;
+      console.log(`inserted task: ${JSON.stringify(insertedPayload, null, 2)}`);
+      // ...
+    });
+  }
 }
 
 run().catch(err => {
   console.error(err)
 });
-
-// Define the collection notification listener
-function payloadListener(payloads, changes) {
-  // Update UI in response to inserted objects
-  changes.insertions.forEach((index) => {
-    let insertedPayload = payloads[index].name;
-    console.log(`inserted task: ${JSON.stringify(insertedPayload, null, 2)}`);
-    // ...
-  });
-}
