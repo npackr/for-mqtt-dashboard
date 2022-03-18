@@ -132,8 +132,9 @@ a:hover {
 }
 
 .form-horizontal .control-label {
-    font-weight: 300;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
 }
 
 input, textarea, select, button {
@@ -211,7 +212,7 @@ ul {
 .btn-danger {
     background-color: #fa8564;
     border-color: #fa8564;
-    color: #FFFFFF;
+    color: #000;
 }
 
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open .dropdown-toggle.btn-danger {
