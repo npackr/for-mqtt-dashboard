@@ -39,7 +39,7 @@
             <div class="brand">
 
                 <a href="index.html" class="logo">
-                    ĐIỆN SỬ DỤNG
+                    DB ĐIỆN
                 </a>
                 <div class="sidebar-toggle-box">
                     <div class="fa fa-bars"></div>
@@ -273,21 +273,75 @@
                 <section class="panel">
                     <header class="panel-heading">
                         WEEK (kWh)
-                        <span class="tools pull-right">
-                            <a href="javascript:;" class="fa fa-chevron-down"></a>
-                            <a href="javascript:;" class="fa fa-cog"></a>
-                            <a href="javascript:;" class="fa fa-times"></a>
-                         </span>
-                    </header>
+                    </header> <br>
+                    <div class="form-group">
+                        <label class="col-lg-1 control-label">Chọn Thứ </label>
+                        <div class="col-lg-2">
+                            <select id="e1" class="populate " style="width: 150px">
+                                <option value="--">---</option>
+                                <option value="01">Monday</option>
+                                <option value="02">Tuesday</option>
+                                <option value="03">Wenesday</option>
+                                <option value="04">Thurstday</option>
+                                <option value="05">Friday</option>
+                                <option value="06">Saturday</option>
+                                <option value="07">Sunday</option>
+                            </select>
+                        </div>
+                        <label class="col-lg-1 control-label">Chọn Tuần </label>
+                        <div class="col-lg-2">
+                            <select id="e1" class="populate " style="width: 150px">
+                                <option value="--">---</option>
+                                <option value="01">Tuần 1</option>
+                                <option value="02">Tuần 2</option>
+                                <option value="03">Tuần 3</option>
+                                <option value="04">Tuần 4</option>
+                            </select>
+                        </div>
+                        <label class="col-lg-1 control-label">Chọn tháng </label>
+                        <div class="col-lg-2">
+                            <select id="e1" class="populate " style="width: 150px">
+                                <option value="--">---</option>
+                                <option value="01">Tháng 1</option>
+                                <option value="02">Tháng 2</option>
+                                <option value="02">Tháng 3</option>
+                                <option value="04">Tháng 4</option>
+                                <option value="05">Tháng 5</option>
+                                <option value="06">Tháng 6</option>
+                                <option value="07">Tháng 7</option>
+                                <option value="08">Tháng 8</option>
+                                <option value="09">Tháng 9</option>
+                                <option value="10">Tháng 10</option>
+                                <option value="11">Tháng 11</option>
+                                <option value="12">Tháng 12</option>
+                            </select>
+                        </div>
+                        <label class="col-lg-1 control-label">Chọn năm </label>
+                        <div class="col-lg-2">
+                            <select id="e1" class="populate " style="width: 150px">
+                                <option value="--">---</option>
+                                <option value="01">Năm 2018</option>
+                                <option value="02">Năm 2019</option>
+                                <option value="02">Năm 2020</option>
+                                <option value="04">Năm 2021</option>
+                                <option value="05">Năm 2022</option>
+                            </select>
+                        </div>
+                    </div> <br>
                     <div class="panel-body">
                         <div class="chartJS">
                             <canvas id="bar-chart-js" height="250" width="800" ></canvas>
+                        </div> <br>
 
+                        <p class="note-p">Dữ liệu được cập nhật hằng tuần</p>
 
+                        <div class="color-bonus" >
+                            NOTE
+                            <div class="color1">_____ HỆ THỐNG ĐÈN</div>
+                            <div class="color2">_____ HỆ THỐNG ĐIỆN GIA DỤNG</div>
+                            <div class="color3">_____ KHÁC</div>
+                            
                         </div>
-
-
-
                     </div>
                 </section>
             </div>

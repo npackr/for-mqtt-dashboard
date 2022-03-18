@@ -342,10 +342,12 @@ ul.sidebar-menu li a.active i {
 }
 a.logo {
     font-size:21px;
-    color:#fff;
+    color:#000;
     float:left;
     margin:20px 0 0 25px;
     text-transform:uppercase;
+    font-weight: 700;
+    margin-left: 70px;
 }
 a.logo:hover,a.logo:focus {
     text-decoration:none;
@@ -5711,7 +5713,7 @@ right: -1px;
     transition: none;
 }
 
-/* NPACkr Customizer Stytle */
+/* NPACkr & XiaoLynx Customizer Stytle */
 .is-hidden {
     display: none;
 }
@@ -5721,4 +5723,23 @@ right: -1px;
 }
 .electric-pay {
     text-align: center;
+}
+
+.color-bonus{
+    font-weight: 900;
+
+}
+
+.color-bonus .color1{
+    color: #4dd1a1;
+}
+.color-bonus .color2{
+    color: #c75052;
+}
+.color-bonus .color3{
+    color: #755ad6;
+    
+}
+.note-p{
+    color: #000;
 }
