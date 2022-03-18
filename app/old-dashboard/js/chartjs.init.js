@@ -16,7 +16,7 @@
                     "height":$(el).parent().outerHeight()
                 });
             });
-            redraw(animate);
+           
             var m = 0;
             $(".chartJS").height("");
             $(".chartJS").each(function(i,el){ m = Math.max(m,$(el).height()); });
