@@ -87,18 +87,18 @@ async function run() {
       });
     });
   })
-
-  // Define the collection notification listener
-  function payloadListener(payloads, changes) {
-    // Update UI in response to inserted objects
-    changes.insertions.forEach((index) => {
-      let insertedPayload = payloads[index].topic + " : " + payloads[index].payload;
-      console.log(`inserted task: ${JSON.stringify(insertedPayload, null, 2)}`);
-      // ...
-    });
-  }
 }
 
 run().catch(err => {
   console.error(err)
 });
+
+// Define the collection notification listener
+function payloadListener(payloads, changes) {
+  // Update UI in response to inserted objects
+  changes.insertions.forEach((index) => {
+    let insertedPayload = payloads[index].topic + " : " + payloads[index].payload;
+    console.log(`inserted task: ${JSON.stringify(insertedPayload, null, 2)}`);
+    // ...
+  });
+}
