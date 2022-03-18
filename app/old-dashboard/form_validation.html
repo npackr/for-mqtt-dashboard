@@ -367,12 +367,55 @@
                                 </div>
 
                                 <div class="form-group has-success">
-                                    <label class="col-lg-8 control-label">Tổng tiền</label>
+                                    <label class="col-lg-8 control-label">Tổng tiền chưa thuế</label>
+                                    <div class="col-lg-3">
+                                        <input type="text" placeholder="" id="f-name" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group has-success">
+                                    <label class="col-lg-8 control-label">Thuế GTGT (8%) tiền điện</label>
+                                    <div class="col-lg-3">
+                                        <input type="text" placeholder="" id="f-name" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group has-success">
+                                    <label class="col-lg-8 control-label">Tổng cộng tiền thanh toán (đồng)</label>
                                     <div class="col-lg-3">
                                         <input type="text" placeholder="" id="f-name" class="form-control">
                                     </div>
                                 </div>
                             </form>
+                        </div>
+
+
+                    </section>
+                </div>
+
+                <div class="col-lg-12">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            Tự tính tiền điện
+                        </header>
+                        <div class="panel-body">
+                            <P class="note-pay"><b>Theo khoản 4.1 phụ lục ban hành kèm theo Quyết định 648/QĐ_BCT ngày 20/3/2019</b> về điều chỉnh mức giá bán lẻ điện bình quân và quy định giá bán điện, giá bán lẻ điện sinh hoạt sẽ được tính theo 6 bậc như sau: <br>
+                                ✅Bậc 1 (0 đến 50kWh): 1.678 đồng/kWh <br>
+                                ✅Bậc 2 (51 đến 100kWh): 1.734 đồng/kWh <br>
+                                ✅Bậc 3 (101 đến 200 kWh): 2.014 đồng/kWh <br>
+                                ✅Bậc 4 (201 đến 300 kWh): 2.536 đồng/kWh <br>
+                                ✅Bậc 5 (301 đến 400 kWh): 2.834 đồng/kWh <br>
+                                ✅Bậc 6 (401 kWh trở lên): 2.927 đồng/kWh <br>
+                                Như vậy, số điện tiêu thụ càng cao thì đồng nghĩa phải đóng mức giá càng cao. Và để tính tiền điện sinh hoạt, bạn hãy áp dụng theo công thức dưới đây: <br>
+                                
+                                <b>Tiền điện bậc Y = Số số điện áp dụng giá điện bậc Y x Giá điện bán lẻ bậc Y </b><br>
+                                
+                                Chẳng hạn: Tháng này gia đình bạn sử dụng hết 200 số điện thì 50 số điện đầu sẽ được tính với mức giá 1.678 đồng/số, 50 số điện tiếp theo sẽ được tính với mức giá 1.734 đồng/số và 100 số điện còn lại sẽ được tính với mức giá 2.014 đồng/số. <br>
+                                
+                                ✅Tiền điện bậc 1 (50 số) = 50 x 1.678 = 83.900 đồng <br>
+                                ✅Tiền điện bậc 2 (50 số) = 50 x 1.734 = 86.700 đồng <br>
+                                ✅Tiền điện bậc 3 (100 số) = 100 x 2.014 = 201.400 đồng <br>
+                                ✅Tổng tiền điện = (Tiền điện bậc 1 + Tiền điện bậc 2 + Tiền điện bậc 3) x 10% VAT (thuế GTGT)  = (83.900 + 86.700 + 201.400) x 10%  = 372.000 x 10% = 409.200 đồng.</P>
                         </div>
 
 
