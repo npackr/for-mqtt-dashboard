@@ -3804,7 +3804,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -112,
-											"top": 224,
+											"top": 128,
 											"height": 13
 										},
 										{
@@ -3815,7 +3815,7 @@
 											},
 											"font": "Arial;13;1",
 											"left": 45,
-											"top": 229,
+											"top": 181,
 											"width": 158.03759765625,
 											"height": 13,
 											"text": "Người quản lý thiết bị IoT"
@@ -3829,7 +3829,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -112,
-											"top": 224,
+											"top": 128,
 											"width": 126.4453125,
 											"height": 13,
 											"text": "(from Model)"
@@ -3843,14 +3843,14 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -112,
-											"top": 224,
+											"top": 128,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 40,
-									"top": 222,
+									"top": 174,
 									"width": 168.03759765625,
 									"height": 25,
 									"stereotypeLabel": {
@@ -3878,7 +3878,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": -56,
-									"top": 112,
+									"top": 64,
 									"width": 10,
 									"height": 10
 								},
@@ -3894,7 +3894,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": -56,
-									"top": 112,
+									"top": 64,
 									"width": 10,
 									"height": 10
 								},
@@ -3910,7 +3910,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": -56,
-									"top": 112,
+									"top": 64,
 									"width": 10,
 									"height": 10
 								},
@@ -3926,7 +3926,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": -56,
-									"top": 112,
+									"top": 64,
 									"width": 10,
 									"height": 10
 								}
@@ -3934,7 +3934,7 @@
 							"font": "Arial;13;0",
 							"containerChangeable": true,
 							"left": 40,
-							"top": 168,
+							"top": 120,
 							"width": 168.03759765625,
 							"height": 80,
 							"nameCompartment": {
@@ -4257,7 +4257,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 192,
-									"top": -80,
+									"top": 24,
 									"width": 10,
 									"height": 10
 								},
@@ -4273,7 +4273,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 192,
-									"top": -80,
+									"top": 24,
 									"width": 10,
 									"height": 10
 								},
@@ -4289,7 +4289,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 192,
-									"top": -80,
+									"top": 24,
 									"width": 10,
 									"height": 10
 								},
@@ -4305,7 +4305,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 192,
-									"top": -80,
+									"top": 24,
 									"width": 10,
 									"height": 10
 								},
@@ -4321,7 +4321,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 192,
-									"top": -80,
+									"top": 24,
 									"width": 10,
 									"height": 10
 								}
@@ -4455,8 +4455,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -176,
-									"top": -64,
+									"left": -168,
+									"top": 128,
 									"width": 10,
 									"height": 10
 								},
@@ -4471,8 +4471,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -176,
-									"top": -64,
+									"left": -168,
+									"top": 128,
 									"width": 10,
 									"height": 10
 								},
@@ -4487,8 +4487,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -176,
-									"top": -64,
+									"left": -168,
+									"top": 128,
 									"width": 10,
 									"height": 10
 								},
@@ -4503,8 +4503,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -176,
-									"top": -64,
+									"left": -168,
+									"top": 128,
 									"width": 10,
 									"height": 10
 								},
@@ -4519,8 +4519,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -176,
-									"top": -64,
+									"left": -168,
+									"top": 128,
 									"width": 10,
 									"height": 10
 								}
@@ -4574,7 +4574,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 142,
-									"top": 256,
+									"top": 232,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -4595,7 +4595,7 @@
 									"visible": null,
 									"font": "Arial;13;0",
 									"left": 157,
-									"top": 256,
+									"top": 232,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -4616,7 +4616,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 113,
-									"top": 257,
+									"top": 233,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -4637,7 +4637,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 143,
-									"top": 266,
+									"top": 218,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
@@ -4658,7 +4658,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 156,
-									"top": 269,
+									"top": 221,
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
@@ -4679,7 +4679,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 115,
-									"top": 262,
+									"top": 214,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
@@ -4785,7 +4785,7 @@
 								"$ref": "AAAAAAF/e+V0D0PPRyQ="
 							},
 							"lineStyle": 2,
-							"points": "128:247;128:280",
+							"points": "128:199;128:280",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF/e+ZnskSSxi4="
@@ -5104,6 +5104,281 @@
 							},
 							"propertyLabel": {
 								"$ref": "AAAAAAF/e+ba+EU61lg="
+							}
+						},
+						{
+							"_type": "UMLUseCaseSubjectView",
+							"_id": "AAAAAAF/lzG7DVYPW4k=",
+							"_parent": {
+								"$ref": "AAAAAAF/e+VBbEOcS9Y="
+							},
+							"model": {
+								"$ref": "AAAAAAF/lzG7C1YNUk0="
+							},
+							"subViews": [
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "AAAAAAF/lzG7DlYQIeA=",
+									"_parent": {
+										"$ref": "AAAAAAF/lzG7DVYPW4k="
+									},
+									"model": {
+										"$ref": "AAAAAAF/lzG7C1YNUk0="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF/lzG7DlYRfhQ=",
+											"_parent": {
+												"$ref": "AAAAAAF/lzG7DlYQIeA="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF/lzG7DlYSGLQ=",
+											"_parent": {
+												"$ref": "AAAAAAF/lzG7DlYQIeA="
+											},
+											"font": "Arial;13;1",
+											"left": 37,
+											"top": 231,
+											"width": 566,
+											"height": 13,
+											"text": "Dashboard dữ liệu MQTT"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF/lzG7DlYTVyU=",
+											"_parent": {
+												"$ref": "AAAAAAF/lzG7DlYQIeA="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF/lzG7DlYURiA=",
+											"_parent": {
+												"$ref": "AAAAAAF/lzG7DlYQIeA="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 32,
+									"top": 224,
+									"width": 576,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAF/lzG7DlYRfhQ="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAF/lzG7DlYSGLQ="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAF/lzG7DlYTVyU="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAF/lzG7DlYURiA="
+									}
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 32,
+							"top": 224,
+							"width": 576,
+							"height": 192,
+							"nameCompartment": {
+								"$ref": "AAAAAAF/lzG7DlYQIeA="
+							}
+						},
+						{
+							"_type": "UMLActorView",
+							"_id": "AAAAAAF/l0bEN1elrTg=",
+							"_parent": {
+								"$ref": "AAAAAAF/e+VBbEOcS9Y="
+							},
+							"model": {
+								"$ref": "AAAAAAF/l0bENFejJmM="
+							},
+							"subViews": [
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "AAAAAAF/l0bEN1em/JU=",
+									"_parent": {
+										"$ref": "AAAAAAF/l0bEN1elrTg="
+									},
+									"model": {
+										"$ref": "AAAAAAF/l0bENFejJmM="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF/l0bEN1endj4=",
+											"_parent": {
+												"$ref": "AAAAAAF/l0bEN1em/JU="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -16,
+											"top": -48,
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF/l0bEN1eoR1Q=",
+											"_parent": {
+												"$ref": "AAAAAAF/l0bEN1em/JU="
+											},
+											"font": "Arial;13;1",
+											"left": 437,
+											"top": 181,
+											"width": 92.447265625,
+											"height": 13,
+											"text": "Máy chủ MQTT"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF/l0bEN1epMCM=",
+											"_parent": {
+												"$ref": "AAAAAAF/l0bEN1em/JU="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -16,
+											"top": -48,
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF/l0bEN1eqSJ8=",
+											"_parent": {
+												"$ref": "AAAAAAF/l0bEN1em/JU="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -16,
+											"top": -48,
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 432,
+									"top": 174,
+									"width": 102.447265625,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAF/l0bEN1endj4="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAF/l0bEN1eoR1Q="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAF/l0bEN1epMCM="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAF/l0bEN1eqSJ8="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "AAAAAAF/l0bEN1eraCQ=",
+									"_parent": {
+										"$ref": "AAAAAAF/l0bEN1elrTg="
+									},
+									"model": {
+										"$ref": "AAAAAAF/l0bENFejJmM="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -8,
+									"top": -24,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "AAAAAAF/l0bEN1esSok=",
+									"_parent": {
+										"$ref": "AAAAAAF/l0bEN1elrTg="
+									},
+									"model": {
+										"$ref": "AAAAAAF/l0bENFejJmM="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -8,
+									"top": -24,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAF/l0bEOFett0s=",
+									"_parent": {
+										"$ref": "AAAAAAF/l0bEN1elrTg="
+									},
+									"model": {
+										"$ref": "AAAAAAF/l0bENFejJmM="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -8,
+									"top": -24,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "AAAAAAF/l0bEOFeu/mk=",
+									"_parent": {
+										"$ref": "AAAAAAF/l0bEN1elrTg="
+									},
+									"model": {
+										"$ref": "AAAAAAF/l0bENFejJmM="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -8,
+									"top": -24,
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"containerChangeable": true,
+							"left": 432,
+							"top": 120,
+							"width": 102.447265625,
+							"height": 80,
+							"nameCompartment": {
+								"$ref": "AAAAAAF/l0bEN1em/JU="
+							},
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"attributeCompartment": {
+								"$ref": "AAAAAAF/l0bEN1eraCQ="
+							},
+							"operationCompartment": {
+								"$ref": "AAAAAAF/l0bEN1esSok="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAF/l0bEOFett0s="
+							},
+							"templateParameterCompartment": {
+								"$ref": "AAAAAAF/l0bEOFeu/mk="
 							}
 						}
 					]
@@ -7446,6 +7721,22 @@
 							"visibility": "private"
 						}
 					]
+				},
+				{
+					"_type": "UMLUseCaseSubject",
+					"_id": "AAAAAAF/lzG7C1YNUk0=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Dashboard dữ liệu MQTT"
+				},
+				{
+					"_type": "UMLActor",
+					"_id": "AAAAAAF/l0bENFejJmM=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Máy chủ MQTT"
 				}
 			]
 		}
