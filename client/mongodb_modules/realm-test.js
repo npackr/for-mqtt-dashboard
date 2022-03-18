@@ -1,3 +1,10 @@
+/*  REALM COMMUNICATION TEST SCRIPT
+    This script base on a article on MongoDB docs
+    
+    Edited by: npackr
+    Resources: https://docs.mongodb.com/realm/sdk/node/quick-start/
+*/
+
 const Realm = require("realm");
 const BSON = require("bson");
 

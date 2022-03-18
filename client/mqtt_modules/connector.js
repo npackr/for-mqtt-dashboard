@@ -1,10 +1,11 @@
 /*  MQTT CONNECTOR MAIN SCRIPT
     This script base on a article on HOCARM.ORG
     
-    By       : npackr
-    Resources: https://hocarm.org/mqtt-client-va-mqtt-broker/ */
+    Edited by: npackr
+    Resources: https://hocarm.org/mqtt-client-va-mqtt-broker/
+*/
 
-// MQTT GLOBAL VALUEABLE - Use to access MQTT.JS framework
+// MQTT GLOBAL VARIABLE - Use to access MQTT.JS framework
 var mqtt = require('mqtt');
 
 // CONNECT OPTIONS

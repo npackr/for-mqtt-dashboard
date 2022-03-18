@@ -1,3 +1,10 @@
+/*  MARIADB COMMUNICATION TEST SCRIPT
+    This script base on a article on MariaDB docs
+    
+    Edited by: npackr
+    Resources: https://mariadb.com/kb/en/getting-started-with-the-nodejs-connector/
+*/
+
 const mariadb = require('mariadb');
 const pool = mariadb.createPool({
      host: 'npackr.com', 

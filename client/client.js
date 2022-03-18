@@ -1,13 +1,24 @@
+/*  MQTT CLIENT COMMUNICATION SCRIPT
+    For receives data from MQTT server and push it to database
+    
+    Edited by: npackr
+    Resources: https://docs.mongodb.com/realm/sdk/node/quick-start/
+*/
+
 // MONGODB REALM IMPORT
 const Realm = require("realm");
 const BSON = require("bson");
+
 // MQTT.JS IMPORT
 var mqtt = require('mqtt');
+
 // GLOBAL VERIABLE
 const data = [];
 
-// REALM APP AND SCHEMA DEFINDING
+// REALM APP DEFINDS
 const app = new Realm.App({ id: "mqtt-data-dashboard-djtyx" });
+
+// DATA SCHEMA DEFINDS
 const payloadSchema = {
   name: "Payload",
   properties: {
@@ -52,9 +63,8 @@ client.on('connect', function () {
 })
 
 // MESSAGE ARRIVED FUNCTION - Function runs when receiving message from topic
-
-
 async function run() {
+
   // REALM DATABASE COMMUNICATION FUNCTION
   const credentials = Realm.Credentials.serverApiKey("G1lEIVcWV2e32WAiizbLtvgraT2VnvuhUTZdkBItqZNvJeZuivIYEKLLtjcOsxxs");
   await app.logIn(credentials);
@@ -73,9 +83,7 @@ async function run() {
   // Add a listener that fires whenever one or more payload are inserted, modified, or deleted.
   payloads.addListener(payloadListener);
 
-  // Add a couple of payload in a single, atomic transaction
-  // Realm automatically sets the _partition property based on the partitionValue used to open the realm
-
+  // Payloads atomic transaction
   client.on('message', function (topic, payload, packet) {
     realm.write(() => {
       const payload1 = realm.create("Payload", {
@@ -98,7 +106,7 @@ function payloadListener(payloads, changes) {
   // Update UI in response to inserted objects
   changes.insertions.forEach((index) => {
     let insertedPayload = payloads[index].topic + " : " + payloads[index].payload;
-    console.log(`inserted task: ${JSON.stringify(insertedPayload, null, 2)}`);
+    console.log(`Inserted task: ${JSON.stringify(insertedPayload, null, 2)}`);
     // ...
   });
 }
