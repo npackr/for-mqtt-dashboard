@@ -7,7 +7,7 @@ ul#clock li{
     position: relative;
     width: 185px;
     height: 185px;
-    margin: -95px auto 0;
+    margin: -65px auto 0;
     background: url(../images/clockface.png) no-repeat;
     list-style: none;
 }
