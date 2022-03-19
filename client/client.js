@@ -27,9 +27,10 @@ const payloadSchema = {
     topic: "string",
     payload: "string",
     qos: "string",
-    timestamp: "string"
+    timestamp: "date"
   },
   primaryKey: "_id",
+  timestamps: true,
 };
 
 // MQTT CONNECT OPTIONS
@@ -91,7 +92,7 @@ async function run() {
         topic: topic,
         payload: payload.toString(),
         qos: packet.qos.toString(),
-        timestamp: new BSON.Timestamp().toString()
+        timestamp: new Date(),
       });
     });
   })
@@ -105,7 +106,7 @@ run().catch(err => {
 function payloadListener(payloads, changes) {
   // Update UI in response to inserted objects
   changes.insertions.forEach((index) => {
-    let insertedPayload = payloads[index].topic + " : " + payloads[index].payload;
+    let insertedPayload = payloads[index].topic + " : " + payloads[index].payload + " / " + payloads[index].timestamp;
     console.log(`Inserted task: ${JSON.stringify(insertedPayload, null, 2)}`);
     // ...
   });
