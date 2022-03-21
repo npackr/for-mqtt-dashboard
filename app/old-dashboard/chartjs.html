@@ -15,6 +15,19 @@
     <link href="css/bootstrap-reset.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
 
+    <link rel="stylesheet" href="css/bootstrap-switch.css" />
+    <link rel="stylesheet" type="text/css" href="js/bootstrap-fileupload/bootstrap-fileupload.css" />
+    <link rel="stylesheet" type="text/css" href="js/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
+    <link rel="stylesheet" type="text/css" href="js/bootstrap-datepicker/css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="js/bootstrap-timepicker/compiled/timepicker.css" />
+    <link rel="stylesheet" type="text/css" href="js/bootstrap-colorpicker/css/colorpicker.css" />
+    <link rel="stylesheet" type="text/css" href="js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+    <link rel="stylesheet" type="text/css" href="js/bootstrap-datetimepicker/css/datetimepicker.css" />
+    <link rel="stylesheet" type="text/css" href="js/jquery-multi-select/css/multi-select.css" />
+    <link rel="stylesheet" type="text/css" href="js/jquery-tags-input/jquery.tagsinput.css" />
+
+    <link rel="stylesheet" type="text/css" href="js/select2/select2.css" />
+
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
@@ -275,57 +288,16 @@
                         WEEK (kWh)
                     </header> <br>
                     <div class="form-group">
-                        <label class="col-lg-1 control-label">Chọn Thứ </label>
-                        <div class="col-lg-2">
-                            <select id="e1" class="populate " style="width: 150px">
-                                <option value="--">---</option>
-                                <option value="01">Monday</option>
-                                <option value="02">Tuesday</option>
-                                <option value="03">Wenesday</option>
-                                <option value="04">Thurstday</option>
-                                <option value="05">Friday</option>
-                                <option value="06">Saturday</option>
-                                <option value="07">Sunday</option>
-                            </select>
-                        </div>
-                        <label class="col-lg-1 control-label">Chọn Tuần </label>
-                        <div class="col-lg-2">
-                            <select id="e1" class="populate " style="width: 150px">
-                                <option value="--">---</option>
-                                <option value="01">Tuần 1</option>
-                                <option value="02">Tuần 2</option>
-                                <option value="03">Tuần 3</option>
-                                <option value="04">Tuần 4</option>
-                            </select>
-                        </div>
-                        <label class="col-lg-1 control-label">Chọn tháng </label>
-                        <div class="col-lg-2">
-                            <select id="e1" class="populate " style="width: 150px">
-                                <option value="--">---</option>
-                                <option value="01">Tháng 1</option>
-                                <option value="02">Tháng 2</option>
-                                <option value="02">Tháng 3</option>
-                                <option value="04">Tháng 4</option>
-                                <option value="05">Tháng 5</option>
-                                <option value="06">Tháng 6</option>
-                                <option value="07">Tháng 7</option>
-                                <option value="08">Tháng 8</option>
-                                <option value="09">Tháng 9</option>
-                                <option value="10">Tháng 10</option>
-                                <option value="11">Tháng 11</option>
-                                <option value="12">Tháng 12</option>
-                            </select>
-                        </div>
-                        <label class="col-lg-1 control-label">Chọn năm </label>
-                        <div class="col-lg-2">
-                            <select id="e1" class="populate " style="width: 150px">
-                                <option value="--">---</option>
-                                <option value="01">Năm 2018</option>
-                                <option value="02">Năm 2019</option>
-                                <option value="02">Năm 2020</option>
-                                <option value="04">Năm 2021</option>
-                                <option value="05">Năm 2022</option>
-                            </select>
+                        <label class="control-label col-md-2">Chọn thời gian</label>
+                        <div class="col-md-2 ">
+
+                            <div data-date-viewmode="years" data-date-format="dd-mm-yyyy" data-date="12-02-2012"  class="input-append date dpYears">
+                                <input type="text" readonly="" value="12-02-2012" size="16" class="form-control">
+                                      <span class="input-group-btn add-on">
+                                        <button class="btn btn-primary" type="button"><i class="fa fa-calendar"></i></button>
+                                      </span>
+                            </div>
+                            
                         </div>
                     </div> <br>
                     <div class="panel-body">
@@ -365,6 +337,34 @@
 <script src="js/jquery.scrollTo.min.js"></script>
 <script src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
 <script src="js/jquery.nicescroll.js"></script>
+
+<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+
+<script src="js/easypiechart/jquery.easypiechart.js"></script>
+
+
+
+<script src="js/bootstrap-switch.js"></script>
+
+<script type="text/javascript" src="js/fuelux/js/spinner.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-fileupload/bootstrap-fileupload.js"></script>
+<script type="text/javascript" src="js/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
+<script type="text/javascript" src="js/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+<script type="text/javascript" src="js/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="js/bootstrap-daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script type="text/javascript" src="js/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+<script type="text/javascript" src="js/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+<script type="text/javascript" src="js/jquery-multi-select/js/jquery.multi-select.js"></script>
+<script type="text/javascript" src="js/jquery-multi-select/js/jquery.quicksearch.js"></script>
+
+<script type="text/javascript" src="js/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+
+<script src="js/jquery-tags-input/jquery.tagsinput.js"></script>
+
+<script src="js/select2/select2.js"></script>
+<script src="js/select-init.js"></script>
 <!--Easy Pie Chart-->
 <script src="js/easypiechart/jquery.easypiechart.js"></script>
 <!--Sparkline Chart-->
@@ -379,6 +379,8 @@
 <script src="js/chartjs.init.js"></script>
 <!--common script init for all pages-->
 <script src="js/scripts.js"></script>
+<script src="js/toggle-init.js"></script>
+<script src="js/advanced-form.js"></script>
 
 </body>
 </html>
