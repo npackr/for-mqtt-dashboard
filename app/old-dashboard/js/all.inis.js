@@ -44,18 +44,18 @@
                     data : [28,48,40,19,54,27,38]
                 },
                 {
-                    fillColor : "#c75052",
-                    strokeColor : "#c75052",
+                    fillColor : "#FFFF00",
+                    strokeColor : "#FFFF00",
                     data : [34,45,54,43,56,55,65]
                 },
                 {
-                    fillColor : "#755ad6",
-                    strokeColor : "#755ad6",
+                    fillColor : "#87CEFA",
+                    strokeColor : "#87CEFA",
                     data : [32,23,36,34,29,38,42]
                 },
                 {
-                    fillColor : "#755ad6",
-                    strokeColor : "#755ad6",
+                    fillColor : "#FF4500",
+                    strokeColor : "#FF4500",
                     data : [32,23,36,34,29,38,42]
                 }
                 
@@ -89,7 +89,14 @@
                     pointColor : "#D9DD81",
                     pointStrokeColor : "#fff",
                     data : [28,48,40,19,96,27,100]
-                }
+                },
+                {
+                    fillColor : "#FF4500",
+                    strokeColor : "#FF4500",
+                    pointColor : "#FF4500",
+                    pointStrokeColor : "#fff",
+                    data : [28,48,40,19,96,27,100]
+                }   
 
             ]
         }
