@@ -5757,4 +5757,22 @@ right: -1px;
     text-align: center;
     font-weight: 400;
 }
+.color-all{
+    font-weight: 900;
+    color: #000;
 
+}
+
+.color-all .colorall1{
+    color: #4dd1a1;
+}
+.color-all .colorall2{
+    color: #FFFF00;
+}
+.color-all .colorall3{
+    color: #87CEFA;
+    
+}
+.color-all .colorall4{
+    color: #FF4500;
+}
