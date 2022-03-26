@@ -8,12 +8,15 @@
     <meta name="author" content="ThemeBucket">
     <link rel="shortcut icon" href="images/favicon.png">
 
-    <title>WEEK</title>
+    <title>Kitchen</title>
 
     <!--Core CSS -->
     <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-reset.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!--Morris Chart CSS -->
+    <link rel="stylesheet" href="js/morris-chart/morris.css">
     <link rel="stylesheet" href="css/bootstrap-switch.css" />
     <link rel="stylesheet" type="text/css" href="js/bootstrap-fileupload/bootstrap-fileupload.css" />
     <link rel="stylesheet" type="text/css" href="js/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
@@ -43,7 +46,6 @@
 </head>
 
 <body>
-
     <section id="container">
         <!--header start-->
         <header class="header fixed-top clearfix">
@@ -251,7 +253,7 @@
                             </a>
                             <ul class="sub">
                                 <li class="active"><a href="mqtt-consumption-chart.html">Tổng hợp</a></li>
-                                <li><a href="all.html">Theo lượng sử dụng</a></li>
+                                <li><a href="all.html">Theo khu vực sử dụng</a></li>
                                 
                             </ul>
                         </li>
@@ -279,59 +281,44 @@
     <section id="main-content">
         <section class="wrapper">
         <!-- page start-->
-
-        <div class="row">
-            <div class="col-sm-12">
-                <section class="panel">
-                    <header class="panel-heading">
-                        Nơi sử dụng(kWh)
-                    </header> <br>
-                    <div class="form-group">
-                        <div class="form-group">
-                            <label class="col-lg-2 control-label">Chọn Khu Vực </label>
-                            <div class="col-lg-2">
-                                <select id="all_select"  style="width: 150px" onchange="genderChanged(this)">
-                                    <option value="--">---</option>
-                                    <option value="livingroom.html"> Phòng khách</option>
-                                    <option value="bedroom.html">Phòng ngủ</option>
-                                    <option value="kitchen.html">Phòng bếp</option>
-                                    <option value="showerroom.html">Phòng tắm</option>
-                                    <option value="other.html">Khác</option>
-                                </select>
-                                    </div>                 
+            <div class="row">
+                <div class="col-sm-12">
+                    <section class="panel">
+                        <header class="panel-heading">
+                         Kitchen
+                            </header> <br>
+                            <div class="form-group">
+                                <label class="control-label col-md-2">Chọn thời gian</label>
+                                <div class="col-md-2 ">
+        
+                                    <div data-date-viewmode="years" data-date-format="dd-mm-yyyy" data-date="12-02-2012"  class="input-append date dpYears">
+                                        <input type="text" readonly="" value="12-02-2012" size="16" class="form-control">
+                                              <span class="input-group-btn add-on">
+                                                <button class="btn btn-primary" type="button"><i class="fa fa-calendar"></i></button>
+                                              </span>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-2"></div>
+                                <label class="col-lg-2 control-label">Chọn Khu Vực Khác </label>
+                                <div class="col-lg-2">
+                                    <select id="all_select"  style="width: 150px" onchange="genderChanged(this)">
+                                        <option value="--">---</option>
+                                        <option value="livingroom.html"> Phòng khách</option>
+                                        <option value="bedroom.html">Phòng ngủ</option>
+                                        <option value="kitchen.html">Phòng bếp</option>
+                                        <option value="showerroom.html">Phòng tắm</option>
+                                        <option value="other.html">Khác</option>
+                                    </select>
+                                </div>   
+                            </div> <br>
+                        <div class="panel-body" >
+                            <div id="graph-donut" ></div>
                         </div>
-                        <label class="control-label col-md-2">Chọn thời gian</label>
-                        <div class="col-md-2 ">
+                    </section>
+                </div>
+            
 
-                            <div data-date-viewmode="years" data-date-format="dd-mm-yyyy" data-date="12-02-2012"  class="input-append date dpYears">
-                                <input type="text" readonly="" value="12-02-2012" size="16" class="form-control">
-                                      <span class="input-group-btn add-on">
-                                        <button class="btn btn-primary" type="button"><i class="fa fa-calendar"></i></button>
-                                      </span>
-                            </div>
-                            
-                        </div>
-                    </div> <br>
-                    <div class="panel-body">
-                        <div class="chartJS">
-                            <canvas id="bar-chart-js" height="250" width="800" ></canvas>
-                        </div> <br>
-
-                        <p class="note-p">Dữ liệu được cập nhật hằng tuần</p>
-
-                        <div class="color-all" >
-                            NOTE
-                            <div class="colorall1">_____ Phòng Khách</div>
-                            <div class="colorall2">_____ Phòng Ngủ</div>
-                            <div class="colorall3">_____ Phòng Bếp</div>
-                            <div class="colorall5">_____ Phòng Tắm</div>
-                            <div class="colorall4">_____ Khác</div>
-                            
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
         <!-- page end-->
         </section>
     </section>
@@ -351,6 +338,7 @@
 <script src="js/jquery.scrollTo.min.js"></script>
 <script src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
 <script src="js/jquery.nicescroll.js"></script>
+
 
 <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
 
@@ -379,8 +367,6 @@
 
 <script src="js/select2/select2.js"></script>
 <script src="js/select-init.js"></script>
-
-
 <!--Easy Pie Chart-->
 <script src="js/easypiechart/jquery.easypiechart.js"></script>
 <!--Sparkline Chart-->
@@ -390,14 +376,15 @@
 <script src="js/flot-chart/jquery.flot.tooltip.min.js"></script>
 <script src="js/flot-chart/jquery.flot.resize.js"></script>
 <script src="js/flot-chart/jquery.flot.pie.resize.js"></script>
-<!--Chart JS-->
-<script src="js/chart-js/Chart.js"></script>
-<script src="js/all.inis.js"></script>
+
+<!--Morris Chart-->
+<script src="js/morris-chart/morris.js"></script>
+<script src="js/morris-chart/raphael-min.js"></script>
+<script src="js/kitchen.js"></script>
+
 <!--common script init for all pages-->
 <script src="js/scripts.js"></script>
 <script src="js/toggle-init.js"></script>
 <script src="js/advanced-form.js"></script>
-
-
 </body>
 </html>
