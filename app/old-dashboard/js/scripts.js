@@ -268,7 +268,7 @@
                 $(this).removeClass("fa-chevron-up").addClass("fa-chevron-down");
                 el.slideDown(200); }
         });
-
+        
 
 
         $('.panel .tools .fa-times').click(function () {

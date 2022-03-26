@@ -72,48 +72,7 @@
         var myLine = new Chart(document.getElementById("bar-chart-js").getContext("2d")).Bar(barChartData);
 
 
-        var Linedata = {
-            labels : ["Monday","Tuesday","Wenesday","Thurstday","Friday","Saturday","Sunday"],
-            datasets : [
-                {
-                    fillColor : "#4dd1a1",
-                    strokeColor : "#4dd1a1",
-                    pointColor : "#4dd1a1",
-                    pointStrokeColor : "#fff",
-                    data : [100,159,190,281,156,155,140]
-                },
-                {
-                    fillColor : "#755ad6",
-                    strokeColor : "#755ad6",
-                    pointColor : "#755ad6",
-                    pointStrokeColor : "#fff",
-                    data : [65,59,90,181,56,55,40]
-                },
-                {
-                    fillColor : "#D9DD81",
-                    strokeColor : "#D9DD81",
-                    pointColor : "#D9DD81",
-                    pointStrokeColor : "#fff",
-                    data : [28,48,40,19,96,27,100]
-                },
-                {
-                    fillColor : "#FF4500",
-                    strokeColor : "#FF4500",
-                    pointColor : "#FF4500",
-                    pointStrokeColor : "#fff",
-                    data : [28,48,40,19,96,27,100]
-                }  ,
-                {
-                    fillColor : "#000000",
-                    strokeColor : "#000000",
-                    pointColor : "#000000",
-                    pointStrokeColor : "#fff",
-                    data : [28,48,40,19,96,27,100]
-                }    
-
-            ]
-        }
-        var myLineChart = new Chart(document.getElementById("line-chart-js").getContext("2d")).Line(Linedata);
+        
 
 
         var pieData = [
@@ -133,33 +92,6 @@
         ];
 
         var myPie = new Chart(document.getElementById("pie-chart-js").getContext("2d")).Pie(pieData);
-
-
-
-        var donutData = [
-            {
-                value: 30,
-                color:"#c75052"
-            },
-            {
-                value : 50,
-                color : "#D9DD81"
-            },
-            {
-                value : 100,
-                color : "#755ad6"
-            },
-            {
-                value : 40,
-                color : "#95D7BB"
-            },
-            {
-                value : 120,
-                color : "#4D5360"
-            }
-
-        ]
-        var myDonut = new Chart(document.getElementById("donut-chart-js").getContext("2d")).Doughnut(donutData);
     }
 
 
