@@ -167,21 +167,8 @@ import * as chartConfigs from "@/components/Charts/config";
 import TaskList from "./Dashboard/TaskList";
 import UserTable from "./Dashboard/UserTable";
 import config from "@/config";
-import gql from "graphql-tag";
 
 export default {
-  apollo: {
-    payloads: gql`
-      query {
-        payload {
-          payload
-          qos
-          timestamp
-          topic
-        }
-      }
-    `,
-  },
 
   components: {
     LineChart,
