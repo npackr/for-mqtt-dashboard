@@ -80,11 +80,11 @@ async function run() {
 
   // Get all payload in the realm
   const payloads = realm.objects("Payload");
-  var startDate = Date("27/03/2022");
-  var endDate = Date("27/03/2022");
+  const startDate = { timestamp: new Date("27/03/2022") };
+  const endDate = { timestamp: new Date("28/03/2022") };
   
-  let task = payloads.filter("timestamp BETWEEN {" + startDate + ", " + endDate + " }");
-  console.log(task);
+  let task = payloads.filtered('timestamp >= $0 && timestamp < $1', startDate, endDate);
+  console.log(`${JSON.stringify(task, null, 2)}`);
 
   // Add a listener that fires whenever one or more payload are inserted, modified, or deleted.
   payloads.addListener(payloadListener);
