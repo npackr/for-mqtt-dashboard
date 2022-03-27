@@ -34,6 +34,6 @@ A dashboard for managing and analytics data from MQTT servers
 * New dashboard (Bootstrap 4: Vue Black Dashboard)
   * Use this command to run the new-dashboard server: `npm run new`
   * Then use a browser and go to the address: `localhost:8080` for new-dashboard
-* MQTT connection script: `npm run mqtt`
+* MQTT Data syncing client: `npm run client`
 
 If an error occurs, try to use `npm install` to install Node's necessary modules and see if the problem can be fixed or not. Try to leave a post in issues of this repository and wait for a reply if the problem still exists. Thank you very much!
