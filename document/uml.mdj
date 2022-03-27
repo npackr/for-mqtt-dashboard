@@ -481,9 +481,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"left": 23,
-																	"top": 160,
+																	"top": 167,
 																	"width": 94,
-																	"height": 52,
+																	"height": 39,
 																	"alpha": -2.2355707379018295,
 																	"distance": 94.02127418834527,
 																	"hostEdge": {
@@ -814,7 +814,7 @@
 																			"left": 101,
 																			"top": 295,
 																			"width": 143,
-																			"height": 26,
+																			"height": 13,
 																			"text": "Thông báo lỗi đăng nhập",
 																			"wordWrap": true
 																		},
@@ -850,7 +850,7 @@
 																	"left": 96,
 																	"top": 288,
 																	"width": 153,
-																	"height": 38,
+																	"height": 25,
 																	"stereotypeLabel": {
 																		"$ref": "AAAAAAF/uvqFm+8AaU0="
 																	},
@@ -3367,9 +3367,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"left": 320,
-																	"top": 304,
+																	"top": 310,
 																	"width": 143.18798828125,
-																	"height": 39,
+																	"height": 26,
 																	"alpha": 0.6627397308887493,
 																	"distance": 100.04498987955368,
 																	"hostEdge": {
@@ -3897,7 +3897,7 @@
 												"$ref": "AAAAAAF/hnt4ENkbv60="
 											},
 											"name": "MaViTri",
-											"type": "varchar",
+											"type": "int",
 											"length": "8",
 											"primaryKey": true
 										}
@@ -4013,7 +4013,7 @@
 												"$ref": "AAAAAAF/hnuo0dkoXEg="
 											},
 											"name": "MaThietBi",
-											"type": "varchar",
+											"type": "int",
 											"length": "32",
 											"primaryKey": true
 										}
@@ -4077,7 +4077,7 @@
 												"$ref": "AAAAAAF/hnvJedk1ZU8="
 											},
 											"name": "IDDuLieu",
-											"type": "varchar",
+											"type": "int",
 											"length": "64",
 											"primaryKey": true
 										}
@@ -4165,7 +4165,7 @@
 												"$ref": "AAAAAAF/hnwi2tlFOlM="
 											},
 											"name": "MaNguoiDung",
-											"type": "varchar",
+											"type": "int",
 											"length": "16",
 											"primaryKey": true
 										}
@@ -5069,7 +5069,7 @@
 									"font": "Arial;13;0",
 									"left": 285,
 									"top": 260.5,
-									"width": 217.2890625,
+									"width": 217,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF/e+WxeEP8DpM="
@@ -5268,7 +5268,7 @@
 									"font": "Arial;13;0",
 									"left": 319,
 									"top": 316.5,
-									"width": 147.78857421875,
+									"width": 147,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF/e+XpGUQqtaM="
@@ -5467,7 +5467,7 @@
 									"font": "Arial;13;0",
 									"left": 301,
 									"top": 372.5,
-									"width": 177.57177734375,
+									"width": 177,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF/e+YHk0RYbuk="
@@ -7208,7 +7208,7 @@
 									"font": "Arial;13;0",
 									"left": 316,
 									"top": 204.5,
-									"width": 135.65185546875,
+									"width": 135,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF/qqxMG5ehhwA="
@@ -10013,7 +10013,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF/hpYXm9vdYQU="
 							},
-							"name": "MaThietBi"
+							"name": "MaThietBi",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -10021,7 +10022,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF/hpYXm9vdYQU="
 							},
-							"name": "MaViTri"
+							"name": "MaViTri",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -10029,7 +10031,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF/hpYXm9vdYQU="
 							},
-							"name": "MaNguoiDung"
+							"name": "MaNguoiDung",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -10224,7 +10227,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF/uq4LoOazFBQ="
 							},
-							"name": "MaNguoiDung"
+							"name": "MaNguoiDung",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -10232,7 +10236,85 @@
 							"_parent": {
 								"$ref": "AAAAAAF/uq4LoOazFBQ="
 							},
-							"name": "TenNguoiDung"
+							"name": "TenNguoiDung",
+							"type": ""
+						}
+					]
+				},
+				{
+					"_type": "DFDDataFlowModel",
+					"_id": "AAAAAAF/u3emoSSY214=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "DataFlowModel1",
+					"ownedElements": [
+						{
+							"_type": "DFDDiagram",
+							"_id": "AAAAAAF/u3emoSSZBfA=",
+							"_parent": {
+								"$ref": "AAAAAAF/u3emoSSY214="
+							},
+							"name": "DFDDiagram1",
+							"ownedViews": [
+								{
+									"_type": "DFDProcessView",
+									"_id": "AAAAAAF/u3ezhyTAnko=",
+									"_parent": {
+										"$ref": "AAAAAAF/u3emoSSZBfA="
+									},
+									"model": {
+										"$ref": "AAAAAAF/u3ezhyS+4nA="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF/u3eziCTBRRE=",
+											"_parent": {
+												"$ref": "AAAAAAF/u3ezhyTAnko="
+											},
+											"font": "Arial;13;0",
+											"left": 314,
+											"top": 288,
+											"width": 54.18994140625,
+											"height": 13,
+											"text": "Process1",
+											"wordWrap": true
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF/u3eziCTCPdQ=",
+											"_parent": {
+												"$ref": "AAAAAAF/u3ezhyTAnko="
+											},
+											"font": "Arial;13;0",
+											"left": 314,
+											"top": 261,
+											"width": 54.18994140625,
+											"height": 13
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 304,
+									"top": 256,
+									"width": 74.18994140625,
+									"height": 56,
+									"nameLabel": {
+										"$ref": "AAAAAAF/u3eziCTBRRE="
+									},
+									"idLabel": {
+										"$ref": "AAAAAAF/u3eziCTCPdQ="
+									}
+								}
+							]
+						},
+						{
+							"_type": "DFDProcess",
+							"_id": "AAAAAAF/u3ezhyS+4nA=",
+							"_parent": {
+								"$ref": "AAAAAAF/u3emoSSY214="
+							},
+							"name": "Process1"
 						}
 					]
 				}
