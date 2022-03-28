@@ -22,23 +22,6 @@ import BlackDashboard from "./plugins/blackDashboard";
 import i18n from "./i18n"
 import './registerServiceWorker'
 
-// APOLLO 
-import { ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client/core'
-
-// HTTP connection to the API
-const httpLink = createHttpLink({
-  uri: 'https://realm.mongodb.com/api/client/v2.0/app/mqtt-data-dashboard-djtyx/graphql',
-})
-
-// Cache implementation
-const cache = new InMemoryCache();
-
-// Create the apollo client
-const apolloClient = new ApolloClient({
-  link: httpLink,
-  cache,
-})
-
 Vue.use(BlackDashboard);
 Vue.use(VueRouter);
 Vue.use(RouterPrefetch);
