@@ -80,10 +80,11 @@ async function run() {
 
   // Get all payload in the realm
   const payloads = realm.objects("Payload");
-  const startDate = { timestamp: new Date("27/03/2022") };
-  const endDate = { timestamp: new Date("28/03/2022") };
+  const startDate = { timestamp: new Date("2022-03-26T23:59:00") };
+  const endDate = { timestamp: new Date("2022-03-28T23:59:00") };
   
   let task = payloads.filtered('timestamp >= $0 && timestamp < $1', startDate, endDate);
+  console.log("Time: " + startDate.timestamp.toString() + " / " + endDate.timestamp.toString());
   console.log(`${JSON.stringify(task, null, 2)}`);
 
   // Add a listener that fires whenever one or more payload are inserted, modified, or deleted.
@@ -95,7 +96,7 @@ async function run() {
       const payload1 = realm.create("Payload", {
         _id: new BSON.ObjectID(),
         topic: topic,
-        payload: payload.toString(),
+        payload: payload.toString().trim(),
         qos: packet.qos.toString(),
         timestamp: new Date(),
       });
