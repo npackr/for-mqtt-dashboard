@@ -87,8 +87,7 @@ async function run() {
   convertDateToUTC(endDate.timestamp);
   
   let task = payloads.filtered('timestamp >= $0 && timestamp < $1', startDate.timestamp, endDate.timestamp);
-  task.payload
-  console.log("Time: " + startDate.timestamp.toString() + " / " + endDate.timestamp.toString());
+  console.log("Time: " + startDate.timestamp.toString() + " -> " + endDate.timestamp.toString());
   console.log(`${JSON.stringify(task, null, 2)}`);
 
   // Add a listener that fires whenever one or more payload are inserted, modified, or deleted.
