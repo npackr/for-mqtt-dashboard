@@ -22,6 +22,7 @@
     "graphql": "^15.8.0",
     "graphql-tag": "^2.12.6",
     "node-fetch": "^3.2.3",
+    "realm-web": "^1.7.0",
     "register-service-worker": "^1.7.1",
     "sass": "^1.49.9",
     "vue": "^2.6.11",
