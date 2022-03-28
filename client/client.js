@@ -80,10 +80,14 @@ async function run() {
 
   // Get all payload in the realm
   const payloads = realm.objects("Payload");
-  const startDate = { timestamp: new Date("2022-03-26T23:59:00") };
-  const endDate = { timestamp: new Date("2022-03-28T23:59:00") };
+  const startDate = { timestamp: new Date("2022-03-27T16:44:00") };
+  const endDate = { timestamp: new Date("2022-03-27T16:46:00") };
   
-  let task = payloads.filtered('timestamp >= $0 && timestamp < $1', startDate, endDate);
+  convertDateToUTC(startDate.timestamp);
+  convertDateToUTC(endDate.timestamp);
+  
+  let task = payloads.filtered('timestamp >= $0 && timestamp < $1', startDate.timestamp, endDate.timestamp);
+  task.payload
   console.log("Time: " + startDate.timestamp.toString() + " / " + endDate.timestamp.toString());
   console.log(`${JSON.stringify(task, null, 2)}`);
 
@@ -116,4 +120,12 @@ function payloadListener(payloads, changes) {
     console.log(`Inserted task: ${JSON.stringify(insertedPayload, null, 2)}`);
     // ...
   });
+}
+
+function createDateAsUTC(date) {
+    return new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate(), date.getHours(), date.getMinutes(), date.getSeconds()));
+}
+
+function convertDateToUTC(date) { 
+    return new Date(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds()); 
 }
