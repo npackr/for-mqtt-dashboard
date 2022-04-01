@@ -183,14 +183,15 @@ export default {
     return {
       bigLineChart: {
         allData: [
-          bigLineChartDataset1,
+          // bigLineChartDataset1,
+          [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120],
           [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120],
           [60, 80, 65, 130, 80, 105, 90, 130, 70, 115, 60, 130],
         ],
         activeIndex: 0,
         chartData: {
           datasets: [{}],
-          labels: payloads.timestamp,
+          labels:  [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120],
         },
         extraOptions: chartConfigs.purpleChartOptions,
         gradientColors: config.colors.primaryGradient,
