@@ -26,7 +26,7 @@ A dashboard for managing and analytics data from MQTT servers
 
 **STEP 2.** Clone this repository local
 
-**STEP 3.** Start HTTP server
+**STEP 3.** Start the server
 
 * Old dashboard (Bootstrap 3: Admin Bucket)
   * Use this command to run the old-dashboard server: `npm run old`

@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "old": "node ./bin/www",
+    "old": "node old-dashboard.js",
     "new": "cd app/dashboard & npm run serve",
     "mqtt": "node client/mqtt_modules/connector.js",
     "realm": "node client/mongodb_modules/realm-test.js",
