@@ -1,16 +1,17 @@
 {
   "dashboard": {
-    "completedTasks": "Completed Tasks",
-    "dailySales": "Daily Sales",
-    "performance": "Performance",
-    "simpleTable": "Simple Table",
-    "totalShipments": "Total Shipments",
+    "completedTasks": "Trong một giờ gần đây",
+    "dailySales": "Dữ liệu hôm nay",
+    "performance": "Sử dụng trong năm qua",
+    "simpleTable": "Bảng dữ liệu sử dụng điện năng",
+    "totalShipments": "Biểu đồ sử dụng năng lượng",
+    "totalShipments2": "Sử dụng trung tuần",
     "chartCategories": [
-      "Accounts",
-      "Purchases",
-      "Sessions"
+      "2022",
+      "2021",
+      "2020"
     ],
-    "tasks": "Tasks({count})",
+    "tasks": "Nhiệm vụ ({count})",
     "today": "Today",
     "dropdown": {
       "action": "Action",
@@ -79,33 +80,33 @@
     },
     "taskList": [
       {
-        "title": "Update the Documentation",
-        "description": "Dwuamish Head, Seattle, WA 8:47 AM",
+        "title": "Về nhà",
+        "description": "Mở rèm cửa, mở máy lạnh, bật đèn",
         "done": false
       },
       {
-        "title": "GDPR Compliance",
-        "description": "The GDPR is a regulation that requires businesses to protect the personal data and privacy of Europe citizens for transactions that occur within EU member states.",
+        "title": "Rời khỏi nhà",
+        "description": "Tắt đèn, đóng rèm, tắt nhạc, bật cảnh báo",
         "done": true
       },
       {
-        "title": "Solve the issues",
-        "description": "Fifty percent of all respondents said they would be more likely to shop at a company",
+        "title": "Thức dậy",
+        "description": "Mở rèm, bật nhạc",
         "done": false
       },
       {
-        "title": "Release v2.0.0",
-        "description": "Ra Ave SW, Seattle, WA 98116, SUA 11:19 AM",
+        "title": "Chiếu phim",
+        "description": "Tắt đèn, mở máy chiếu",
         "done": false
       },
       {
-        "title": "Export the processed files",
-        "description": "The report also shows that consumers will not easily forgive a company once a breach exposing their personal data occurs.",
+        "title": "Đi ngủ",
+        "description": "Đóng rèm, tắt đèn",
         "done": false
       },
       {
-        "title": "Arival at export process",
-        "description": "Capitol Hill, Seattle, WA 12:34 AM",
+        "title": "Âm nhạc",
+        "description": "Bật nhạc với âm lượng 60%",
         "done": false
       }
     ]

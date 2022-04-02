@@ -56,7 +56,7 @@
       <div class="col-lg-4" :class="{ 'text-right': isRTL }">
         <card type="chart">
           <template slot="header">
-            <h5 class="card-category">{{ $t("dashboard.totalShipments") }}</h5>
+            <h5 class="card-category">{{ $t("dashboard.totalShipments2") }}</h5>
             <h3 class="card-title">
               <i class="tim-icons icon-bell-55 text-primary"></i> 763,215
             </h3>
@@ -185,7 +185,7 @@ export default {
         allData: [
           // bigLineChartDataset1,
           [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120],
-          [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120],
+          [80, 1, 105, 110, 2, 105, 60, 100, 3, 95, 70, 120],
           [60, 80, 65, 130, 80, 105, 90, 130, 70, 115, 60, 130],
         ],
         activeIndex: 0,
@@ -201,10 +201,10 @@ export default {
       purpleLineChart: {
         extraOptions: chartConfigs.purpleChartOptions,
         chartData: {
-          labels: ["JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+          labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
           datasets: [
             {
-              label: "Labels",
+              label: "Trung tuần",
               fill: true,
               borderColor: config.colors.primary,
               borderWidth: 2,
@@ -217,7 +217,7 @@ export default {
               pointHoverRadius: 4,
               pointHoverBorderWidth: 15,
               pointRadius: 4,
-              data: [80, 100, 70, 80, 120, 80],
+              data: [80, 100, 70, 80, 120, 80, 90],
             },
           ],
         },
@@ -227,10 +227,10 @@ export default {
       greenLineChart: {
         extraOptions: chartConfigs.greenChartOptions,
         chartData: {
-          labels: ["JUL", "AUG", "SEP", "OCT", "NOV"],
+          labels: ["Now", "2 hour", "6 hour", "12 hour", "24 hour"],
           datasets: [
             {
-              label: "My First dataset",
+              label: "Hôm nay",
               fill: true,
               borderColor: config.colors.danger,
               borderWidth: 2,
@@ -257,10 +257,10 @@ export default {
       blueBarChart: {
         extraOptions: chartConfigs.barChartOptions,
         chartData: {
-          labels: ["USA", "GER", "AUS", "UK", "RO", "BR"],
+          labels: ["Now", "1 min", "5 min", "10 min", "30 min", "1 hour"],
           datasets: [
             {
-              label: "Countries",
+              label: "Một giờ gần đây",
               fill: true,
               borderColor: config.colors.info,
               borderWidth: 2,
