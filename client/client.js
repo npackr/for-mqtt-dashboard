@@ -106,8 +106,21 @@ run().catch(err => {
 function payloadListener(payloads, changes) {
   // Update UI in response to inserted objects
   changes.insertions.forEach((index) => {
-    let insertedPayload = payloads[index].topic + " : " + payloads[index].payload + " / " + payloads[index].timestamp;
-    console.log(`New payload arrived: ${JSON.stringify(insertedPayload, null, 2)}`);
-    // ...
+    let insertedPayload = payloads[index].topic + " \n " + payloads[index].payload + " \n - " + payloads[index].timestamp;
+    console.log("New payload arrived: " + insertedPayload + "\n");
+    // console.log(`New payload arrived: ${JSON.stringify(insertedPayload, null, 2)}`);
+    // overloadChecking(payloads, payloads[index].topic, payloads[index].payload);
   });
+}
+
+function overloadChecking(payloads, topic, payload) {
+  const filter = { topic: topic };
+  let task = payloads.filtered('topic = $0', filter.topic);
+
+  const arr = task.payload;
+  const avg = arr => arr.reduce((acc, v, i, a) => (acc + v / a.length), 0);
+
+  if (avg / parseFloat(payload) > 0.2 ) {
+    console.log("This payload uses more 20% than usual!");
+  } 
 }

@@ -1,5 +1,5 @@
 /*  MONGODB REALM QUERY - TOPIC
-    Query for getting data ny topic from MongoDB
+    Query for getting data specific topic from MongoDB
     
     Edited by: npackr
     Resources: https://docs.mongodb.com/realm/sdk/node/quick-start/

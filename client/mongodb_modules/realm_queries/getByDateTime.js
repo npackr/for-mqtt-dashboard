@@ -42,10 +42,16 @@ async function run() {
 
   // Get all payload in the realm
   const payloads = realm.objects("Payload");
+  var startDate;
+  var endDate;
 
   // Set datetime to filter (GMT+7)
-  const startDate = { timestamp: new Date("2022-03-27T16:44:00") };
-  const endDate = { timestamp: new Date("2022-03-27T16:46:00") };
+  const mode = "byTimestamp";
+   switch (mode) {
+     case "byTimestamp":
+      startDate = { timestamp: new Date("2022-03-27T16:44:00") };
+      endDate = { timestamp: new Date("2022-03-27T16:46:00") };
+   }
   
   convertDateToUTC(startDate.timestamp);
   convertDateToUTC(endDate.timestamp);
