@@ -8,6 +8,7 @@ A dashboard for managing and analytics data from MQTT servers
 * Gantt Chart   : [GANTT.md](/GANTT.md)
 * UML Diagram   : [uml.mdj](/document/uml.mdj)
 * Project Report: [report.docx](/document/report.docx)
+* Presentation  : [presentation.pptx](/document/presentation.pptx)
 
 ## Local Dependencies
 

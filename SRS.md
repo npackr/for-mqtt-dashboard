@@ -11,7 +11,7 @@
 Thực hiện bởi NHÓM 3:
 
 1. Nguyễn Anh Kiệt. MSSV: 1851062658. Lớp: S21- 60TH1
-2. Nguyễn Thị Giao Linh. MSSV: 1851062815. Lớp: S21-60TH1
+2. Nguyễn Thị Giao Linh. MSSV: 1851062928. Lớp: S21-60TH1
 3. Trần Thị Bích Ngọc. MSSV: 1851062787. Lớp: S21-60TH1
 4. Nguyễn Yến Linh. MSSV: 1851062815. Lớp: S21-60TH2
 
