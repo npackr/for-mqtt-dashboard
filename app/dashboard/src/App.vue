@@ -5,8 +5,9 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
+
   methods: {
     disableRTL() {
       if (!this.$rtl.isRTL) {
