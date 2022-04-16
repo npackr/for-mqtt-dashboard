@@ -17,7 +17,7 @@ a:hover {
     border-color:#eff2f7 ;
     font-size: 13px;
     font-weight: 400;
-    background: rgba(255,0,0,0.7);
+    background:#9933CC;
     text-transform: uppercase;
     padding: 15px;
     color: #000;
@@ -162,8 +162,8 @@ ul {
 }
 
 .btn-primary {
-    background-color: #1fb5ad;
-    border-color: #1fb5ad;
+    background-color: #9966CC;
+    border-color: #9966CC;
     color: #FFFFFF;
 }
 

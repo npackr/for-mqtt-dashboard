@@ -40,7 +40,7 @@
                 borderWidth: 1,
                 borderColor: "#eeeeee"
             },
-            colors: ["#79D1CF"],
+            colors: ["#9966CC"],
             tooltip: true,
             tooltipOpts: {
                 defaultTheme: false

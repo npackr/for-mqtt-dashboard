@@ -424,7 +424,7 @@
       colorStart: "#6fadcf",
       colorStop: void 0,
       gradientType: 0,
-      strokeColor: "#e0e0e0",
+      strokeColor: "#9966cc",
       pointer: {
         length: 0.8,
         strokeWidth: 0.035

@@ -62,7 +62,7 @@ a,a:hover,a:focus {
     margin:0;
     padding:35px 15px;
     text-align:center;
-    background:rgba(255, 0, 0, 0.7);
+    background: #9933CC;
     border-radius:5px 5px 0 0;
     -webkit-border-radius:5px 5px 0 0;
     color:#000;
@@ -101,7 +101,7 @@ a,a:hover,a:focus {
     font-size:16px;
 }
 .form-signin .btn-login {
-    background:rgba(255, 0, 0, 0.7);;
+    background:#9933CC;;
     color:#000;
     text-transform:uppercase;
     font-weight:500;
@@ -115,7 +115,7 @@ a,a:hover,a:focus {
     font-weight:300;
 }
 .form-signin a,.form-signin a:hover {
-    color: rgb(255, 0, 0);
+    color: #9933CC ;
 }
 .form-signin a:hover {
     text-decoration:underline;
@@ -155,6 +155,7 @@ a,a:hover,a:focus {
 
 .leftside-navigation,.right-stat-bar{
     height: 100%;
+   
 }
 
 .right-stat-bar ul {
@@ -325,6 +326,7 @@ ul.sidebar-menu li a.active i {
 .fixed-top {
     position:fixed;
     box-shadow:1px 0 3px rgba(0,0,0,.15);
+    
 }
 .wrapper {
     display:inline-block;
@@ -334,7 +336,7 @@ ul.sidebar-menu li a.active i {
 
 }
 .brand {
-    background:rgba(255,0,0,0.7);
+    background:#9933CC;
     float:left;
     width:240px;
     height:80px;
@@ -3300,7 +3302,7 @@ input:focus:invalid:focus,textarea:focus:invalid:focus,select:focus:invalid:focu
 }
 .profile-nav .user-heading.clock-row {
     padding:30px;
-    background-color: rgba(255, 0,0,0.7);
+    background-color: #9933CC;
 }
 .clock-row {
     text-transform:uppercase;
@@ -4966,7 +4968,7 @@ div.tagsinput span.tag {
 }
 /*=Event Calendar=*/
 .event-calendar {
-    background: rgba(255,0,0,0.7);
+    background: #9933CC;
     -webkit-border-radius:6px;
     -moz-border-radius:6px;
     border-radius:6px;
@@ -4996,7 +4998,7 @@ div.tagsinput span.tag {
 }
 .today .day-contents {
     width:30px;
-    background:rgba(255, 0, 0, .7);
+    background: #9966CC;
     cursor:pointer;
     color:#fff;
     -webkit-border-radius:3px;

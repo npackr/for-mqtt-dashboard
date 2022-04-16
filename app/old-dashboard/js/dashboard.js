@@ -42,10 +42,10 @@
                 onStep: function(from, to, percent) {
                     $(this.el).find('.percent').text(Math.round(percent));
                 },
-                barColor: "#f8a20f",
+                barColor: "#9966CC",
                 lineWidth: 5,
                 size:80,
-                trackColor: "#efefef",
+                trackColor: "#9966CC",
                 scaleColor:"#cccccc"
             });
         }
@@ -117,11 +117,11 @@ if (Gauge) {
         pointer: {
             length: 0.6, // The radius of the inner circle
             strokeWidth: 0.03, // The rotation offset
-            color: '#464646' // Fill color
+            color: '#000000' // Fill color
         },
         limitMax: 'true', // If true, the pointer will not go past the end of the gauge
-        colorStart: '#fa8564', // Colors
-        colorStop: '#fa8564', // just experiment with them
+        colorStart: '#9966CC', // Colors
+        colorStop: '#9966CC', // just experiment with them
         strokeColor: '#F1F1F1', // to see which ones work best for you
         generateGradient: true
     };
@@ -170,7 +170,7 @@ if (Gauge) {
             labels : ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"],
             datasets : [
                 {
-                    fillColor : "#261B5E",
+                    fillColor : "#9966CC",
                     strokeColor : "#261B5E",
                     data : [10,13,7,7,11,11,9,10,9,9,11,7,11,13,11,11,9,8,12,9,10]
                 },   

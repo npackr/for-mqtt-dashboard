@@ -39,8 +39,8 @@
             labels : ["0h","2h","4h","6h","8h","10h","12h","14h","16h","18h","20h","22h","23h59h"],
             datasets : [
                 {
-                    fillColor : "#e64545",
-                    strokeColor : "#e64545",
+                    fillColor : "#9966CC",
+                    strokeColor : "#9966CC",
                     data : [742,643,723,979,654,812,940,778,829,816,889,797,724]
                 },
                 
