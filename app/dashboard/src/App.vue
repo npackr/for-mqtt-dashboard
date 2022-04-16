@@ -5,7 +5,10 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+// import { Payload } from './models/Payload.interface';
+// import { app, credentials } from './utils/mongo.client';
+
 export default {
   methods: {
     disableRTL() {
