@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "ansi-regex": "^5.0.1",
+    "chart.js": "^2.9.4",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
@@ -19,7 +20,9 @@
     "morgan": "~1.9.1",
     "pug": "^3.0.2",
     "realm-web": "^1.7.0",
+    "sass": "^1.50.0",
     "vue": "^3.2.31",
+    "vue-chartjs": "^4.0.5",
     "vue-router": "^4.0.13",
     "vue2-transitions": "^0.3.0"
   },
