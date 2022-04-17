@@ -1,16 +1,3 @@
-/**
- * Serbian cyrillic translation for bootstrap-datetimepicker
- * Bojan Milosavlević <milboj@gmail.com>
- */
-;(function($){
-	$.fn.datetimepicker.dates['rs'] = {
-		days: ["Недеља","Понедељак", "Уторак", "Среда", "Четвртак", "Петак", "Субота", "Недеља"],
-		daysShort: ["Нед", "Пон", "Уто", "Сре", "Чет", "Пет", "Суб", "Нед"],
-		daysMin: ["Н", "По", "У", "Ср", "Ч", "Пе", "Су", "Н"],
-		months: ["Јануар", "Фебруар", "Март", "Април", "Мај", "Јун", "Јул", "Август", "Септембар", "Октобар", "Новембар", "Децембар"],
-		monthsShort: ["Јан", "Феб", "Мар", "Апр", "Мај", "Јун", "Јул", "Авг", "Сеп", "Окт", "Нов", "Дец"],
-		today: "Данас",
-		suffix: [],
-		meridiem: []
-	};
-}(jQuery));
+version https://git-lfs.github.com/spec/v1
+oid sha256:b8e6163ac2109b35464f9c1982240108673f0be2fd53cc4f9fc6a4af28c7ccf7
+size 889

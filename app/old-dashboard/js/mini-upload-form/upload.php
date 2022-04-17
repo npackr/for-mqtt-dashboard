@@ -1,22 +1,3 @@
-<?php
-
-// A list of permitted file extensions
-$allowed = array('png', 'jpg', 'gif','zip');
-
-if(isset($_FILES['upl']) && $_FILES['upl']['error'] == 0){
-
-	$extension = pathinfo($_FILES['upl']['name'], PATHINFO_EXTENSION);
-
-	if(!in_array(strtolower($extension), $allowed)){
-		echo '{"status":"error"}';
-		exit;
-	}
-
-	if(move_uploaded_file($_FILES['upl']['tmp_name'], 'uploads/'.$_FILES['upl']['name'])){
-		echo '{"status":"success"}';
-		exit;
-	}
-}
-
-echo '{"status":"error"}';
-exit;
+version https://git-lfs.github.com/spec/v1
+oid sha256:0d2fc2d49828927cdd535d8504d3af9d63198e9a1157ad39937d3e071f76723a
+size 498

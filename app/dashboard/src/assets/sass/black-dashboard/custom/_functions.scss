@@ -1,23 +1,3 @@
-// Retrieve color Sass maps
-
-@function section-color($key: "primary") {
-	@return map-get($section-colors, $key);
-}
-
-// Lines colors
-
-@function shapes-primary-color($key: "step-1-gradient-bg") {
-	@return map-get($shapes-primary-colors, $key);
-}
-
-@function shapes-default-color($key: "step-1-gradient-bg") {
-	@return map-get($shapes-default-colors, $key);
-}
-
-@function lines-light-color($key: "step-1-gradient-bg") {
-	@return map-get($shapes-light-colors, $key);
-}
-
-@function shapes-dark-color($key: "step-1-gradient-bg") {
-	@return map-get($shapes-dark-colors, $key);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2c97be4535ed6d13e981ec56b246af2ebbeee2377f494cc38424bcada538c9f8
+size 590

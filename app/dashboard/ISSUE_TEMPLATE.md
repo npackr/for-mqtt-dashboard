@@ -1,13 +1,3 @@
-<!--
- IMPORTANT: Please use the following link to create a new issue:
-
-  https://www.creative-tim.com/new-issue/vue-black-dashboard
-
-**If your issue was not created using the app above, it will be closed immediately.**
--->
-
-<!--
-Love Creative Tim? Do you need Angular, React, Vuejs or HTML? You can visit:
-👉  https://www.creative-tim.com/bundles
-👉  https://www.creative-tim.com
--->
+version https://git-lfs.github.com/spec/v1
+oid sha256:29e49e8d123e8a55b62c41407f076baa309bdbff80837a60e2273cf60b0c1597
+size 401

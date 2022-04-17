@@ -1,16 +1,3 @@
-/**
- * Catalan translation for bootstrap-datetimepicker
- * J. Garcia <jogaco.en@gmail.com>
- */
-;(function($){
-	$.fn.datetimepicker.dates['ca'] = {
-		days: ["Diumenge", "Dilluns", "Dimarts", "Dimecres", "Dijous", "Divendres", "Dissabte", "Diumenge"],
-		daysShort: ["Diu",  "Dil", "Dmt", "Dmc", "Dij", "Div", "Dis", "Diu"],
-		daysMin: ["dg", "dl", "dt", "dc", "dj", "dv", "ds", "dg"],
-		months: ["Gener", "Febrer", "Març", "Abril", "Maig", "Juny", "Juliol", "Agost", "Setembre", "Octubre", "Novembre", "Desembre"],
-		monthsShort: ["Gen", "Feb", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Oct", "Nov", "Des"],
-		today: "Avui",
-		suffix: [],
-		meridiem: []
-	};
-}(jQuery));
+version https://git-lfs.github.com/spec/v1
+oid sha256:e6ed66d0b5115c48d3b35e0ada6a58df4f95934c2908881e77a9a2dca6f56621
+size 693

@@ -1,16 +1,3 @@
-/**
- * Slovene translation for bootstrap-datetimepicker
- * Gregor Rudolf <gregor.rudolf@gmail.com>
- */
-;(function($){
-	$.fn.datetimepicker.dates['sl'] = {
-		days: ["Nedelja", "Ponedeljek", "Torek", "Sreda", "Četrtek", "Petek", "Sobota", "Nedelja"],
-		daysShort: ["Ned", "Pon", "Tor", "Sre", "Čet", "Pet", "Sob", "Ned"],
-		daysMin: ["Ne", "Po", "To", "Sr", "Če", "Pe", "So", "Ne"],
-		months: ["Januar", "Februar", "Marec", "April", "Maj", "Junij", "Julij", "Avgust", "September", "Oktober", "November", "December"],
-		monthsShort: ["Jan", "Feb", "Mar", "Apr", "Maj", "Jun", "Jul", "Avg", "Sep", "Okt", "Nov", "Dec"],
-		today: "Danes",
-		suffix: [],
-		meridiem: []
-	};
-}(jQuery));
+version https://git-lfs.github.com/spec/v1
+oid sha256:3c460fc8936457e9bf379b116f45b95f081986a3da46a301d92daf96cc1ddd05
+size 698

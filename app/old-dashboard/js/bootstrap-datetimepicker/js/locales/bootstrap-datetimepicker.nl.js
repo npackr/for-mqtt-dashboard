@@ -1,16 +1,3 @@
-/**
- * Dutch translation for bootstrap-datetimepicker
- * Reinier Goltstein <mrgoltstein@gmail.com>
- */
-;(function($){
-	$.fn.datetimepicker.dates['nl'] = {
-		days: ["Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag", "Zondag"],
-		daysShort: ["Zo", "Ma", "Di", "Wo", "Do", "Vr", "Za", "Zo"],
-		daysMin: ["Zo", "Ma", "Di", "Wo", "Do", "Vr", "Za", "Zo"],
-		months: ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"],
-		monthsShort: ["Jan", "Feb", "Mrt", "Apr", "Mei", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dec"],
-		today: "Vandaag",
-		suffix: [],
-		meridiem: []
-	};
-}(jQuery));
+version https://git-lfs.github.com/spec/v1
+oid sha256:f40b7c3e7bf7e5e3dfccbd1001ec01abde57022a53165dd80599cc798899607f
+size 697

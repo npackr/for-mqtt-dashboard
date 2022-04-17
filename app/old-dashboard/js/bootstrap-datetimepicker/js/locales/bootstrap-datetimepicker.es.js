@@ -1,16 +1,3 @@
-/**
- * Spanish translation for bootstrap-datetimepicker
- * Bruno Bonamin <bruno.bonamin@gmail.com>
- */
-;(function($){
-	$.fn.datetimepicker.dates['es'] = {
-		days: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"],
-		daysShort: ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"],
-		daysMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa", "Do"],
-		months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
-		monthsShort: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
-		today: "Hoy",
-		suffix: [],
-		meridiem: []
-	};
-}(jQuery));
+version https://git-lfs.github.com/spec/v1
+oid sha256:abe1386bce3194a7a79504f20dd85b64c50d218d04cbae2ae137ddc1628187e8
+size 701

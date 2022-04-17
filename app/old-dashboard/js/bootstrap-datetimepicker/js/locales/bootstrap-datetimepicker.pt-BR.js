@@ -1,17 +1,3 @@
-/**
- * Brazilian translation for bootstrap-datetimepicker
- * Cauan Cabral <cauan@radig.com.br>
- */
-;(function($){
-	$.fn.datetimepicker.dates['pt-BR'] = {
-        format: 'dd/mm/yyyy',
-		days: ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"],
-		daysShort: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"],
-		daysMin: ["Do", "Se", "Te", "Qu", "Qu", "Se", "Sa", "Do"],
-		months: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
-		monthsShort: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
-		today: "Hoje",
-		suffix: [],
-		meridiem: []
-	};
-}(jQuery));
+version https://git-lfs.github.com/spec/v1
+oid sha256:470ff38ad08b57995cfc1f217ccd6a787ac8e1ccffe3f6a556ff21f4423f4e2d
+size 728

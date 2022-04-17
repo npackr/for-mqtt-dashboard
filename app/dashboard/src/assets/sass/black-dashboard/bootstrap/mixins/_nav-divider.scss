@@ -1,10 +1,3 @@
-// Horizontal dividers
-//
-// Dividers (basically an hr) within dropdowns and nav lists
-
-@mixin nav-divider($color: $nav-divider-color, $margin-y: $nav-divider-margin-y) {
-  height: 0;
-  margin: $margin-y 0;
-  overflow: hidden;
-  border-top: 1px solid $color;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f9f257f6bdf9bae412e3b4c0cc33a6bf11cc2a9575d22f299c66413fa55fc8d2
+size 271

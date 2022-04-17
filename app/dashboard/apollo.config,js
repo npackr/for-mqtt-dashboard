@@ -1,17 +1,3 @@
-// apollo.config.js
-module.exports = {
-  client: {
-    service: {
-      name: 'mqtt-vue-black-dashboard',
-      // URL to the GraphQL API
-      url: 'https://realm.mongodb.com/api/client/v2.0/app/mqtt-data-dashboard-djtyx/graphql',
-      }
-  }
-    },
-    // Files processed by the extension
-    includes: [
-      'src/**/*.vue',
-      'src/**/*.js',
-    ],
-  },
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:551fd2005462c495c94af1137ad5f1e5918f445866266d990d27b7f70cca3b40
+size 379

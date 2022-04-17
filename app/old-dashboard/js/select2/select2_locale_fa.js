@@ -1,17 +1,3 @@
-/**
- * Select2 Persian translation.
- * 
- * Author: Ali Choopan <choopan@arsh.co>
- */
-(function ($) {
-    "use strict";
-
-    $.extend($.fn.select2.defaults, {
-        formatNoMatches: function () { return "نتیجه‌ای یافت نشد."; },
-        formatInputTooShort: function (input, min) { var n = min - input.length; return " لطفا بیش از"+n+"کاراکتر وارد نمایید "; },
-        formatInputTooLong: function (input, max) { var n = input.length - max; return " لطفا" + n + " کاراکتر را حذف کنید."; },
-        formatSelectionTooBig: function (limit) { return "شما فقط می‌توانید " + limit + " مورد را انتخاب کنید"; },
-        formatLoadMore: function (pageNumber) { return "در حال بارگذاری موارد بیشتر …"; },
-        formatSearching: function () { return "در حال جستجو"; }
-    });
-})(jQuery);
+version https://git-lfs.github.com/spec/v1
+oid sha256:8f9215cc1a7a9537043aa3021fe22a3061f2bf2e67695579b4413353d2dcfa4a
+size 926

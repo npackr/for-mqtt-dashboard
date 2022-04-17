@@ -1,18 +1,3 @@
-/**
- * Select2 Norwegian translation.
- *
- * Author: Torgeir Veimo <torgeir.veimo@gmail.com>
- */
-(function ($) {
-    "use strict";
-
-    $.extend($.fn.select2.defaults, {
-        formatNoMatches: function () { return "Ingen treff"; },
-        formatInputTooShort: function (input, min) { var n = min - input.length; return "Vennligst skriv inn " + n + (n>1 ? " flere tegn" : " tegn til"); },
-        formatInputTooLong: function (input, max) { var n = input.length - max; return "Vennligst fjern " + n + " tegn"; },
-        formatSelectionTooBig: function (limit) { return "Du kan velge maks " + limit + " elementer"; },
-        formatLoadMore: function (pageNumber) { return "Laster flere resultater…"; },
-        formatSearching: function () { return "Søker…"; }
-    });
-})(jQuery);
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:7b94b1e84c7b1cc943567f1d707694ac558c69be0e908673e97f0e3c8e51e81a
+size 807

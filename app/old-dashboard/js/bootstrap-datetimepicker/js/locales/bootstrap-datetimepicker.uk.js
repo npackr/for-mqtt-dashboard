@@ -1,16 +1,3 @@
-/**
- * Ukrainian translation for bootstrap-datetimepicker
- * Andrey Vityuk <andrey [dot] vityuk [at] gmail.com>
- */
-;(function($){
-	$.fn.datetimepicker.dates['uk'] = {
-		days: ["Неділя", "Понеділок", "Вівторок", "Середа", "Четвер", "П'ятниця", "Субота", "Неділя"],
-		daysShort: ["Нед", "Пнд", "Втр", "Срд", "Чтв", "Птн", "Суб", "Нед"],
-		daysMin: ["Нд", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Нд"],
-		months: ["Січень", "Лютий", "Березень", "Квітень", "Травень", "Червень", "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"],
-		monthsShort: ["Січ", "Лют", "Бер", "Кві", "Тра", "Чер", "Лип", "Сер", "Вер", "Жов", "Лис", "Гру"],
-		today: "Сьогодні",
-		suffix: [],
-		meridiem: []
-	};
-}(jQuery));
+version https://git-lfs.github.com/spec/v1
+oid sha256:014f36bb36a6792b9e015fba39bf11754117e96727c7640107b9e54f8ae9ae48
+size 942

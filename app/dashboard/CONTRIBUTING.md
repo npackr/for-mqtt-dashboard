@@ -1,9 +1,3 @@
-* Fork the repository
-* Clone it on your PC
-* `npm install` or `yarn install`
-* Make changes, commit open PR
-
-### Notes
-* Please don't use jQuery or jQuery based plugins since there are many pure Vue alternatives
-
-This project uses [vue-cli 3](https://github.com/vuejs/vue-cli).
+version https://git-lfs.github.com/spec/v1
+oid sha256:466339d32ac8ea5c80cd295ba1c3908d28527894d8ae10f883c49adeca4f9965
+size 288

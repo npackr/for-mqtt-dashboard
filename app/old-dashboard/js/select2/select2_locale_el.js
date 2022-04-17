@@ -1,17 +1,3 @@
-/**
- * Select2 Greek translation.
- * 
- * @author  Uriy Efremochkin <efremochkin@uriy.me>
- */
-(function ($) {
-    "use strict";
-
-    $.extend($.fn.select2.defaults, {
-        formatNoMatches: function () { return "Δεν βρέθηκαν αποτελέσματα"; },
-        formatInputTooShort: function (input, min) { var n = min - input.length; return "Παρακαλούμε εισάγετε " + n + " περισσότερο" + (n > 1 ? "υς" : "") + " χαρακτήρ" + (n > 1 ? "ες" : "α"); },
-        formatInputTooLong: function (input, max) { var n = input.length - max; return "Παρακαλούμε διαγράψτε " + n + " χαρακτήρ" + (n > 1 ? "ες" : "α"); },
-        formatSelectionTooBig: function (limit) { return "Μπορείτε να επιλέξετε μόνο " + limit + " αντικείμεν" + (limit > 1 ? "α" : "ο"); },
-        formatLoadMore: function (pageNumber) { return "Φόρτωση περισσότερων…"; },
-        formatSearching: function () { return "Αναζήτηση…"; }
-    });
-})(jQuery);
+version https://git-lfs.github.com/spec/v1
+oid sha256:4f14f408627ca00181514dca728c3f75b3657899d053c5611b87e842e79023eb
+size 1082

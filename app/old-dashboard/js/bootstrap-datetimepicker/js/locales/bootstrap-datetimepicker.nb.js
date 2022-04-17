@@ -1,16 +1,3 @@
-/**
- * Norwegian (bokmål) translation for bootstrap-datetimepicker
- * Fredrik Sundmyhr <http://github.com/fsundmyhr>
- */
-;(function($){
-	$.fn.datetimepicker.dates['nb'] = {
-		days: ["Søndag", "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag"],
-		daysShort: ["Søn", "Man", "Tir", "Ons", "Tor", "Fre", "Lør", "Søn"],
-		daysMin: ["Sø", "Ma", "Ti", "On", "To", "Fr", "Lø", "Sø"],
-		months: ["Januar", "Februar", "Mars", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Desember"],
-		monthsShort: ["Jan", "Feb", "Mar", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Des"],
-		today: "I Dag",
-		suffix: [],
-		meridiem: []
-	};
-}(jQuery));
+version https://git-lfs.github.com/spec/v1
+oid sha256:70388163cdc9e544d0c967fb9405e5dea60edf6df84c5d883703ed4fe45e7cdc
+size 716

@@ -1,16 +1,3 @@
-application: jquery-file-upload
-version: 1
-runtime: python27
-api_version: 1
-threadsafe: true
-
-builtins:
-- deferred: on
-
-handlers:
-- url: /(favicon\.ico|robots\.txt)
-  static_files: static/\1
-  upload: static/(.*)
-  expiration: '1d'
-- url: /.*
-  script: main.app
+version https://git-lfs.github.com/spec/v1
+oid sha256:7194c63c7aec6a38ca97ed97ed5fc0dabce090dff2c841e0142ebc3c6a077c25
+size 278

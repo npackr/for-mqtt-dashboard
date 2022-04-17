@@ -1,13 +1,3 @@
-@mixin transition($transition...) {
-  @if $enable-transitions {
-    @if length($transition) == 0 {
-      transition: $transition-base;
-    } @else {
-      transition: $transition;
-    }
-  }
-
-  @media screen and (prefers-reduced-motion: reduce) {
-    transition: none;
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d2d657cff56629b8819d3f809d0d423d8040ca9fb38a1403bc59573e752cb0ce
+size 287

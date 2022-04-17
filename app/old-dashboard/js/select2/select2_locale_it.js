@@ -1,15 +1,3 @@
-/**
- * Select2 Italian translation
- */
-(function ($) {
-    "use strict";
-
-    $.extend($.fn.select2.defaults, {
-        formatNoMatches: function () { return "Nessuna corrispondenza trovata"; },
-        formatInputTooShort: function (input, min) { var n = min - input.length; return "Inserisci ancora " + n + " caratter" + (n == 1? "e" : "i"); },
-        formatInputTooLong: function (input, max) { var n = input.length - max; return "Inserisci " + n + " caratter" + (n == 1? "e" : "i") + " in meno"; },
-        formatSelectionTooBig: function (limit) { return "Puoi selezionare solo " + limit + " element" + (limit == 1 ? "o" : "i"); },
-        formatLoadMore: function (pageNumber) { return "Caricamento in corso…"; },
-        formatSearching: function () { return "Ricerca…"; }
-    });
-})(jQuery);
+version https://git-lfs.github.com/spec/v1
+oid sha256:341a3c240931677dbb3bf1b1892e4ad4bbffdc219c9b83bebff7a854ea9471fb
+size 818

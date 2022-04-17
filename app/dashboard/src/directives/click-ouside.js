@@ -1,15 +1,3 @@
-export default {
-  bind: function (el, binding, vnode) {
-    el.clickOutsideEvent = function (event) {
-      // here I check that click was outside the el and his childrens
-      if (!(el == event.target || el.contains(event.target))) {
-        // and if it did, call method provided in attribute value
-        vnode.context[binding.expression](event);
-      }
-    };
-    document.body.addEventListener('click', el.clickOutsideEvent)
-  },
-  unbind: function (el) {
-    document.body.removeEventListener('click', el.clickOutsideEvent)
-  },
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b2c3f0eb35fa0f11f03929f31fd10c5dc86549a69ee89b53282bae0b302b066c
+size 556

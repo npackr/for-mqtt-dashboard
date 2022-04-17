@@ -1,15 +1,3 @@
-<?php
-/*
- * jQuery File Upload Plugin PHP Example 5.14
- * https://github.com/blueimp/jQuery-File-Upload
- *
- * Copyright 2010, Sebastian Tschan
- * https://blueimp.net
- *
- * Licensed under the MIT license:
- * http://www.opensource.org/licenses/MIT
- */
-
-error_reporting(E_ALL | E_STRICT);
-require('UploadHandler.php');
-$upload_handler = new UploadHandler();
+version https://git-lfs.github.com/spec/v1
+oid sha256:7c4f27c9fecdcdf3435e878e5f840db307784ad55f0ecef94e5f0981aaf46f9e
+size 370

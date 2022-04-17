@@ -1,16 +1,3 @@
-<?php /* <body><pre>
-
--------------------------------------------------------------------------------------------
-  CKEditor - Posted Data
-
-  We are sorry, but your Web server does not support the PHP language used in this script.
-
-  Please note that CKEditor can be used with any other server-side language than just PHP.
-  To save the content created with CKEditor you need to read the POST data on the server
-  side and write it to a file or the database.
-
-  Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
-  For licensing, see LICENSE.html or <a href="http://ckeditor.com/license">http://ckeditor.com/license</a>
--------------------------------------------------------------------------------------------
-
-</pre><div style="display:none"></body> */ include "assets/posteddata.php"; ?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:ec0616b0c4be89ca7f227ca72e5dd54d758e619f933f0a338e99b50fe4a7bf5a
+size 833

@@ -1,16 +1,3 @@
-.jumbotron {
-  padding: $jumbotron-padding ($jumbotron-padding / 2);
-  margin-bottom: $jumbotron-padding;
-  background-color: $jumbotron-bg;
-  @include border-radius($border-radius-lg);
-
-  @include media-breakpoint-up(sm) {
-    padding: ($jumbotron-padding * 2) $jumbotron-padding;
-  }
-}
-
-.jumbotron-fluid {
-  padding-right: 0;
-  padding-left: 0;
-  @include border-radius(0);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:186781a730d8e460448deef2aee5fd44f20b387f8a0715da0e5f88917a0a55bf
+size 394

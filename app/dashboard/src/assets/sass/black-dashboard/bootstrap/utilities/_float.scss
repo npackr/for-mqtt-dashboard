@@ -1,9 +1,3 @@
-@each $breakpoint in map-keys($grid-breakpoints) {
-  @include media-breakpoint-up($breakpoint) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-
-    .float#{$infix}-left  { @include float-left; }
-    .float#{$infix}-right { @include float-right; }
-    .float#{$infix}-none  { @include float-none; }
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:24b5074635d2dade2f5395291df09544150ad4a1477d09fae80bc1f74b92f5bf
+size 329

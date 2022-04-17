@@ -1,15 +1,3 @@
-/**
- * Select2 Japanese translation.
- */
-(function ($) {
-    "use strict";
-
-    $.extend($.fn.select2.defaults, {
-        formatNoMatches: function () { return "該当なし"; },
-        formatInputTooShort: function (input, min) { var n = min - input.length; return "後" + n + "文字入れてください"; },
-        formatInputTooLong: function (input, max) { var n = input.length - max; return "検索文字列が" + n + "文字長すぎます"; },
-        formatSelectionTooBig: function (limit) { return "最多で" + limit + "項目までしか選択できません"; },
-        formatLoadMore: function (pageNumber) { return "読込中･･･"; },
-        formatSearching: function () { return "検索中･･･"; }
-    });
-})(jQuery);
+version https://git-lfs.github.com/spec/v1
+oid sha256:9ca59e1dd279745860ff1b54e87fb07329f2324c6eb52a65f86578a0c0b8cf07
+size 765

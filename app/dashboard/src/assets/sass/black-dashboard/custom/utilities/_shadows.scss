@@ -1,10 +1,3 @@
-[class*="shadow"] {
-	@if $enable-transitions {
-        transition: $transition-base;
-    }
-}
-
-.shadow-sm--hover:hover { box-shadow: $box-shadow-sm !important; }
-.shadow--hover:hover { box-shadow: $box-shadow !important; }
-.shadow-lg--hover:hover { box-shadow: $box-shadow-lg !important; }
-.shadow-none--hover:hover { box-shadow: none !important; }
+version https://git-lfs.github.com/spec/v1
+oid sha256:38956cd6e0ddd55c36dbb707cb954bc651003d72f5d1899a7fcf16f53c6e35c7
+size 358

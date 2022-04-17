@@ -1,26 +1,3 @@
-import Sidebar from "./SideBar.vue";
-import SidebarLink from "./SidebarLink";
-
-const SidebarStore = {
-  showSidebar: false,
-  sidebarLinks: [],
-  displaySidebar(value) {
-    this.showSidebar = value;
-  }
-};
-
-const SidebarPlugin = {
-  install(Vue) {
-    let app = new Vue({
-      data: {
-        sidebarStore: SidebarStore
-      }
-    });
-
-    Vue.prototype.$sidebar = app.sidebarStore;
-    Vue.component("side-bar", Sidebar);
-    Vue.component("sidebar-link", SidebarLink);
-  }
-};
-
-export default SidebarPlugin;
+version https://git-lfs.github.com/spec/v1
+oid sha256:c4e69fd71082250cac6548a048c7fca60edf120490b2b55faf31d372219ff9ba
+size 538

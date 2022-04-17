@@ -1,26 +1,3 @@
-@mixin dropdown-colors($brand-color, $dropdown-header-color, $dropdown-color, $background-color ) {
-    background-color: $brand-color;
-
-    &:before{
-        color: $brand-color;
-    }
-
-    .dropdown-header:not([href]):not([tabindex]){
-        color: $dropdown-header-color;
-    }
-
-    .dropdown-item{
-        color: $dropdown-color;
-
-        &:hover,
-        &:focus{
-            background-color: $background-color;
-        }
-    }
-
-    .dropdown-divider{
-        background-color: $background-color;
-    }
-
-  
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:acc04894c566d375f00f9b427b348a19aa64e77c29609ea4bd7b2b2b4b3cda1e
+size 542

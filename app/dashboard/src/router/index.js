@@ -1,17 +1,3 @@
-import VueRouter from "vue-router";
-import routes from "./routes";
-
-// configure router
-const router = new VueRouter({
-  routes, // short for routes: routes
-  linkExactActiveClass: "active",
-  scrollBehavior: (to) => {
-    if (to.hash) {
-      return {selector: to.hash}
-    } else {
-      return { x: 0, y: 0 }
-    }
-  }
-});
-
-export default router;
+version https://git-lfs.github.com/spec/v1
+oid sha256:7da79f3cfa1a200a31b8fb2a473cb33532e323b8b52696ee93d9e18b7d201bd2
+size 367

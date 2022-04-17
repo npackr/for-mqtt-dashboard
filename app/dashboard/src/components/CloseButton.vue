@@ -1,34 +1,3 @@
-<template>
-    <button type="button" class="navbar-toggler"
-            data-toggle="collapse"
-            @click="handleClick"
-            :data-target="`#${target}`"
-            :aria-controls="target"
-            :aria-expanded="expanded"
-            aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-    </button>
-</template>
-<script>
-export default {
-  name: "close-button",
-  props: {
-    target: {
-      type: [String, Number],
-      description: "Close button target element"
-    },
-    expanded: {
-      type: Boolean,
-      description: "Whether button is expanded (aria-expanded attribute)"
-    }
-  },
-  methods: {
-    handleClick(evt) {
-      this.$emit("click", evt);
-    }
-  }
-};
-</script>
-<style>
-</style>
+version https://git-lfs.github.com/spec/v1
+oid sha256:012bb0d7167de5b80304718c979c936cee41549e1e6237a91c292960583e6cc2
+size 781

@@ -1,5 +1,3 @@
-import * as Realm from 'realm-web';
-
-const REALM_APP_ID = process.env.VUE_APP_REALM_APP_ID;
-export const app: Realm.App = new Realm.App({ id: REALM_APP_ID! });
-export const credentials = Realm.Credentials.serverApiKey("G1lEIVcWV2e32WAiizbLtvgraT2VnvuhUTZdkBItqZNvJeZuivIYEKLLtjcOsxxs");
+version https://git-lfs.github.com/spec/v1
+oid sha256:ed5226a0cca1d0e099d08d4792351402bd0e632134f7c599db409fd90d6afa3d
+size 290

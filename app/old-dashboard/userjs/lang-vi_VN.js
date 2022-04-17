@@ -1,3 +1,3 @@
-document.body.innerHTML = document.body.innerHTML.replace(/'Unsuccessful'/g, 'Thao tác thất bại');
-document.body.innerHTML = document.body.innerHTML.replace(/'Successful'/g, 'Thao tác thành công');
-document.body.innerHTML = document.body.innerHTML.replace(/'Info'/g, 'Thông tin');
+version https://git-lfs.github.com/spec/v1
+oid sha256:e3e73c71b1491e1bcf25bbb75d14a1b2e82cd31f3bdbf63ccb45453de2a51c63
+size 293

@@ -1,10 +1,3 @@
-export default {
-  colors: {
-    default: "#344675",
-    primary: "#42b883",
-    info: "#1d8cf8",
-    danger: "#fd5d93",
-    teal: "#00d6b4",
-    primaryGradient: ['rgba(76, 211, 150, 0.1)', 'rgba(53, 183, 125, 0)', 'rgba(119,52,169,0)'],
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b4f391ece03aac41983201ec788f0b54711c5c97366008659204bbbc53f563c2
+size 255

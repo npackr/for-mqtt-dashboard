@@ -1,17 +1,3 @@
-/**
- * Select2 Swedish translation.
- *
- * Author: Jens Rantil <jens.rantil@telavox.com>
- */
-(function ($) {
-    "use strict";
-
-    $.extend($.fn.select2.defaults, {
-        formatNoMatches: function () { return "Inga träffar"; },
-        formatInputTooShort: function (input, min) { var n = min - input.length; return "Var god skriv in " + n + (n>1 ? " till tecken" : " tecken till"); },
-        formatInputTooLong: function (input, max) { var n = input.length - max; return "Var god sudda ut " + n + " tecken"; },
-        formatSelectionTooBig: function (limit) { return "Du kan max välja " + limit + " element"; },
-        formatLoadMore: function (pageNumber) { return "Laddar fler resultat…"; },
-        formatSearching: function () { return "Söker…"; }
-    });
-})(jQuery);
+version https://git-lfs.github.com/spec/v1
+oid sha256:165a04b08c27b7df0e34b47ecdf92eb823ecd994abb64dac3a1706c9851487e0
+size 802

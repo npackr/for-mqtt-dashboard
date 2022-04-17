@@ -1,30 +1,3 @@
-.card-tasks {
-  height: 473px;
-
-  .table-full-width {
-    max-height: 410px;
-    position: relative;
-  }
-
-  .card-header {
-    .title {
-      margin-right: 20px;
-      font-weight: $font-weight-normal;
-    }
-
-    .dropdown {
-      float: right;
-      color: darken($white, 20%);
-    }
-  }
-
-  .card-body {
-    i {
-      color: $dark-gray;
-      font-size: 1.4em;
-      &:hover {
-        color: $white;
-      }
-    }
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e869aef4cde625777845e26a1c42c355d94fdb30a8721d751aaaa3cf311c726b
+size 451

@@ -1,12 +1,3 @@
-# Makefile for generating minified files
-
-.PHONY: all
-
-# we cheat and process all .js files instead of an exhaustive list
-all: $(patsubst %.js,%.min.js,$(filter-out %.min.js,$(wildcard *.js)))
-
-%.min.js: %.js
-	yui-compressor $< -o $@
-
-test:
-	./node_modules/.bin/jshint *jquery.flot.js
+version https://git-lfs.github.com/spec/v1
+oid sha256:43fbbfa80efcde32c8252e731ed346fea2077f188cfd65e0108e8cb6a9cc0314
+size 297

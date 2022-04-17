@@ -1,15 +1,3 @@
-/**
- * Select2 Hungarian translation
- */
-(function ($) {
-    "use strict";
-
-    $.extend($.fn.select2.defaults, {
-        formatNoMatches: function () { return "Nincs találat."; },
-        formatInputTooShort: function (input, min) { var n = min - input.length; return "Túl rövid. Még " + n + " karakter hiányzik."; },
-        formatInputTooLong: function (input, max) { var n = input.length - max; return "Túl hosszú. " + n + " kerekterrel több mint kellene."; },
-        formatSelectionTooBig: function (limit) { return "Csak " + limit + " elemet lehet kiválasztani."; },
-        formatLoadMore: function (pageNumber) { return "Töltés…"; },
-        formatSearching: function () { return "Keresés…"; }
-    });
-})(jQuery);
+version https://git-lfs.github.com/spec/v1
+oid sha256:38fc01b287067ae5bcfbccb09be5ac2ded9c88c7913633cd5c470180fd84246c
+size 754

@@ -1,15 +1,3 @@
-/**
- * Select2 Dutch translation
- */
-(function ($) {
-    "use strict";
-
-    $.extend($.fn.select2.defaults, {
-        formatNoMatches: function () { return "Geen resultaten gevonden"; },
-        formatInputTooShort: function (input, min) { var n = min - input.length; return "Vul " + n + " karakter" + (n == 1? "" : "s") + " meer in"; },
-        formatInputTooLong: function (input, max) { var n = input.length - max; return "Vul " + n + " karakter" + (n == 1? "" : "s") + " minder in"; },
-        formatSelectionTooBig: function (limit) { return "Maximaal " + limit + " item" + (limit == 1 ? "" : "s") + " toegestaan"; },
-        formatLoadMore: function (pageNumber) { return "Meer resultaten laden…"; },
-        formatSearching: function () { return "Zoeken…"; }
-    });
-})(jQuery);
+version https://git-lfs.github.com/spec/v1
+oid sha256:f654cca6601a3377361f3cee6fe127d23b15817693f9c231d8f2dc52ee659fdc
+size 803

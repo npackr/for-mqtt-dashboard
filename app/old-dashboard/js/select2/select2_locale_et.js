@@ -1,17 +1,3 @@
-/**
- * Select2 Estonian translation.
- *
- * Author: Kuldar Kalvik <kuldar@kalvik.ee>
- */
-(function ($) {
-    "use strict";
-
-    $.extend($.fn.select2.defaults, {
-        formatNoMatches: function () { return "Tulemused puuduvad"; },
-        formatInputTooShort: function (input, min) { var n = min - input.length; return "Sisesta " + n + " täht" + (n == 1 ? "" : "e") + " rohkem"; },
-        formatInputTooLong: function (input, max) { var n = input.length - max; return "Sisesta " + n + " täht" + (n == 1? "" : "e") + " vähem"; },
-        formatSelectionTooBig: function (limit) { return "Saad vaid " + limit + " tulemus" + (limit == 1 ? "e" : "t") + " valida"; },
-        formatLoadMore: function (pageNumber) { return "Laen tulemusi.."; },
-        formatSearching: function () { return "Otsin.."; }
-    });
-})(jQuery);
+version https://git-lfs.github.com/spec/v1
+oid sha256:cb019dcdd8b8e37a477dea4f4920e3ffb8585474bfc779b3b081b88c538e4266
+size 841

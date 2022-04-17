@@ -1,16 +1,3 @@
-/**
- * Danish translation for bootstrap-datetimepicker
- * Christian Pedersen <http://github.com/chripede>
- */
-;(function($){
-	$.fn.datetimepicker.dates['da'] = {
-		days: ["Søndag", "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag"],
-		daysShort: ["Søn", "Man", "Tir", "Ons", "Tor", "Fre", "Lør", "Søn"],
-		daysMin: ["Sø", "Ma", "Ti", "On", "To", "Fr", "Lø", "Sø"],
-		months: ["Januar", "Februar", "Marts", "April", "Maj", "Juni", "Juli", "August", "September", "Oktober", "November", "December"],
-		monthsShort: ["Jan", "Feb", "Mar", "Apr", "Maj", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dec"],
-		today: "I Dag",
-		suffix: [],
-		meridiem: []
-	};
-}(jQuery));
+version https://git-lfs.github.com/spec/v1
+oid sha256:66c0d0a80aad8ea3df662670ddd64780f49dbd4e766a312260f32a607278e499
+size 705

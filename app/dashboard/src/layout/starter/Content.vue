@@ -1,16 +1,3 @@
-<template>
-  <div class="content">
-    <fade-transition :duration="100" mode="out-in">
-      <!-- your content here -->
-      <router-view></router-view>
-    </fade-transition>
-  </div>
-</template>
-<script>
-  import {FadeTransition} from 'vue2-transitions';
-  export default {
-    components: {
-      FadeTransition
-    }
-  };
-</script>
+version https://git-lfs.github.com/spec/v1
+oid sha256:c25691257a0806c5e1c9fd0b159b028df3cfee5da665d6a198e8e7072ad972e6
+size 353

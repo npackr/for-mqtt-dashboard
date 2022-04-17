@@ -1,20 +1,3 @@
-Morris.Bar({
-    element: 'graph-bar',
-    data: [
-        {x: '2021 T11', amthanh: 110, dien: 250, khac: 300},
-        {x: '2021 T12', amthanh: 140, dien: 300, khac: 260},
-        {x: '2022 T1', amthanh: 110, dien: 280, khac: 350},
-        {x: '2022 T2', amthanh: 150, dien: 340, khac: 280}
-    ],
-    xkey: 'x',
-    ykeys: ['amthanh', 'dien', 'khac'],
-    labels: ['AMTHANH', 'DIEN', 'KHAC'],
-    barColors:['#E67A77','#D9DD81','#79D1CF']
-
-
-});
-
-
-
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:4b5cc966f5ff53d7e2756950b4a7e5064d522a3a2f417218ffd4263af31179b3
+size 472

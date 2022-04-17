@@ -1,8 +1,3 @@
-{
-    "name": "select2",
-    "version": "3.4.5",
-    "main": ["select2.js", "select2.css", "select2.png", "select2x2.png", "select2-spinner.gif"],
-    "dependencies": {
-        "jquery": ">= 1.7.1"
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6acdbcab39e5869161e5f4839627219cd80fc45639a91052bc7f59db26f7f9fb
+size 214

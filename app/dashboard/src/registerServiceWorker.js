@@ -1,35 +1,3 @@
-/* eslint-disable no-console */
-
-import { register } from 'register-service-worker'
-
-if (process.env.NODE_ENV === 'production') {
-  register(`${process.env.BASE_URL}service-worker.js`, {
-    registrationOptions: {
-      scope: process.env.BASE_URL,
-    },
-    ready () {
-      console.log(
-        'App is being served from cache by a service worker.\n' +
-        'For more details, visit https://goo.gl/AFskqB'
-      )
-    },
-    registered () {
-      console.log('Service worker has been registered.')
-    },
-    cached () {
-      console.log('Content has been cached for offline use.')
-    },
-    updatefound () {
-      console.log('New content is downloading.')
-    },
-    updated () {
-      console.log('New content is available; please refresh.')
-    },
-    offline () {
-      console.log('No internet connection found. App is running in offline mode.')
-    },
-    error (error) {
-      console.error('Error during service worker registration:', error)
-    }
-  })
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7fde7b6512fb138fe2fa8315a2b5feebbef837a65620f816b22346f53afc06eb
+size 1007

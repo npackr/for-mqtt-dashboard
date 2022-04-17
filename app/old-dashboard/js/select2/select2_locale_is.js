@@ -1,15 +1,3 @@
-/**
- * Select2 Icelandic translation.
- */
-(function ($) {
-    "use strict";
-
-    $.extend($.fn.select2.defaults, {
-        formatNoMatches: function () { return "Ekkert fannst"; },
-        formatInputTooShort: function (input, min) { var n = min - input.length; return "Vinsamlegast skrifið " + n + " staf" + (n > 1 ? "i" : "") + " í viðbót"; },
-        formatInputTooLong: function (input, max) { var n = input.length - max; return "Vinsamlegast styttið texta um " + n + " staf" + (n > 1 ? "i" : ""); },
-        formatSelectionTooBig: function (limit) { return "Þú getur aðeins valið " + limit + " atriði"; },
-        formatLoadMore: function (pageNumber) { return "Sæki fleiri niðurstöður…"; },
-        formatSearching: function () { return "Leita…"; }
-    });
-})(jQuery);
+version https://git-lfs.github.com/spec/v1
+oid sha256:b82428474ca87058387a08283a34378104a9e8f2d25a1c4da5ababcf49ca7386
+size 808

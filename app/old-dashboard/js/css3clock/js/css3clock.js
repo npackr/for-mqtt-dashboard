@@ -1,33 +1,3 @@
-$(function() {
-
-    setInterval( function() {
-        var seconds = new Date().getSeconds();
-        var sdegree = seconds * 6;
-        var srotate = "rotate(" + sdegree + "deg)";
-
-        $("#sec").css({"-moz-transform" : srotate, "-webkit-transform" : srotate});
-
-    }, 1000 );
-
-
-    setInterval( function() {
-        var hours = new Date().getHours();
-        var mins = new Date().getMinutes();
-        var hdegree = hours * 30 + (mins / 2);
-        var hrotate = "rotate(" + hdegree + "deg)";
-
-        $("#hour").css({"-moz-transform" : hrotate, "-webkit-transform" : hrotate});
-
-    }, 1000 );
-
-
-    setInterval( function() {
-        var mins = new Date().getMinutes();
-        var mdegree = mins * 6;
-        var mrotate = "rotate(" + mdegree + "deg)";
-
-        $("#min").css({"-moz-transform" : mrotate, "-webkit-transform" : mrotate});
-
-    }, 1000 );
-
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:24e4e359f716283b7d39b7dcfa1a1a16d93b2ce3cce075baddaa5ff9f7aeb90c
+size 898

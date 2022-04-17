@@ -1,23 +1,3 @@
-# Change Log
-
-## [1.1.1] 2020-06-26
-- Package updates
-
-## [1.1.0] 2019-02-12
-- Package updates
-- Add pwa support
-- Improve accessibility
-- Cleanups & other minor UI improvements
-- Improve bundle size
-
-## [1.0.1] 2018-12-03
-### Minor updates
-- Upgrade packages
-- Change sidebar gradient colors (more pleasant)
-- Make links "bolder" in the sidebar so they are more readable
-- Improve bundle size, add vue-router prefetch
-- Add pwa support
-
-
-## [1.0.0] 2018-10-14
-### Stable Original Release
+version https://git-lfs.github.com/spec/v1
+oid sha256:85e6c3d96f56d0dc34069e83a3c3196ffcacab07091b58fb969752cd1fabd37a
+size 512

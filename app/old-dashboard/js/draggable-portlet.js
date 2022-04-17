@@ -1,27 +1,3 @@
-var DraggablePortlet = function () {
-
-    return {
-        //main function to initiate the module
-        init: function () {
-
-            if (!jQuery().sortable) {
-                return;
-            }
-
-            $("#draggable_portlets").sortable({
-                connectWith: ".panel",
-                items: ".panel",
-                opacity: 0.8,
-                coneHelperSize: true,
-                placeholder: 'sortable-box-placeholder round-all',
-                forcePlaceholderSize: true,
-                tolerance: "pointer"
-            });
-
-            $(".column").disableSelection();
-
-        }
-
-    };
-
-}();
+version https://git-lfs.github.com/spec/v1
+oid sha256:f78af906d96966e502cd72a7721312acb4ba7d00aa3dc62447de71b08c8b3a97
+size 652

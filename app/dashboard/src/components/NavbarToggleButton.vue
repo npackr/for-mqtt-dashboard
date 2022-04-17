@@ -1,27 +1,3 @@
-<template>
-    <button class="navbar-toggler" type="button"
-            data-toggle="collapse"
-            :data-target="target"
-            :aria-controls="target"
-            :aria-expanded="toggled"
-            aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-</template>
-<script>
-export default {
-  props: {
-    target: {
-      type: [String, Number],
-      description: "Button target element"
-    },
-    toggled: {
-      type: Boolean,
-      default: false,
-      description: "Whether button is toggled"
-    }
-  }
-};
-</script>
-<style>
-</style>
+version https://git-lfs.github.com/spec/v1
+oid sha256:d830480b9729c2e0680c425b9c168b29c85fc5ee70488970c29bd0a40435f2ea
+size 625

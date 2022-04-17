@@ -1,17 +1,3 @@
-/**
- * Slovak translation for bootstrap-datetimepicker
- * Marek Lichtner <marek@licht.sk>
- * Fixes by Michal Remiš <michal.remis@gmail.com>
- */
-;(function($){
-	$.fn.datetimepicker.dates["sk"] = {
-		days: ["Nedeľa", "Pondelok", "Utorok", "Streda", "Štvrtok", "Piatok", "Sobota", "Nedeľa"],
-		daysShort: ["Ned", "Pon", "Uto", "Str", "Štv", "Pia", "Sob", "Ned"],
-		daysMin: ["Ne", "Po", "Ut", "St", "Št", "Pia", "So", "Ne"],
-		months: ["Január", "Február", "Marec", "Apríl", "Máj", "Jún", "Júl", "August", "September", "Október", "November", "December"],
-		monthsShort: ["Jan", "Feb", "Mar", "Apr", "Máj", "Jún", "Júl", "Aug", "Sep", "Okt", "Nov", "Dec"],
-		today: "Dnes",
-		suffix: [],
-		meridiem: []
-	};
-}(jQuery));
+version https://git-lfs.github.com/spec/v1
+oid sha256:1144c9de49829a41e6be82b88f43bd80a9d1c6c0708a6bdfa4a14a8b9ccc0250
+size 748

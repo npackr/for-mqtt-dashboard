@@ -1,12 +1,3 @@
-// This configuration file is not used anywhere in the code, it's a hack to handle InteliJ relative path imports
-// Keep in sync with actual webpack aliases
-
-const path = require('path');
-
-module.exports = {
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src')
-    }
-  }
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:ae50ea88d8074ae00863d0d9821287ebc085fe31e7093550c53f70fb7368936c
+size 301
