@@ -36,7 +36,7 @@
 
 
         var barChartData = {
-            labels : ["Monday","Tuesday","Wenesday","Thurstday","Friday","Saturday","Sunday"],
+            labels : ["Thứ hai","Thứ ba","Thứ tư","Thứ năm","Thứ sáu","Thứ bảy","Chủ nhật"],
             datasets : [
                 {
                     fillColor : "#4dd1a1",
@@ -62,7 +62,7 @@
 
 
         var Linedata = {
-            labels : ["Monday","Tuesday","Wenesday","Thurstday","Friday","Saturday","Sunday"],
+            labels : ["Thứ hai","Thứ ba","Thứ tư","Thứ năm","Thứ sáu","Thứ bảy","Chủ nhật"],
             datasets : [
                 {
                     fillColor : "#4dd1a1",

@@ -36,7 +36,7 @@
 
 
         var barChartData = {
-            labels : ["WEEK 1","WEEK 2","WEEK 3","WEEK 4" ],
+            labels : ["Tuần 1","Tuần 2","Tuần 3","Tuần 4" ],
             datasets : [
                 {
                     fillColor : "#4dd1a1",

@@ -312,48 +312,57 @@
                     <header class="panel-heading">
                         Nơi sử dụng(kWh)
                     </header> <br>
-                    <div class="form-group">
+                    <div style="margin-bottom: 32px;" class="form-group">
                         <div class="form-group">
-                            <label class="col-lg-2 control-label">Chọn Khu Vực </label>
+                            <div class="col-md-1"></div>
+                            <label style="line-height: 32px;" class="col-lg-2 control-label">Chọn Khu vực </label>
                             <div class="col-lg-2">
-                                <select id="all_select"  style="width: 150px" onchange="genderChanged(this)">
-                                    <option value="--">---</option>
+                                <!-- <select id="all_select"  style="width: 150px" onchange="genderChanged(this)">
+                                    <option value="#">Tất cả</option>
                                     <option value="livingroom.html"> Phòng khách</option>
                                     <option value="bedroom.html">Phòng ngủ</option>
                                     <option value="kitchen.html">Phòng bếp</option>
                                     <option value="showerroom.html">Phòng tắm</option>
                                     <option value="other.html">Khác</option>
-                                </select>
-                                    </div>                 
+                                </select> -->
+                                <div style="vertical-align: center;" class="btn-group">
+                                    <button class="btn btn-white" type="button">Tất cả</button>
+                                    <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button"><span class="caret"></span></button>
+                                    <ul role="menu" class="dropdown-menu">
+                                        <li><a href="#">Tất cả</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="livingroom.html">Phòng khách</a></li>
+                                        <li><a href="bedroom.html">Phòng ngủ</a></li>
+                                        <li><a href="kitchen.html">Phòng bếp</a></li>
+                                        <li><a href="showerroom.html">Phòng tắm</a></li>
+                                        <li><a href="other.html">Khác</a></li>
+                                    </ul>
+                                </div>
+                                </div>                 
                         </div>
-                        <label class="control-label col-md-2">Chọn thời gian</label>
+                        <div class="col-md-1"></div>
+                        <label style="line-height: 32px;" class="control-label col-md-2">Chọn thời gian</label>
                         <div class="col-md-2 ">
-
                             <div data-date-viewmode="years" data-date-format="dd-mm-yyyy" data-date="12-02-2012"  class="input-append date dpYears">
                                 <input type="text" readonly="" value="12-02-2012" size="16" class="form-control">
                                       <span class="input-group-btn add-on">
                                         <button class="btn btn-primary" type="button"><i class="fa fa-calendar"></i></button>
                                       </span>
                             </div>
-                            
                         </div>
-                    </div> <br>
+                    </div>
                     <div class="panel-body">
+                        <div class="color-all" style="text-align: center; margin-top: 32px;">
+                            <div style="display: inline-block; margin-right: 32px;" class="colorall1"> Phòng Khách ■</div>
+                            <div style="display: inline-block; margin-right: 32px;" class="colorall2"> Phòng Ngủ ■</div>
+                            <div style="display: inline-block; margin-right: 32px;" class="colorall3"> Phòng Bếp ■</div>
+                            <div style="display: inline-block; margin-right: 32px;" class="colorall5"> Phòng Tắm ■</div>
+                            <div style="display: inline-block; margin-right: 32px;" class="colorall4"> Khác ■</div>
+                        </div>
                         <div class="chartJS">
                             <canvas id="bar-chart-js" height="250" width="800" ></canvas>
-                        </div> <br>
-
-                        <p class="note-p">Dữ liệu được cập nhật hằng tuần</p>
-
-                        <div class="color-all" >
-                            NOTE
-                            <div class="colorall1">_____ Phòng Khách</div>
-                            <div class="colorall2">_____ Phòng Ngủ</div>
-                            <div class="colorall3">_____ Phòng Bếp</div>
-                            <div class="colorall5">_____ Phòng Tắm</div>
-                            <div class="colorall4">_____ Khác</div>
-                            
                         </div>
+                        
                     </div>
                 </section>
             </div>

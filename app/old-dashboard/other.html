@@ -310,33 +310,49 @@
                 <div class="col-sm-12">
                     <section class="panel">
                         <header class="panel-heading">
-                         OTHER
+                         Biểu đồ sử dụng khu vực khác
                             </header> <br>
-                            <div class="form-group">
-                                <label class="control-label col-md-2">Chọn thời gian</label>
+                            
+                            <div style="margin-bottom: 32px;" class="form-group">
+                                <div class="form-group">
+                                    <div class="col-md-1"></div>
+                                    <label style="line-height: 32px;" class="col-lg-2 control-label">Chọn Khu vực </label>
+                                    <div class="col-lg-2">
+                                        <!-- <select id="all_select"  style="width: 150px" onchange="genderChanged(this)">
+                                            <option value="#">Tất cả</option>
+                                            <option value="livingroom.html"> Phòng khách</option>
+                                            <option value="bedroom.html">Phòng ngủ</option>
+                                            <option value="kitchen.html">Phòng bếp</option>
+                                            <option value="showerroom.html">Phòng tắm</option>
+                                            <option value="other.html">Khác</option>
+                                        </select> -->
+                                        <div style="vertical-align: center;" class="btn-group">
+                                            <button class="btn btn-white" type="button">Khu vực khác</button>
+                                            <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button"><span class="caret"></span></button>
+                                            <ul role="menu" class="dropdown-menu">
+                                                <li><a href="#">Tất cả</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="livingroom.html">Phòng khách</a></li>
+                                                <li><a href="bedroom.html">Phòng ngủ</a></li>
+                                                <li><a href="kitchen.html">Phòng bếp</a></li>
+                                                <li><a href="showerroom.html">Phòng tắm</a></li>
+                                                <li><a href="other.html">Khác</a></li>
+                                            </ul>
+                                        </div>
+                                        </div>                 
+                                </div>
+                                <div class="col-md-1"></div>
+                                <label style="line-height: 32px;" class="control-label col-md-2">Chọn thời gian</label>
                                 <div class="col-md-2 ">
-        
                                     <div data-date-viewmode="years" data-date-format="dd-mm-yyyy" data-date="12-02-2012"  class="input-append date dpYears">
                                         <input type="text" readonly="" value="12-02-2012" size="16" class="form-control">
                                               <span class="input-group-btn add-on">
                                                 <button class="btn btn-primary" type="button"><i class="fa fa-calendar"></i></button>
                                               </span>
                                     </div>
-                                    
                                 </div>
-                                <div class="col-md-2"></div>
-                                <label class="col-lg-2 control-label">Chọn Khu Vực Khác </label>
-                                <div class="col-lg-2">
-                                    <select id="all_select"  style="width: 150px" onchange="genderChanged(this)">
-                                        <option value="--">---</option>
-                                        <option value="livingroom.html"> Phòng khách</option>
-                                        <option value="bedroom.html">Phòng ngủ</option>
-                                        <option value="kitchen.html">Phòng bếp</option>
-                                        <option value="showerroom.html">Phòng tắm</option>
-                                        <option value="other.html">Khác</option>
-                                    </select>
-                                </div>   
-                            </div> <br>
+                            </div>
+
                         <div class="panel-body" >
                             <div id="graph-donut" ></div>
                         </div>
