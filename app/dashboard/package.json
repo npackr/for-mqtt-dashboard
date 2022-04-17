@@ -1,6 +1,6 @@
 {
   "name": "mqtt-data-dashboard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "A dashboard for MQTT server's data",
   "author": "L2NK TEAM <l2nk@npackr.com>",
@@ -15,6 +15,7 @@
   "dependencies": {
     "apollo-boost": "^0.4.9",
     "chart.js": "^2.9.3",
+    "graphql": "^15.8.0",
     "realm-web": "^1.7.0",
     "register-service-worker": "^1.7.1",
     "sass": "^1.50.0",
