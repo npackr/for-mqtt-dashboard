@@ -7,7 +7,9 @@
     "new": "cd app/dashboard & npm run serve",
     "mqtt": "node client/mqtt_modules/connector.js",
     "realm": "node client/mongodb_modules/realm-test.js",
-    "client": "node client/client.js"
+    "client": "node client/client.js",
+    "setup": "npm install & npm run dashboard-install",
+    "dashboard-install": "cd app/dashboard & npm install"
   },
   "dependencies": {
     "ansi-regex": "^5.0.1",
