@@ -112,14 +112,14 @@
     ]
   },
   "sidebar": {
-    "title": "Creative Tim",
+    "title": "Danh mục",
     "shortTitle": "CT",
-    "dashboard": "dashboard",
+    "dashboard": "Tổng quan",
     "icons": "Icons",
     "maps": "Maps",
-    "notifications": "Notifications",
-    "userProfile": "User Profile",
-    "tableList": "Table List",
+    "notifications": "Thông báo",
+    "userProfile": "Khách hàng",
+    "tableList": "Nhật ký",
     "typography": "Typography",
     "rtlSupport": "RTL Support"
   }
