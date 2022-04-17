@@ -52,13 +52,13 @@ var client = mqtt.connect('mqtt://168.138.165.18', options);
 
 // MQTT CONNECTED FUNCTION - Run after connected to server
 client.on('connect', function () {
-  console.log('Client connected to server!')
+  console.log('Đã kết nối thành công máy chủ!')
   // client subcribe topic
   client.subscribe('#', function (error, granted) {
     if (error) {
       console.log(error);
     } else {
-      console.log(`Topic list was subscribed!`);
+      console.log(`Đã theo dõi thành công danh sách kênh!`);
     }
   });
 })
@@ -107,7 +107,7 @@ function payloadListener(payloads, changes) {
   // Update UI in response to inserted objects
   changes.insertions.forEach((index) => {
     let insertedPayload = payloads[index].topic + " \n " + payloads[index].payload + " \n - " + payloads[index].timestamp;
-    console.log("New payload arrived: " + insertedPayload + "\n");
+    console.log("Đã nhận được dữ liệu mới: " + insertedPayload + "\n");
     // console.log(`New payload arrived: ${JSON.stringify(insertedPayload, null, 2)}`);
     // overloadChecking(payloads, payloads[index].topic, payloads[index].payload);
   });
@@ -121,6 +121,6 @@ function overloadChecking(payloads, topic, payload) {
   const avg = arr => arr.reduce((acc, v, i, a) => (acc + v / a.length), 0);
 
   if (avg / parseFloat(payload) > 0.2 ) {
-    console.log("This payload uses more 20% than usual!");
+    console.log("Dữ liệu vừa nhận được có giá trị cao bất thường, hãy kịp thời xử lý!");
   } 
 }

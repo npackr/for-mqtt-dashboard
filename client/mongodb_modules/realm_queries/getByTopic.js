@@ -50,7 +50,7 @@ async function run() {
   // Add a listener that fires whenever one or more payload are inserted, modified, or deleted.
   task.addListener(payloadListener);
 
-  console.log("Result for topic: " + filter.topic.toString());
+  console.log("Kết quả cho kênh: " + filter.topic.toString());
   console.log(`${JSON.stringify(task, null, 2)}`);
 }
 
@@ -63,7 +63,7 @@ function payloadListener(payloads, changes) {
   // Update UI in response to inserted objects
   changes.insertions.forEach((index) => {
     let insertedPayload = payloads[index].topic + " : " + payloads[index].payload + " / " + payloads[index].timestamp;
-    console.log(`Update arrived: ${JSON.stringify(insertedPayload, null, 2)}`);
+    console.log(`Đã nhận được cập nhật mới liên quan: ${JSON.stringify(insertedPayload, null, 2)}`);
     // ...
   });
 }

@@ -59,7 +59,7 @@ async function run() {
   let task = payloads.filtered('timestamp >= $0 && timestamp < $1', startDate.timestamp, endDate.timestamp);
   task.addListener(payloadListener);
 
-  console.log("Result for timestamp: " + startDate.timestamp.toString() + " -> " + endDate.timestamp.toString());
+  console.log("Kết quả theo khoảng thời gian: " + startDate.timestamp.toString() + " -> " + endDate.timestamp.toString());
   console.log(`${JSON.stringify(task, null, 2)}`);
 }
 
@@ -72,7 +72,7 @@ function payloadListener(payloads, changes) {
   // Update UI in response to inserted objects
   changes.insertions.forEach((index) => {
     let insertedPayload = payloads[index].topic + " : " + payloads[index].payload + " / " + payloads[index].timestamp;
-    console.log(`Update arrived: ${JSON.stringify(insertedPayload, null, 2)}`);
+    console.log(`Đã nhận được cập nhật mới liên quan: ${JSON.stringify(insertedPayload, null, 2)}`);
     // ...
   });
 }
