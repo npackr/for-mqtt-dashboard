@@ -8,7 +8,7 @@
     <meta name="author" content="ThemeBucket">
     <link rel="shortcut icon" href="images/favicon.png">
 
-    <title>MONTH</title>
+    <title>Monthy - MQTT Dashboard</title>
 
     <!--Core CSS -->
     <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
@@ -310,34 +310,29 @@
             <div class="col-sm-12">
                 <section class="panel">
                     <header class="panel-heading">
-                        MONTH (KWh) <br>
-                        
-                    </header> <br>
-                    <div class="form-group">
-                        <label class="control-label col-md-3">Chọn thời điểm</label>
-                        <div class="col-md-4">
+                        Biểu đồ sử dụng trong tháng
+                    </header>
+                    <div style="padding-top: 24px;" class="form-group">
+                        <label style="text-align: center; line-height: 32px" class="control-label col-md-2">Chọn thời gian</label>
+                        <div style="text-align: center; vertical-align: center;" class="col-md-3">
                             <div class="input-group input-large" data-date="13/07/2013" data-date-format="mm/dd/yyyy">
                                 <input type="text" class="form-control dpd1" name="from">
                                 <span class="input-group-addon">đến</span>
                                 <input type="text" class="form-control dpd2" name="to">
                             </div>
                         </div>
+                        <div class="col-md-3" style="display: block; float: right;">
+                            <div class="color-bonus" style="text-align: right;">
+                                <div class="color1">Hệ thống đèn ■</div>
+                                <div class="color2">Hệ thống điện gia dụng ■</div>
+                                <div class="color3">Các thiết bị khác ■</div>
+                            </div>
+                        </div>
                     </div>
-                    <br>
                     <div class="panel-body">
                         <div class="chartJS">
                             <canvas id="bar-chart-js" height="250" width="800" ></canvas>
-
                         </div>
-                        <p class="note-p">Dữ liệu được cập nhật hằng tháng</p> <br>
-                        <div class="color-bonus" >
-                            NOTE
-                            <div class="color1">_____ HỆ THỐNG ĐÈN</div>
-                            <div class="color2">_____ HỆ THỐNG ĐIỆN GIA DỤNG</div>
-                            <div class="color3">_____ KHÁC</div>
-                            
-                        </div>
-
                     </div>
                 </section>
             </div>
