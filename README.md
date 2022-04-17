@@ -31,7 +31,7 @@ A dashboard for managing and analytics data from MQTT servers
 
 * Old dashboard (Bootstrap 3: Admin Bucket)
   * Use this command to run the old-dashboard server: `npm run old`
-  * Then use a browser and go to the address: `localhost:3000` for old-dashboard
+  * Then use a browser and go to the address: `localhost:7070` for old-dashboard
 * New dashboard (Bootstrap 4: Vue Black Dashboard)
   * Use this command to run the new-dashboard server: `npm run new`
   * Then use a browser and go to the address: `localhost:8080` for new-dashboard
