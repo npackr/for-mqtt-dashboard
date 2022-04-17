@@ -54,13 +54,9 @@
 		<header class="header fixed-top clearfix">
 			<!--logo start-->
 			<div class="brand">
-
 				<a href="index.html" class="logo">
 					DB ĐIỆN
 				</a>
-				<div class="sidebar-toggle-box">
-					<div class="fa fa-bars"></div>
-				</div>
 			</div>
 			<!--logo end-->
 
@@ -230,55 +226,89 @@
 		</header>
 		<!--header end-->
 		<!--sidebar start-->
-		<aside>
-			<div id="sidebar" class="nav-collapse">
-				<!-- sidebar menu start-->
-				<div class="leftside-navigation">
-					<ul class="sidebar-menu" id="nav-accordion">
-
-						<li class="sub-menu">
-							<a href="responsive_table.html">
-								<i class="fa fa-th"></i>
-								<span> Dữ liệu sử dụng điện năng</span>
-							</a>
-							<ul class="sub">
-								<li><a href="flot_chartnow.html">Mới nhất</a></li>
-								<li><a href="today.html">Hôm nay</a></li>
-								<li><a href="chartjs.html">Tuần này</a></li>
-								<li><a href="month.html">Tháng này</a></li>
-							</ul>
-						</li>
-
-						<li class="sub-menu">
-							<a class="active" href="javascript:;">
-								<i class=" fa fa-bar-chart-o"></i>
-								<span>Biểu đồ sử dụng năng lượng</span>
-							</a>
-							<ul class="sub">
-								<li class="active"><a href="mqtt-consumption-chart.html">Tổng hợp</a></li>
-								<li><a href="all.html">Theo khu vực sử dụng</a></li>
-
-							</ul>
-						</li>
-
-						<li class="sub-menu">
-							<a href="javascript:;">
-								<i class="fa fa-dashboard"></i>
-								<span>Tiện ích bổ sung</span>
-							</a>
-							<ul class="sub">
-								<li><a href="form_validation.html">Tính tiền điện</a></li>
-							</ul>
-						</li>
-					</ul>
-					<p style="padding: 10px; size: 10px;">
-						(c) MQTT Data Dashboard 2022.<br />
-						Giao diện khi thử nghiệm có thể khác với thực tế!
-					</p>
-				</div>
-				<!-- sidebar menu end-->
-			</div>
-		</aside>
+		<div class="sidebar">
+            <div class="logo-details">
+                <div class="logo_name">Dashboard Dien</div>
+                <i class='fa fa-th' id="btn" ></i>
+            </div>
+            <ul class="nav-list">
+              <li>
+                <a href="responsive_table.html">
+                  <i class='fa fa-list-ul'></i>
+                  <span class="links_name">Dữ liệu sử dụng điện năng</span>
+                </a>
+                 <span class="tooltip">Dữ liệu sử dụng điện năng</span>
+              </li>
+              <li>
+               <a href="flot_chartnow.html">
+                 <i class='fa fa-dot-circle-o' ></i>
+                 <span class="links_name">Mới nhất</span>
+               </a>
+               <span class="tooltip">Mới nhất</span>
+             </li>
+             <li>
+               <a href="today.html">
+                 <i class='fa fa-dot-circle-o' ></i>
+                 <span class="links_name">Hôm nay</span>
+               </a>
+               <span class="tooltip">Hôm nay</span>
+             </li>
+             <li>
+               <a href="chartjs.html">
+                 <i class='fa fa-dot-circle-o' ></i>
+                 <span class="links_name">Tuần này</span>
+               </a>
+               <span class="tooltip">Tuần này</span>
+             </li>
+             <li>
+                <a href="month.html">
+                  <i class='fa fa-dot-circle-o' ></i>
+                  <span class="links_name">Tháng này</span>
+                </a>
+                <span class="tooltip">Tháng này</span>
+              </li>
+             <li>
+               <a href="#">
+                 <i class='fa fa-list-ul' ></i>
+                 <span class="links_name">Biểu đồ sử dụng năng lượng</span>
+               </a>
+               <span class="tooltip">Biểu đồ sử dụng năng lượng</span>
+             </li>
+             <li>
+               <a href="mqtt-consumption-chart.html">
+                 <i class='fa fa-dot-circle-o' ></i>
+                 <span class="links_name">Tổng hợp</span>
+               </a>
+               <span class="tooltip">Tổng hợp</span>
+             </li>
+             <li>
+               <a href="all.html">
+                 <i class='fa fa-dot-circle-o' ></i>
+                 <span class="links_name">Theo khu vực sử dụng</span>
+               </a>
+               <span class="tooltip">Theo khu vực sử dụng</span>
+             </li>
+             <li>
+               <a href="#">
+                 <i class='fa fa-list-ul' ></i>
+                 <span class="links_name">Tiện ích bổ sung</span>
+               </a>
+               <span class="tooltip">Tiện ích bổ sung</span>
+             </li>
+             <li>
+                <a href="form_validation.html">
+                  <i class='fa fa-dot-circle-o' ></i>
+                  <span class="links_name">Tính tiền điện</span>
+                </a>
+                <span class="tooltip">Tính tiền điện</span>
+              </li>
+            
+            </ul>
+            <p style="padding: 10px; size: 10px;">
+                (c) MQTT Data Dashboard 2022.<br/>
+                Giao diện khi thử nghiệm có thể khác với thực tế!
+            </p>
+          </div>
 		<!--sidebar end-->
 		<!--main content start-->
 		<section id="main-content">
@@ -501,7 +531,26 @@
 
 	<!--common script init for all pages-->
 	<script src="js/scripts.js"></script>
-
+	<script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        
+      
+        closeBtn.addEventListener("click", ()=>{
+          sidebar.classList.toggle("open");
+          menuBtnChange();//calling the function(optional)
+        });
+      
+      
+        // following are the code to change sidebar button(optional)
+        function menuBtnChange() {
+         if(sidebar.classList.contains("open")){
+           closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+         }else {
+           closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+         }
+        }
+        </script>
 </body>
 
 </html>
