@@ -1,3 +1,4 @@
+const { MongoDBRealmError } = require('realm-web');
 const webpack = require('webpack');
 
 module.exports = {
@@ -6,7 +7,7 @@ module.exports = {
     // Set up all the aliases we use in our app.
     resolve: {
       alias: {
-        'chart.js': 'chart.js/dist/Chart.js'
+        'chart.js': 'chart.js/dist/Chart.js',
       }
     },
     plugins: [
@@ -16,7 +17,7 @@ module.exports = {
     ]
   },
   pwa: {
-    name: 'Vue Black Dashboard',
+    name: 'MQTT Data Dashboard',
     themeColor: '#344675',
     msTileColor: '#344675',
     appleMobileWebAppCapable: 'yes',

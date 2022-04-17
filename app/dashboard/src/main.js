@@ -20,24 +20,24 @@ import router from "./router/index";
 import BlackDashboard from "./plugins/blackDashboard";
 import i18n from "./i18n"
 import './registerServiceWorker'
-
-import ApolloClient from 'apollo-boost'
 import VueApollo from 'vue-apollo';
+import ApolloClient from 'apollo-boost'
+
+const apolloClient = new ApolloClient({
+  uri: 'https://realm.mongodb.com/api/client/v2.0/app/mqtt-data-dashboard-djtyx/graphql',
+  headers: {
+    "apiKey": process.env.VUE_APP_REALM_APP_API_KEY,
+  }
+})
 
 Vue.use(VueApollo);
+Vue.use(BlackDashboard);
+Vue.use(VueRouter);
+Vue.use(RouterPrefetch);
 
 const apolloProvider = new VueApollo({
   defaultClient: apolloClient,
 })
-
-const apolloClient = new ApolloClient({
-  // You should use an absolute URL here
-  uri: 'https://realm.mongodb.com/api/client/v2.0/app/mqtt-data-dashboard-djtyx/graphql'
-})
-
-Vue.use(BlackDashboard);
-Vue.use(VueRouter);
-Vue.use(RouterPrefetch);
 
 /* eslint-disable no-new */
 new Vue({

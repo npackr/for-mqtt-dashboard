@@ -12,25 +12,13 @@
                 <h2 class="card-title">{{ $t("dashboard.performance") }}</h2>
               </div>
               <div class="col-sm-6">
-                <div
-                  class="btn-group btn-group-toggle"
-                  :class="isRTL ? 'float-left' : 'float-right'"
-                  data-toggle="buttons"
-                >
-                  <label
-                    v-for="(option, index) in bigLineChartCategories"
-                    :key="option"
-                    class="btn btn-sm btn-primary btn-simple"
-                    :class="{ active: bigLineChart.activeIndex === index }"
-                    :id="index"
-                  >
-                    <input
-                      type="radio"
-                      @click="initBigChart(index)"
-                      name="options"
-                      autocomplete="off"
-                      :checked="bigLineChart.activeIndex === index"
-                    />
+                <div class="btn-group btn-group-toggle" :class="isRTL ? 'float-left' : 'float-right'"
+                  data-toggle="buttons">
+                  <label v-for="(option, index) in bigLineChartCategories" :key="option"
+                    class="btn btn-sm btn-primary btn-simple" :class="{ active: bigLineChart.activeIndex === index }"
+                    :id="index">
+                    <input type="radio" @click="initBigChart(index)" name="options" autocomplete="off"
+                      :checked="bigLineChart.activeIndex === index" />
                     {{ option }}
                   </label>
                 </div>
@@ -38,15 +26,9 @@
             </div>
           </template>
           <div class="chart-area">
-            <line-chart
-              style="height: 100%"
-              ref="bigChart"
-              chart-id="big-line-chart"
-              :chart-data="bigLineChart.chartData"
-              :gradient-colors="bigLineChart.gradientColors"
-              :gradient-stops="bigLineChart.gradientStops"
-              :extra-options="bigLineChart.extraOptions"
-            >
+            <line-chart style="height: 100%" ref="bigChart" chart-id="big-line-chart"
+              :chart-data="bigLineChart.chartData" :gradient-colors="bigLineChart.gradientColors"
+              :gradient-stops="bigLineChart.gradientStops" :extra-options="bigLineChart.extraOptions">
             </line-chart>
           </div>
         </card>
@@ -58,18 +40,13 @@
           <template slot="header">
             <h5 class="card-category">{{ $t("dashboard.totalShipments2") }}</h5>
             <h3 class="card-title">
-              <i class="tim-icons icon-bell-55 text-primary"></i> 763,215
+              <i class="tim-icons icon-bell-55 text-primary"></i> 23,764 KWh
             </h3>
           </template>
           <div class="chart-area">
-            <line-chart
-              style="height: 100%"
-              chart-id="purple-line-chart"
-              :chart-data="purpleLineChart.chartData"
-              :gradient-colors="purpleLineChart.gradientColors"
-              :gradient-stops="purpleLineChart.gradientStops"
-              :extra-options="purpleLineChart.extraOptions"
-            >
+            <line-chart style="height: 100%" chart-id="purple-line-chart" :chart-data="purpleLineChart.chartData"
+              :gradient-colors="purpleLineChart.gradientColors" :gradient-stops="purpleLineChart.gradientStops"
+              :extra-options="purpleLineChart.extraOptions">
             </line-chart>
           </div>
         </card>
@@ -79,17 +56,12 @@
           <template slot="header">
             <h5 class="card-category">{{ $t("dashboard.dailySales") }}</h5>
             <h3 class="card-title">
-              <i class="tim-icons icon-delivery-fast text-info"></i> 3,500€
+              <i class="tim-icons icon-delivery-fast text-info"></i> 3,542 KWh
             </h3>
           </template>
           <div class="chart-area">
-            <bar-chart
-              style="height: 100%"
-              chart-id="blue-bar-chart"
-              :chart-data="blueBarChart.chartData"
-              :gradient-stops="blueBarChart.gradientStops"
-              :extra-options="blueBarChart.extraOptions"
-            >
+            <bar-chart style="height: 100%" chart-id="blue-bar-chart" :chart-data="blueBarChart.chartData"
+              :gradient-stops="blueBarChart.gradientStops" :extra-options="blueBarChart.extraOptions">
             </bar-chart>
           </div>
         </card>
@@ -99,17 +71,12 @@
           <template slot="header">
             <h5 class="card-category">{{ $t("dashboard.completedTasks") }}</h5>
             <h3 class="card-title">
-              <i class="tim-icons icon-send text-success"></i> 12,100K
+              <i class="tim-icons icon-send text-success"></i> 420 KWh
             </h3>
           </template>
           <div class="chart-area">
-            <line-chart
-              style="height: 100%"
-              chart-id="green-line-chart"
-              :chart-data="greenLineChart.chartData"
-              :gradient-stops="greenLineChart.gradientStops"
-              :extra-options="greenLineChart.extraOptions"
-            >
+            <line-chart style="height: 100%" chart-id="green-line-chart" :chart-data="greenLineChart.chartData"
+              :gradient-stops="greenLineChart.gradientStops" :extra-options="greenLineChart.extraOptions">
             </line-chart>
           </div>
         </card>
@@ -123,13 +90,8 @@
               {{ $t("dashboard.tasks", { count: 5 }) }}
             </h6>
             <p class="card-category d-inline">{{ $t("dashboard.today") }}</p>
-            <base-dropdown
-              menu-on-right=""
-              tag="div"
-              title-classes="btn btn-link btn-icon"
-              aria-label="Settings menu"
-              :class="{ 'float-left': isRTL }"
-            >
+            <base-dropdown menu-on-right="" tag="div" title-classes="btn btn-link btn-icon" aria-label="Settings menu"
+              :class="{ 'float-left': isRTL }">
               <i slot="title" class="tim-icons icon-settings-gear-63"></i>
               <a class="dropdown-item" href="#pablo">{{
                 $t("dashboard.dropdown.action")
@@ -167,6 +129,7 @@ import * as chartConfigs from "@/components/Charts/config";
 import TaskList from "./Dashboard/TaskList";
 import UserTable from "./Dashboard/UserTable";
 import config from "@/config";
+import gql from 'graphql-tag'
 
 export default {
   components: {
@@ -174,6 +137,20 @@ export default {
     BarChart,
     TaskList,
     UserTable,
+  },
+
+  apollo: {
+    hello: gql`query {
+      payload {
+        _id
+        _partition
+        payload
+        pdb
+        qos
+        timestamp
+        topic
+      }
+    }`,
   },
 
   data() {
@@ -188,7 +165,7 @@ export default {
         activeIndex: 0,
         chartData: {
           datasets: [{}],
-          labels:  [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120],
+          labels: [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120],
         },
         extraOptions: chartConfigs.purpleChartOptions,
         gradientColors: config.colors.primaryGradient,
@@ -198,10 +175,10 @@ export default {
       purpleLineChart: {
         extraOptions: chartConfigs.purpleChartOptions,
         chartData: {
-          labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+          labels: ["Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy", "Chủ nhật"],
           datasets: [
             {
-              label: "Trung tuần",
+              label: "Bình quân",
               fill: true,
               borderColor: config.colors.primary,
               borderWidth: 2,
@@ -224,7 +201,7 @@ export default {
       greenLineChart: {
         extraOptions: chartConfigs.greenChartOptions,
         chartData: {
-          labels: ["Now", "2 hour", "6 hour", "12 hour", "24 hour"],
+          labels: ["Mới đây", "5 phút", "10 phút", "30 phút", "1 giờ"],
           datasets: [
             {
               label: "Hôm nay",
@@ -254,16 +231,16 @@ export default {
       blueBarChart: {
         extraOptions: chartConfigs.barChartOptions,
         chartData: {
-          labels: ["Now", "1 min", "5 min", "10 min", "30 min", "1 hour"],
+          labels: ["Mới đây", "30 phút", "1 giờ", "2 giờ", "6 giờ", "12 giờ"],
           datasets: [
             {
-              label: "Một giờ gần đây",
+              label: "Bình quân",
               fill: true,
               borderColor: config.colors.info,
               borderWidth: 2,
               borderDash: [],
               borderDashOffset: 0.0,
-              data: [53, 20, 10, 80, 100, 45],
+              data: [90, 20, 10, 80, 100, 45],
             },
           ],
         },
@@ -304,18 +281,18 @@ export default {
           },
         ],
         labels: [
-          "JAN",
-          "FEB",
-          "MAR",
-          "APR",
-          "MAY",
-          "JUN",
-          "JUL",
-          "AUG",
-          "SEP",
-          "OCT",
-          "NOV",
-          "DEC",
+          "Tháng 1",
+          "Tháng 2",
+          "Tháng 3",
+          "Tháng 4",
+          "Tháng 5",
+          "Tháng 6",
+          "Tháng 7",
+          "Tháng 8",
+          "Tháng 9",
+          "Tháng 10",
+          "Tháng 11",
+          "Tháng 12",
         ],
       };
       this.$refs.bigChart.updateGradients(chartData);
