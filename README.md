@@ -16,7 +16,7 @@ A dashboard for managing and analytics data from MQTT servers
 
 ## Cloud Dependencies
 
-* [Mosquitto](https://mosquitto.org/) *(Private server)*
+* [Mosquitto](https://mosquitto.org/)
 * [MongoDB Atlas](https://www.mongodb.com/atlas)
 
 ## How to use
@@ -35,8 +35,8 @@ A dashboard for managing and analytics data from MQTT servers
 * New dashboard (Bootstrap 4: Vue Black Dashboard)
   * Use this command to run the new-dashboard server: `npm run new`
   * Then use a browser and go to the address: `localhost:8080` for new-dashboard
-* MQTT Data syncing client: `npm run client`
-* Additional database communication scripts can be found in: `/client/mongodb_modules/realm_queries`a
+* MQTT Data syncing client: Edit your server infomation in `/client/client.js` and run `npm run client` for start the client
+* Additional database communication scripts can be found in: `/client/mongodb_modules/realm_queries`
 
 If an error occurs, try to remove your `node_modules` folder and use `npm run setup` to re-install Node's necessary modules and see if the problem can be fixed or not.
 Try to leave a post in issues of this repository and wait for a reply if the problem still exists.
