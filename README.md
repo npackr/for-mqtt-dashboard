@@ -2,8 +2,9 @@
 
 A dashboard for managing and analytics data from MQTT servers
 
-Video Demo:
+## Videos
 
+### Old Dashboard
 
 https://user-images.githubusercontent.com/24362894/176678777-8465e13a-8674-4ccc-99c6-989a0d9f0015.mp4
 
@@ -51,7 +52,15 @@ https://user-images.githubusercontent.com/24362894/176678851-e5d84c97-7ee3-4b9f-
 
 https://user-images.githubusercontent.com/24362894/176678854-5461b12c-a7b0-46b5-b296-aa828f2260b9.mp4
 
+### New Dashboard
 
+https://user-images.githubusercontent.com/24362894/176686475-3a1c2077-3c98-4106-9ecc-5e629064616b.mp4
+
+https://user-images.githubusercontent.com/24362894/176686491-83aaf6d0-1486-449b-964a-8ce3a5399874.mp4
+
+### Overview with Back-end
+
+Watch on Google Drive: https://drive.google.com/drive/u/1/folders/1CEeZC-CH_PAupD6_v13AW9Ynn-P8yaZe
 
 ## Documents
 
