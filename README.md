@@ -61,6 +61,8 @@ https://user-images.githubusercontent.com/24362894/176678854-5461b12c-a7b0-46b5-
 * Project Report : [report.docx](/document/report.docx)
 * Presentation   : [presentation.pptx](/document/presentation.pptx)
 
+All documents of this project can be found on [project's Google Drive](https://drive.google.com/drive/u/1/folders/1CEeZC-CH_PAupD6_v13AW9Ynn-P8yaZe)
+
 ## Local Dependencies
 
 * [NodeJS](https://nodejs.org)
