@@ -26,5 +26,3 @@
 2. Nguyen Thi Giao Linh
 3. Tran Thi Bich Ngoc
 4. Nguyen Yen Linh
-
-5. Huynh Duy Khanh
