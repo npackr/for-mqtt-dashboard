@@ -1,3 +1,69 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5540a143ee60c81320ff4ff94e9ac26488225c7329345c39c5754535f9152072
-size 2030
+/*  MONGODB REALM QUERY - KEYWORD
+    Query for getting data keyword like room name or device name from MongoDB
+    
+    Edited by: npackr
+    Resources: https://docs.mongodb.com/realm/sdk/node/quick-start/
+*/
+
+// MONGODB REALM IMPORT
+const Realm = require("realm");
+const BSON = require("bson");
+
+// REALM APP DEFINDS
+const app = new Realm.App({ id: "mqtt-data-dashboard-djtyx" });
+
+// DATA SCHEMA DEFINDS
+const payloadSchema = {
+  name: "Payload",
+  properties: {
+    _id: "objectId",
+    _partition: "string?",
+    topic: "string",
+    payload: "string",
+    qos: "string",
+    timestamp: "date"
+  },
+  primaryKey: "_id",
+  timestamps: true,
+};
+
+// REALM DATABASE COMMUNICATION FUNCTION
+async function run() {
+  const credentials = Realm.Credentials.serverApiKey("YOUR_API_KEY");
+  await app.logIn(credentials);
+
+  const realm = await Realm.open({
+    schema: [payloadSchema],
+    sync: {
+      user: app.currentUser,
+      partitionValue: "pdb",
+    },
+  });
+
+
+  // Get all payload in the realm
+  const payloads = realm.objects("Payload");
+  const filter = { keyword: "PhongKhach" };
+
+  let task = payloads.filtered('topic LIKE "*' + filter.keyword + '*"');
+
+  // Add a listener that fires whenever one or more payload are inserted, modified, or deleted.
+  task.addListener(payloadListener);
+
+  console.log("Kết quả cho từ khóa: " + filter.keyword.toString());
+  console.log(`${JSON.stringify(task, null, 2)}`);
+}
+
+run().catch(err => {
+  console.error(err)
+});
+
+// Define the collection notification listener
+function payloadListener(payloads, changes) {
+  // Update UI in response to inserted objects
+  changes.insertions.forEach((index) => {
+    let insertedPayload = payloads[index].topic + " : " + payloads[index].payload + " / " + payloads[index].timestamp;
+    console.log(`Đã nhận được cập nhật mới liên quan: ${JSON.stringify(insertedPayload, null, 2)}`);
+    // ...
+  });
+}
