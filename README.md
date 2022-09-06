@@ -2,6 +2,66 @@
 
 A dashboard for managing and analytics data from MQTT servers
 
+## Videos
+
+### Old Dashboard
+
+https://user-images.githubusercontent.com/24362894/176678777-8465e13a-8674-4ccc-99c6-989a0d9f0015.mp4
+
+
+
+https://user-images.githubusercontent.com/24362894/176678789-b872f40f-f1be-4c42-9343-596569cb6663.mp4
+
+
+
+https://user-images.githubusercontent.com/24362894/176678797-fbe7c406-51fe-4ee2-84b0-c4f556491646.mp4
+
+
+
+https://user-images.githubusercontent.com/24362894/176678809-2252b213-a7cf-4a2e-bbbd-324ebfd68ad3.mp4
+
+
+
+https://user-images.githubusercontent.com/24362894/176678812-d541efdb-13f5-40ac-8820-501cc460654d.mp4
+
+
+
+https://user-images.githubusercontent.com/24362894/176678820-0075af93-5e29-4c82-8501-d7de0a2f5a4a.mp4
+
+
+
+https://user-images.githubusercontent.com/24362894/176678822-ed5f0ed7-db6d-4e06-aca6-99369825f651.mp4
+
+
+
+https://user-images.githubusercontent.com/24362894/176678826-d5d7a7d3-19e1-48b2-86b0-c75a6339a002.mp4
+
+
+
+https://user-images.githubusercontent.com/24362894/176678832-a2ed51f3-9113-4056-9abb-871b7f8c3087.mp4
+
+
+
+https://user-images.githubusercontent.com/24362894/176678843-db879670-634b-4033-81d5-de035cff9797.mp4
+
+
+
+https://user-images.githubusercontent.com/24362894/176678851-e5d84c97-7ee3-4b9f-a675-d299959a1c18.mp4
+
+
+
+https://user-images.githubusercontent.com/24362894/176678854-5461b12c-a7b0-46b5-b296-aa828f2260b9.mp4
+
+### New Dashboard
+
+https://user-images.githubusercontent.com/24362894/176686475-3a1c2077-3c98-4106-9ecc-5e629064616b.mp4
+
+https://user-images.githubusercontent.com/24362894/176686491-83aaf6d0-1486-449b-964a-8ce3a5399874.mp4
+
+### Overview with Back-end
+
+Watch on Google Drive: https://drive.google.com/drive/u/1/folders/1CEeZC-CH_PAupD6_v13AW9Ynn-P8yaZe
+
 ## Documents
 
 * SRS Document   : [SRS.md](/SRS.md)
@@ -9,6 +69,8 @@ A dashboard for managing and analytics data from MQTT servers
 * UML Diagram    : [uml.mdj](/document/uml.mdj)
 * Project Report : [report.docx](/document/report.docx)
 * Presentation   : [presentation.pptx](/document/presentation.pptx)
+
+All documents of this project can be found on [project's Google Drive](https://drive.google.com/drive/u/1/folders/1CEeZC-CH_PAupD6_v13AW9Ynn-P8yaZe)
 
 ## Local Dependencies
 
